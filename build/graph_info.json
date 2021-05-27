@@ -1,0 +1,38 @@
+{
+ "options": [
+  [
+   "libuuid:fPIC",
+   "True"
+  ],
+  [
+   "libuuid:shared",
+   "False"
+  ],
+  [
+   "xapian-core:fPIC",
+   "True"
+  ],
+  [
+   "xapian-core:shared",
+   "False"
+  ],
+  [
+   "zlib:fPIC",
+   "True"
+  ],
+  [
+   "zlib:minizip",
+   "deprecated"
+  ],
+  [
+   "zlib:shared",
+   "False"
+  ]
+ ],
+ "root": {
+  "name": null,
+  "version": null,
+  "user": null,
+  "channel": null
+ }
+}

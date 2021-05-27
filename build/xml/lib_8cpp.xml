@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="lib_8cpp" kind="file" language="C++">
+    <compoundname>lib.cpp</compoundname>
+    <includes refid="lib_8hpp" local="yes">lib.hpp</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>lib.hpp</label>
+        <link refid="lib_8hpp_source"/>
+      </node>
+      <node id="1">
+        <label>src/lib.cpp</label>
+        <link refid="lib_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lib_8cpp_1a8abe6cc07d3222213569068a53724de2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int not_random</definition>
+        <argsstring>()</argsstring>
+        <name>not_random</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib.cpp" line="3" column="5" bodyfile="src/lib.cpp" bodystart="3" bodyend="3"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;lib.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>not_random()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>3;<sp/>}</highlight></codeline>
+    </programlisting>
+    <location file="src/lib.cpp"/>
+  </compounddef>
+</doxygen>

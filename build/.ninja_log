@@ -1,0 +1,21 @@
+# ninja log v5
+39	1706	1622059039381562000	src/CMakeFiles/proj.dir/searcher.cpp.o	1a899c7c4de0ba39
+661	716	1618068042422858525	src/proj	c259a6136f84fa4d
+33	110	1620803525782089210	src/CMakeFiles/proj.dir/lib.cpp.o	cc88f4a6f77403ba
+1	775	1622070936699912412	src/CMakeFiles/proj.dir/main.cpp.o	a37acdf44cc05863
+1	2196	1618054538725052682	external/doctest/CMakeFiles/doctest.dir/doctest.cpp.o	8ba64ad081210519
+1715	2279	1622028928351034901	src/proj_test_tests-b858cb2.cmake	5944239470bc064f
+0	1471	1622102969907652146	build.ninja	902fd7d98fe92bc4
+2197	2268	1618054538811770000	external/doctest/libdoctest.a	1dd070c4f0e40d7
+34	110	1620803525782080927	src/CMakeFiles/proj_test.dir/lib.cpp.o	d707924bdc8ddfc6
+1715	2279	1622028928351034901	bin/proj_test	5944239470bc064f
+2	785	1622070871608821301	src/CMakeFiles/proj.dir/position.cpp.o	f1c2a607a58ec70c
+2	669	1621978410796982469	src/CMakeFiles/proj_test.dir/searcher.cpp.o	dcda6e9408a56bf0
+33	187	1620803525861240000	lib/libdoctest.a	b36a9bb1ab3ac10b
+0	592	0	CMakeFiles/Doxygen	a95f8cf743117242
+26	1714	1622028927776650312	src/CMakeFiles/proj_test.dir/test.cpp.o	3f7da60ccb09d8df
+25	1347	1622023854353275917	src/CMakeFiles/proj_test.dir/position.cpp.o	d2e86bbb0338b1ab
+775	839	1622070936769999333	bin/proj	657326eb02ec7e48
+0	331	0	CMakeFiles/Doxygen	a95f8cf743117242
+72	1766	1622103370221788173	src/CMakeFiles/proj.dir/main.cpp.o	a37acdf44cc05863
+1766	1926	1622103370384454864	bin/proj	657326eb02ec7e48

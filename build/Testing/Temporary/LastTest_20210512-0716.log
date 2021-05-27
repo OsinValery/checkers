@@ -1,0 +1,24 @@
+Start testing: May 12 10:16 MSK
+----------------------------------------------------------
+1/1 Testing: Something works
+1/1 Test: Something works
+Command: "/Users/valerij/Desktop/cpp-starter-project/build/bin/proj_test" "--test-case=Something works"
+Directory: /Users/valerij/Desktop/cpp-starter-project/build/src
+"Something works" start time: May 12 10:16 MSK
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "2.3.8"
+[doctest] run with "--help" for options
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |      0 skipped
+[doctest] assertions:      1 |      1 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"Something works" end time: May 12 10:16 MSK
+"Something works" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: May 12 10:16 MSK

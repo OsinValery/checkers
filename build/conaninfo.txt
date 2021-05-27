@@ -1,0 +1,45 @@
+[settings]
+    arch=x86_64
+    build_type=Debug
+    compiler=apple-clang
+    compiler.libcxx=libc++
+    compiler.version=12.0
+    os=Macos
+
+[requires]
+    doxygen/1.Y.Z
+
+[options]
+
+
+[full_settings]
+    arch=x86_64
+    arch_build=x86_64
+    build_type=Debug
+    compiler=apple-clang
+    compiler.libcxx=libc++
+    compiler.version=12.0
+    os=Macos
+    os_build=Macos
+
+[full_requires]
+    doxygen/1.8.20:2d36ef93f4aac51333b231bcccb770deba4580d7
+    libuuid/1.0.3:d98fae1010d1fb9e7f79a1e8a72bbf129d8660a2
+    xapian-core/1.4.18:9282a40774a88010b7c4ad6c26e9598ec76fb393
+    zlib/1.2.11:d98fae1010d1fb9e7f79a1e8a72bbf129d8660a2
+
+[full_options]
+    libuuid:fPIC=True
+    libuuid:shared=False
+    xapian-core:fPIC=True
+    xapian-core:shared=False
+    zlib:fPIC=True
+    zlib:minizip=deprecated
+    zlib:shared=False
+
+[recipe_hash]
+
+
+[env]
+    CONAN_CMAKE_PROGRAM="/usr/local/Cellar/cmake/3.19.2/bin/cmake"
+    CXX=/Library/Developer/CommandLineTools/usr/bin/c++

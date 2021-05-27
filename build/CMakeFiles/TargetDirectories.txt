@@ -1,0 +1,13 @@
+/Users/valerij/Desktop/cpp-starter-project/build/CMakeFiles/rebuild_cache.dir
+/Users/valerij/Desktop/cpp-starter-project/build/CMakeFiles/edit_cache.dir
+/Users/valerij/Desktop/cpp-starter-project/build/CMakeFiles/Doxygen.dir
+/Users/valerij/Desktop/cpp-starter-project/build/CMakeFiles/test.dir
+/Users/valerij/Desktop/cpp-starter-project/build/external/doctest/CMakeFiles/rebuild_cache.dir
+/Users/valerij/Desktop/cpp-starter-project/build/external/doctest/CMakeFiles/edit_cache.dir
+/Users/valerij/Desktop/cpp-starter-project/build/external/doctest/CMakeFiles/test.dir
+/Users/valerij/Desktop/cpp-starter-project/build/external/doctest/CMakeFiles/doctest.dir
+/Users/valerij/Desktop/cpp-starter-project/build/src/CMakeFiles/rebuild_cache.dir
+/Users/valerij/Desktop/cpp-starter-project/build/src/CMakeFiles/edit_cache.dir
+/Users/valerij/Desktop/cpp-starter-project/build/src/CMakeFiles/test.dir
+/Users/valerij/Desktop/cpp-starter-project/build/src/CMakeFiles/proj.dir
+/Users/valerij/Desktop/cpp-starter-project/build/src/CMakeFiles/proj_test.dir

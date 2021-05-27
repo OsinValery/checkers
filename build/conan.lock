@@ -1,0 +1,53 @@
+{
+ "graph_lock": {
+  "nodes": {
+   "0": {
+    "options": "libuuid:fPIC=True\nlibuuid:shared=False\nxapian-core:fPIC=True\nxapian-core:shared=False\nzlib:fPIC=True\nzlib:minizip=deprecated\nzlib:shared=False",
+    "requires": [
+     "1"
+    ],
+    "path": "../conanfile.txt",
+    "context": "host"
+   },
+   "1": {
+    "ref": "doxygen/1.8.20",
+    "options": "libuuid:fPIC=True\nlibuuid:shared=False\nxapian-core:fPIC=True\nxapian-core:shared=False\nzlib:fPIC=True\nzlib:minizip=deprecated\nzlib:shared=False",
+    "package_id": "2d36ef93f4aac51333b231bcccb770deba4580d7",
+    "prev": "0",
+    "requires": [
+     "2",
+     "4"
+    ],
+    "context": "host"
+   },
+   "2": {
+    "ref": "xapian-core/1.4.18",
+    "options": "fPIC=True\nshared=False\nlibuuid:fPIC=True\nlibuuid:shared=False\nzlib:fPIC=True\nzlib:minizip=deprecated\nzlib:shared=False",
+    "package_id": "9282a40774a88010b7c4ad6c26e9598ec76fb393",
+    "prev": "0",
+    "requires": [
+     "3",
+     "4"
+    ],
+    "context": "host"
+   },
+   "3": {
+    "ref": "libuuid/1.0.3",
+    "options": "fPIC=True\nshared=False",
+    "package_id": "d98fae1010d1fb9e7f79a1e8a72bbf129d8660a2",
+    "prev": "0",
+    "context": "host"
+   },
+   "4": {
+    "ref": "zlib/1.2.11",
+    "options": "fPIC=True\nminizip=deprecated\nshared=False",
+    "package_id": "d98fae1010d1fb9e7f79a1e8a72bbf129d8660a2",
+    "prev": "0",
+    "context": "host"
+   }
+  },
+  "revisions_enabled": false
+ },
+ "version": "0.4",
+ "profile_host": "[settings]\narch=x86_64\narch_build=x86_64\nbuild_type=Debug\ncompiler=apple-clang\ncompiler.libcxx=libc++\ncompiler.version=12.0\nos=Macos\nos_build=Macos\n[options]\n[build_requires]\n[env]\nCONAN_CMAKE_PROGRAM=\"/usr/local/Cellar/cmake/3.19.2/bin/cmake\"\nCXX=/Library/Developer/CommandLineTools/usr/bin/c++"
+}

@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_searcher" kind="class" language="C++" prot="public">
+    <compoundname>Searcher</compoundname>
+    <includes refid="searcher_8hpp" local="no">searcher.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_searcher_1a7f0d52a713d4c221d494fa455cc5bf98" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Searcher::queen_weight</definition>
+        <argsstring></argsstring>
+        <name>queen_weight</name>
+        <initializer>= 10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ценность фигур, дамки и обычной </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/searcher.hpp" line="13" column="13" bodyfile="src/searcher.hpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_searcher_1a90ba4cb83bd6f4d837ccaed9b1835119" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Searcher::simple_weight</definition>
+        <argsstring></argsstring>
+        <name>simple_weight</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ценность фигур, дамки и обычной </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/searcher.hpp" line="17" column="13" bodyfile="src/searcher.hpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_searcher_1a8140f189be693ad99a65bdf7396c663f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt; int &gt; Searcher::find</definition>
+        <argsstring>(Position position, int h)</argsstring>
+        <name>find</name>
+        <param>
+          <type><ref refid="class_position" kindref="compound">Position</ref></type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+<para>самая главная функция, она ищет лучший ход за чёрных </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>позиция, которую оцениваем </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- высота дерева вариантов, которое строится во время поиска <linebreak/>
+должен быть нечётным числом &gt;= 1 <linebreak/>
+будет произведён поиск на h/2 ходов вперёд, например 3 для h = 5 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/searcher.hpp" line="26" column="21" bodyfile="src/searcher.cpp" bodystart="18" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_searcher_1ad62bfd90ecff5defb2ce8124a999e3dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long int</type>
+        <definition>long int Searcher::estimate_board</definition>
+        <argsstring>(std::string board, bool color)</argsstring>
+        <name>estimate_board</name>
+        <param>
+          <type>std::string</type>
+          <declname>board</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>на листьях дерева позицию оценивает <linebreak/>
+ он умножает ценность фигуры на вес поля для всех фигур </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>board</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>доска для оценки </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>с точки зрения какого цвета оценивать доску <linebreak/>
+ true для белых </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/searcher.hpp" line="34" column="18" bodyfile="src/searcher.cpp" bodystart="37" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="class_searcher_1aacfcf539ac5df47fc396b9b35c1f0e09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long int</type>
+        <definition>long int Searcher::analize_move</definition>
+        <argsstring>(Position position, std::vector&lt; int &gt; move, int h)</argsstring>
+        <name>analize_move</name>
+        <param>
+          <type><ref refid="class_position" kindref="compound">Position</ref></type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt;</type>
+          <declname>move</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+<para>строит дерево для данного хода </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>-текущая позиция в узле дерева </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>move</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- исследуемых ход - ребро дерева </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- высота узла до листа, при h = 1 возвращается <ref refid="class_searcher_1ad62bfd90ecff5defb2ce8124a999e3dc" kindref="member">estimate_board()</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/searcher.hpp" line="42" column="18" bodyfile="src/searcher.cpp" bodystart="85" bodyend="121"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>класс реализует логику поиска лучшего хода за чёрных(для бота) </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/searcher.hpp" line="8" column="1" bodyfile="src/searcher.hpp" bodystart="8" bodyend="43"/>
+    <listofallmembers>
+      <member refid="class_searcher_1aacfcf539ac5df47fc396b9b35c1f0e09" prot="public" virt="non-virtual"><scope>Searcher</scope><name>analize_move</name></member>
+      <member refid="class_searcher_1ad62bfd90ecff5defb2ce8124a999e3dc" prot="public" virt="non-virtual"><scope>Searcher</scope><name>estimate_board</name></member>
+      <member refid="class_searcher_1a8140f189be693ad99a65bdf7396c663f" prot="public" virt="non-virtual"><scope>Searcher</scope><name>find</name></member>
+      <member refid="class_searcher_1a7f0d52a713d4c221d494fa455cc5bf98" prot="public" virt="non-virtual"><scope>Searcher</scope><name>queen_weight</name></member>
+      <member refid="class_searcher_1a90ba4cb83bd6f4d837ccaed9b1835119" prot="public" virt="non-virtual"><scope>Searcher</scope><name>simple_weight</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,5 @@
+[requires]
+doxygen/1.8.20
+
+[generators]
+cmake

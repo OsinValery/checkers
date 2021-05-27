@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20210526-0525-Experimental"
+	Name="(empty)"
+	Generator="ctest-3.19.2"
+	CompilerName=""
+	CompilerVersion=""
+	OSName="macOS"
+	Hostname="MacBook-Pro-Valerij.local"
+	OSRelease="11.2.3"
+	OSVersion="20D91"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="142"
+	ProcessorCacheSize="32768"
+	NumberOfLogicalCPU="8"
+	NumberOfPhysicalCPU="4"
+	TotalVirtualMemory="6144"
+	TotalPhysicalMemory="8192"
+	LogicalProcessorsPerPhysical="8"
+	ProcessorClockFrequency="1400"
+	>
+	<Testing>
+		<StartDateTime>May 26 14:35 MSK</StartDateTime>
+		<StartTestTime>1622028928</StartTestTime>
+		<TestList>
+			<Test>./src/Moving-queen</Test>
+			<Test>./src/Moving-simple-not_tacking</Test>
+			<Test>./src/Moving-simple-taking</Test>
+			<Test>./src/Moving-simple-taking-2</Test>
+			<Test>./src/Something_works</Test>
+			<Test>./src/small_methoods</Test>
+			<Test>./src/Short_game</Test>
+			<Test>./src/find_all_moves_of_simple_figure</Test>
+			<Test>./src/all_moves_of_simple_figure_with_taking</Test>
+			<Test>./src/all_moves_of_queen</Test>
+			<Test>./src/all_moves_queen_taking</Test>
+			<Test>./src/Large_queen_moves</Test>
+			<Test>./src/Simple_search</Test>
+			<Test>./src/Searcher's_things</Test>
+			<Test>./src/all_moves_mixed_figures_with_taking</Test>
+			<Test>./src/all_moves_of_queen_with_taking</Test>
+			<Test>./src/Large_search</Test>
+			<Test>./src/Short_game_with_stupid_player</Test>
+		</TestList>
+		<Test Status="passed">
+			<Name>Moving-queen</Name>
+			<Path>./src</Path>
+			<FullName>./src/Moving-queen</FullName>
+			<FullCommandLine>/Users/valerij/Desktop/cpp-starter-project/build/bin/proj_test "--test-case=Moving-queen"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0182521</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/Users/valerij/Desktop/cpp-starter-project/build/bin/proj_test "--test-case=Moving-queen"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyLTslPLkktLolVgDIUylKLijPz8xQyixWUjPSM9SyUuKLhiopK8xTKM0syFJR0dTNScwqUFNLyixTyC0qAOoq5bKkLkOwFuyw5sTi12EoBDAwVamCMgsTi4tQUGN9AIS0xMwfONzRXKM7OLChITUEyDaShCOxkqGmmMN2mOE1D0h5cklhSCtQaHOrs7BocrMgFACqQXjI=</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>Moving-simple-not_tacking</Name>
+			<Path>./src</Path>
+			<FullName>./src/Moving-simple-not_tacking</FullName>
+			<FullCommandLine>/Users/valerij/Desktop/cpp-starter-project/build/bin/proj_test "--test-case=Moving-simple-not_tacking"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0197246</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/Users/valerij/Desktop/cpp-starter-project/build/bin/proj_test "--test-case=Moving-simple-not_tacking"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyLTslPLkktLolVgDIUylKLijPz8xQyixWUjPSM9SyUuKLhiopK8xTKM0syFJR0dTNScwqUFNLyixTyC0qAOoq5bKkLkOwFuyw5sTi12EoBDAwVamCMgsTi4tQUGN9AIS0xMwfONzRXKM7OLChITUEyDaShCOxkqGlmMN1mOE1D0h5cklhSCtQaHOrs7BocrMgFACsFXjQ=</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>Moving-simple-taking</Name>
+			<Path>./src</Path>
+			<FullName>./src/Moving-simple-taking</FullName>
+			<FullCommandLine>/Users/valerij/Desktop/cpp-starter-project/build/bin/proj_test "--test-case=Moving-simple-taking"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0206804</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/Users/valerij/Desktop/cpp-starter-project/build/bin/proj_test "--test-case=Moving-simple-taking"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyLTslPLkktLolVgDIUylKLijPz8xQyixWUjPSM9SyUuKLhiopK8xTKM0syFJR0dTNScwqUFNLyixTyC0qAOoq5bKkLkOwFuyw5sTi12EoBDAwVamCMgsTi4tQUGN9AIS0xMwfONzRXKM7OLChITUEyDaShCOxkqGkWMN0WOE1D0h5cklhSCtQaHOrs7BocrMgFACvvXjg=</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>Moving-simple-taking-2</Name>
+			<Path>./src</Path>
+			<FullName>./src/Moving-simple-taking-2</FullName>
+			<FullCommandLine>/Users/valerij/Desktop/cpp-starter-project/build/bin/proj_test "--test-case=Moving-simple-taking-2"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0217164</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/Users/valerij/Desktop/cpp-starter-project/build/bin/proj_test "--test-case=Moving-simple-taking-2"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyLTslPLkktLolVgDIUylKLijPz8xQyixWUjPSM9SyUuKLhiopK8xTKM0syFJR0dTNScwqUFNLyixTyC0qAOoq5bKkLkOwFuyw5sTi12EoBDAwVamCMgsTi4tQUGN9AIS0xMwfONzRXKM7OLChITUEyDaShCOxkqGlmMN1mOE1D0h5cklhSCtQaHOrs7BocrMgFACsFXjQ=</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>Something works</Name>
+			<Path>./src</Path>
+			<FullName>./src/Something_works</FullName>
+			<FullCommandLine>/Users/valerij/Desktop/cpp-starter-project/build/bin/proj_test "--test-case=Something works"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.022167</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/Users/valerij/Desktop/cpp-starter-project/build/bin/proj_test "--test-case=Something works"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyLTslPLkktLolVgDIUylKLijPz8xQyixWUjPSM9SyUuKLhiopK8xTKM0syFJR0dTNScwqUFNLyixTyC0qAOoq5bKkLkOwFuyw5sTi12EoBDAwVamCMgsTi4tQUGN9AIS0xMwfONzRXKM7OLChITUEyDaShCOxk4k1D0h5cklhSCtQaHOrs7BocrMgFACi8Xio=</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>small methoods</Name>
+			<Path>./src</Path>
+			<FullName>./src/small_methoods</FullName>
+			<FullCommandLine>/Users/valerij/Desktop/cpp-starter-project/build/bin/proj_test "--test-case=small methoods"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0232818</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/Users/valerij/Desktop/cpp-starter-project/build/bin/proj_test "--test-case=small methoods"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyLTslPLkktLolVgDIUylKLijPz8xQyixWUjPSM9SyUuKLhiopK8xTKM0syFJR0dTNScwqUFNLyixTyC0qAOoq5bKkLkOwFuyw5sTi12EoBDAwVamCMgsTi4tQUGN9AIS0xMwfONzRXKM7OLChITUEyDaShCOxkqGlmMN1mOE1D0h5cklhSCtQaHOrs7BocrMgFACsFXjQ=</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>Short game</Name>
+			<Path>./src</Path>
+			<FullName>./src/Short_game</FullName>
+			<FullCommandLine>/Users/valerij/Desktop/cpp-starter-project/build/bin/proj_test "--test-case=Short game"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0231986</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/Users/valerij/Desktop/cpp-starter-project/build/bin/proj_test "--test-case=Short game"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyLTslPLkktLolVgDIUylKLijPz8xQyixWUjPSM9SyUuKLhiopK8xTKM0syFJR0dTNScwqUFNLyixTyC0qAOoq5bKkLkOwFuyw5sTi12EoBDAwVamCMgsTi4tQUGN9AIS0xMwfONzRXKM7OLChITUEyDaShCOxkqGkWMN0WOE1D0h5cklhSCtQaHOrs7BocrMgFACvvXjg=</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>find all moves of simple figure</Name>
+			<Path>./src</Path>
+			<FullName>./src/find_all_moves_of_simple_figure</FullName>
+			<FullCommandLine>/Users/valerij/Desktop/cpp-starter-project/build/bin/proj_test "--test-case=find all moves of simple figure"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0264316</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/Users/valerij/Desktop/cpp-starter-project/build/bin/proj_test "--test-case=find all moves of simple figure"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyLTslPLkktLolVgDIUylKLijPz8xQyixWUjPSM9SyUuKLhiopK8xTKM0syFJR0dTNScwqUFNLyixTyC0qAOoq5bKkLkOwFuyw5sTi12EoBDAwVamCMgsTi4tQUGN9AIS0xMwfONzRXKM7OLChITUEyDaShCOxkiGmGxjDVxjhNQ9IeXJJYUgrUGhzq7OwaHKzIBQAxjV5Q====</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>all moves of simple figure with taking</Name>
+			<Path>./src</Path>
+			<FullName>./src/all_moves_of_simple_figure_with_taking</FullName>
+			<FullCommandLine>/Users/valerij/Desktop/cpp-starter-project/build/bin/proj_test "--test-case=all moves of simple figure with taking"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0278148</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/Users/valerij/Desktop/cpp-starter-project/build/bin/proj_test "--test-case=all moves of simple figure with taking"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyLTslPLkktLolVgDIUylKLijPz8xQyixWUjPSM9SyUuKLhiopK8xTKM0syFJR0dTNScwqUFNLyixTyC0qAOoq5bKkLkOwFuyw5sTi12EoBDAwVamCMgsTi4tQUGN9AIS0xMwfONzRXKM7OLChITUEyDaShCOxkqGkmMN0mOE1D0h5cklhSCtQaHOrs7BocrMgFACobXjA=</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>all moves of queen</Name>
+			<Path>./src</Path>
+			<FullName>./src/all_moves_of_queen</FullName>
+			<FullCommandLine>/Users/valerij/Desktop/cpp-starter-project/build/bin/proj_test "--test-case=all moves of queen"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0268078</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/Users/valerij/Desktop/cpp-starter-project/build/bin/proj_test "--test-case=all moves of queen"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyLTslPLkktLolVgDIUylKLijPz8xQyixWUjPSM9SyUuKLhiopK8xTKM0syFJR0dTNScwqUFNLyixTyC0qAOoq5bKkLkOwFuyw5sTi12EoBDAwVamCMgsTi4tQUGN9AIS0xMwfONzRXKM7OLChITUEyDaShCOxkqGmmMN2mOE1D0h5cklhSCtQaHOrs7BocrMgFACqQXjI=</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>all moves queen taking</Name>
+			<Path>./src</Path>
+			<FullName>./src/all_moves_queen_taking</FullName>
+			<FullCommandLine>/Users/valerij/Desktop/cpp-starter-project/build/bin/proj_test "--test-case=all moves queen taking"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0236812</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/Users/valerij/Desktop/cpp-starter-project/build/bin/proj_test "--test-case=all moves queen taking"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyLTslPLkktLolVgDIUylKLijPz8xQyixWUjPSM9SyUuKLhiopK8xTKM0syFJR0dTNScwqUFNLyixTyC0qAOoq5bKkLkOwFuyw5sTi12EoBDAwVamCMgsTi4tQUGN9AIS0xMwfONzRXKM7OLChITUEyDaShCOxkqGlGMN1GOE1D0h5cklhSCtQaHOrs7BocrMgFACkxXiw=</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>Large queen moves</Name>
+			<Path>./src</Path>
+			<FullName>./src/Large_queen_moves</FullName>
+			<FullCommandLine>/Users/valerij/Desktop/cpp-starter-project/build/bin/proj_test "--test-case=Large queen moves"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0218249</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/Users/valerij/Desktop/cpp-starter-project/build/bin/proj_test "--test-case=Large queen moves"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyLTslPLkktLolVgDIUylKLijPz8xQyixWUjPSM9SyUuKLhiopK8xTKM0syFJR0dTNScwqUFNLyixTyC0qAOoq5bKkLkOwFuyw5sTi12EoBDAwVamCMgsTi4tQUGN9AIS0xMwfONzRXKM7OLChITUEyDaShCOxkqGlGMN1GOE1D0h5cklhSCtQaHOrs7BocrMgFACkxXiw=</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>Simple search</Name>
+			<Path>./src</Path>
+			<FullName>./src/Simple_search</FullName>
+			<FullCommandLine>/Users/valerij/Desktop/cpp-starter-project/build/bin/proj_test "--test-case=Simple search"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.019914</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/Users/valerij/Desktop/cpp-starter-project/build/bin/proj_test "--test-case=Simple search"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJytjzELwjAQhff8ijN7S6NQRXAq/oLgVBxCk9JgaULuqos/3hqaksXNt9w7uO/xrtWuI4N0h9XA0wS0bgKLwPfloTxx1m5HYZ7gZWkAXhSDGT2H3gVwnhYCmaii0szM5b/KGsXOnUKDZ4gS8E7GK0Sj015Br+y47eII+LDeG52lfYEQn1nT6kTXP9MyXJKieUHlrWmuUu7YB2KxYqU=</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>Searcher's things</Name>
+			<Path>./src</Path>
+			<FullName>./src/Searcher's_things</FullName>
+			<FullCommandLine>/Users/valerij/Desktop/cpp-starter-project/build/bin/proj_test "--test-case=Searcher's things"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0145929</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/Users/valerij/Desktop/cpp-starter-project/build/bin/proj_test "--test-case=Searcher's things"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyLTslPLkktLolVgDIUylKLijPz8xQyixWUjPSM9SyUuKLhiopK8xTKM0syFJR0dTNScwqUFNLyixTyC0qAOoq5bKkLkOwFuyw5sTi12EoBDAwVamCMgsTi4tQUGN9AIS0xMwfONzRXKM7OLChITUEyDaShCOxkqGnGMN3GOE1D0h5cklhSCtQaHOrs7BocrMgFACmmXi4=</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>all moves mixed figures with taking</Name>
+			<Path>./src</Path>
+			<FullName>./src/all_moves_mixed_figures_with_taking</FullName>
+			<FullCommandLine>/Users/valerij/Desktop/cpp-starter-project/build/bin/proj_test "--test-case=all moves mixed figures with taking"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0121016</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/Users/valerij/Desktop/cpp-starter-project/build/bin/proj_test "--test-case=all moves mixed figures with taking"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyLTslPLkktLolVgDIUylKLijPz8xQyixWUjPSM9SyUuKLhiopK8xTKM0syFJR0dTNScwqUFNLyixTyC0qAOoq5bKkLkOwFuyw5sTi12EoBDAwVamCMgsTi4tQUGN9AIS0xMwfONzRXKM7OLChITUEyDaShCOxkqGlGMN1GOE1D0h5cklhSCtQaHOrs7BocrMgFACkxXiw=</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>all moves of queen with taking</Name>
+			<Path>./src</Path>
+			<FullName>./src/all_moves_of_queen_with_taking</FullName>
+			<FullCommandLine>/Users/valerij/Desktop/cpp-starter-project/build/bin/proj_test "--test-case=all moves of queen with taking"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.00872169</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/Users/valerij/Desktop/cpp-starter-project/build/bin/proj_test "--test-case=all moves of queen with taking"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyLTslPLkktLolVgDIUylKLijPz8xQyixWUjPSM9SyUuKLhiopK8xTKM0syFJR0dTNScwqUFNLyixTyC0qAOoq5bKkLkOwFuyw5sTi12EoBDAwVamCMgsTi4tQUGN9AIS0xMwfONzRXKM7OLChITUEyDaShCOxkqGlGMN1GOE1D0h5cklhSCtQaHOrs7BocrMgFACkxXiw=</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>Large search</Name>
+			<Path>./src</Path>
+			<FullName>./src/Large_search</FullName>
+			<FullCommandLine>/Users/valerij/Desktop/cpp-starter-project/build/bin/proj_test "--test-case=Large search"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0871258</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/Users/valerij/Desktop/cpp-starter-project/build/bin/proj_test "--test-case=Large search"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJytjjEPgjAQhff+irM7ROogMXEi/ILGiTg0tIRGQpveoYs/Xmwo6eLmm95L7nv3Ou16Mkh32Aw8TUDrZrAIXJSnsuas24/CMsPL0gi8KEYzeQ6DC+A8rQSyml3/q+xz3NYrNHiBqAreyXiFaHTKRxiUnfZcnQEf1nujs7YvEOLorU0kWvxsy3BJipYVlbemaaU8sA+ePV5u====</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>Short game with stupid player</Name>
+			<Path>./src</Path>
+			<FullName>./src/Short_game_with_stupid_player</FullName>
+			<FullCommandLine>/Users/valerij/Desktop/cpp-starter-project/build/bin/proj_test "--test-case=Short game with stupid player"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>6.52897</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/Users/valerij/Desktop/cpp-starter-project/build/bin/proj_test "--test-case=Short game with stupid player"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJytj8EKwjAMhu95itj7xtopiuBp+ATF0/BQto4VZS1Npxcf3m5soxdvJjn8P+T7SerWNkFTuOMi8KU9GTugIWQiL/MTg3pb8uOAbxN6ZFnW66dj2FmP1oVIEBRJcw5cgIhTTg6igP3WB7j8t5Ib5y8aRZrOOBfHzyqcItLt6gvslHlunh+RHsY53SZpE+Dn95Y0sdLiZ1qCy6DCGFF5q6qrlDv4AnRBY6A=</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<EndDateTime>May 26 14:35 MSK</EndDateTime>
+		<EndTestTime>1622028934</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>
