@@ -7,6 +7,7 @@
 #include "position.hpp"
 #include "searcher.hpp"
 
+#include "raylib.h"
 
 // w - simple white
 // W - queen of white
@@ -26,8 +27,8 @@ void print_help(){
     std::cout << "restart                   - leave this game and create new\n";
     std::cout << "move x y x y...           - move figure by the way\n";
     std::cout << "show                      - draw the board with game\n";
-    std::cout << "see                       - show 1 move(may be stupid)\n";
-    std::cout << "Good game!\n\n>>";
+    std::cout << "see                       - show 1 move(may be stupid)\n\n";
+    std::cout << "Good game to you!\n\n>>";
 }
 
 int from_char(char digit){
@@ -78,7 +79,7 @@ bool have_color(std::string board,std::string sim){
 int main() {
     Position position;
     Searcher analizer;
-    int H = 5;
+    int H = 7;
 
     position.set_board(gen_start(),true);
 

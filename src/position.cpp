@@ -8,54 +8,49 @@ bool equal_color(char c1, char c2){
     return tolower(c1) == tolower(c2);
 }
 
-int abs(int value){if (value < 0) return -value; else return value;}
-
+// условие ? true : false
+int abs(int value) {return value<0 ? -value : value;}
 
 
 
 void Position::set_board(std::string new_board, bool new_move_of){
     this->board = new_board;
-    if (new_move_of){ this->move_of = 0;} else {this->move_of = 1;};
+    this->move_of = new_move_of ? 0 : 1;
 }
 
-void Position::move(std::vector<int> moves){
+void Position::move(std::vector<int> const& moves){
     // from a,b   to   x,y
     int a,b,x,y;
     a = moves[0];
     b = moves[1];
-    unsigned long pos = 1;
-    unsigned long length = moves.size();
+    unsigned short pos = 2;  
+    unsigned short length = moves.size();
     char color = tolower(board[a+8*b]);
-    while (pos + 1 < length){
-        x = moves[pos+1];
-        y = moves[pos+2];
+    while (pos != length){ 
+        x = moves[pos];
+        y = moves[pos+1];
         pos += 2;
 
         // in first move_of == 0
-        if ((color == 'w' and y == 7)or(color == 'b' and y == 0)) {
+        if ((y == 7 and color == 'w' )or(y == 0 and color == 'b' )) {
             // create queen
             std::string sim = "W";
             if (color == 'b') sim = "B";
             board.replace(a+8*b,1,sim);
         }
         
-        int c,d;
         std::swap(board[a + 8 * b],board[x + 8 * y]);
         if (abs(a-x)!= 1 ){
-            c = a;
-            d = b;
-            while (c != x){
-                if (board[c + 8*d] != '.') {board.replace(c+8*d,1,".") ;}
-                if (c > x) {c -= 1;} else {c += 1;};
-                if (d > y) {d -= 1;} else {d += 1;};
+            while (a != x){
+                if (board[a + 8*b] != '.') {board.replace(a+8*b,1,".");}
+                if (a > x) {a -= 1;} else {a += 1;};
+                if (b > y) {b -= 1;} else {b += 1;};
             }
             
         }
         a = x; b = y;
     }
-
-    if (move_of == 0) move_of = 1; else move_of = 0;
-
+    move_of = move_of == 0 ? 1:0;
 }
 
 void Position::print(){
@@ -68,11 +63,11 @@ void Position::print(){
     for (short int x = 0;x<8; x++){
         line = board.substr(i-8,8);
         result += "  |   |";
-        for (char field:line) if (field == '_')result += "###"; else result += "   ";
+        for (char const& field:line) if (field == '_')result += "###"; else result += "   ";
         result += "|   |\n  | ";
         result += std::to_string(7-x);
         result += " |";
-        for (char field:line){
+        for (char const& field:line){
             if (field == '_') result += "###";
             else if (field == '.') result += "   ";
             else{
@@ -87,7 +82,7 @@ void Position::print(){
         result += "| ";
         result += std::to_string(7-x);
         result += " |\n  |   |";
-        for (char field:line) if (field == '_')result += "###"; else result += "   ";
+        for (char const& field:line) if (field == '_')result += "###"; else result += "   ";
         result += "|   |\n";
         i -= 8;
     }
@@ -99,8 +94,7 @@ void Position::print(){
 
 Position Position::copy(){
     Position new_position;
-    new_position.set_board(board,true);
-    new_position.move_of = move_of;
+    new_position.set_board(board,move_of == 0);
     return new_position;
 }
 
@@ -109,16 +103,16 @@ std::vector<std::vector<int>> Position::all_moves(bool color){
     std::vector<std::vector<int>> temp_moves;
     for (short int y = 0; y < 8; y++){
         for (short int x = y % 2; x < 8; x += 2){
-            if (board[x+8*y] != '.' ){
-                char figure = board[x+8*y];
-                if (tolower(figure) == 'w' && color ){
+            char figure = tolower(board[x+8*y]);
+            if (figure != '.' ){
+                if (figure == 'w' and color ){
                     auto res = fig_moves(x,y,true);
-                    for (auto el:res)
+                    for (const auto &el:res)
                         temp_moves.push_back(el);
                 }
-                else if (tolower(figure) == 'b' and not color){
+                else if (figure == 'b' and !color){
                     auto res = fig_moves(x,y,true);
-                    for (auto el:res)
+                    for (const auto &el:res)
                         temp_moves.push_back(el);
                 }
             }
@@ -127,7 +121,6 @@ std::vector<std::vector<int>> Position::all_moves(bool color){
     return temp_moves;
 }
 
-// строит дерево позиций и применяет minimax
 std::vector<std::vector<int>> Position::fig_moves(int x, int y, bool free , int line){
     // free - can figure do all the moves or it must only take other 
     // true - can
@@ -138,9 +131,10 @@ std::vector<std::vector<int>> Position::fig_moves(int x, int y, bool free , int 
     // 2 - down-right
     // 3 - down-left
     // 4 - up-left
+    unsigned long d = x + 8 * y;
     std::vector<std::vector<int>> temp_moves;
-    bool is_queen = not islower(board[x+8*y]);
-    char color = tolower(board[x+8*y]);
+    bool is_queen = not islower(board[d]);
+    char color = tolower(board[d]);
     // если не дамка - проверяет воля вокруг, если свободно - все простые ходы тоже
     // если возможно взятие, рубит и заходит в реккурсию и ставит free = false
     // для дамки
@@ -155,25 +149,28 @@ std::vector<std::vector<int>> Position::fig_moves(int x, int y, bool free , int 
     if (not is_queen){
         // up - right
         if (x != 7 and y != 7){
-            if (board[x+8*y+9] == '.'){
+            if (board[d+9] == '.'){
                 if (free and color == 'w'){
                     temp_moves.push_back({x,y, x+1,y+1});
                 }
             }
-            else if (x<6 and y<6 and not equal_color(color,board[x+9+8*y]) ){
-                if (board[x+18+8*y] == '.'){
+            else if (x<6 and y<6 and not equal_color(color,board[d+9]) ){
+                if (board[d+18] == '.'){
                     temp_moves.push_back({x,y,x+2,y+2});
                     Position temp_pos = copy();
                     temp_pos.move({x,y,x+2,y+2});
                     std::vector<std::vector<int>> new_moves = temp_pos.fig_moves(x+2,y+2,false,3);
-                    for (std::vector<int> way:new_moves){
-                        if (color == 'w' and y == 5){
+
+                    if (color == 'w' and y == 5){
+                        for (std::vector<int> &way:new_moves){
                             way[0] = x;
                             way[1] = y;
                             temp_moves.push_back(way);
                         }
-                        else{
-                            std::vector<int> new_way = {x,y};
+                    }
+                    else{
+                        for (const std::vector<int> &way:new_moves){
+                            std::vector<int> new_way{x,y};
                             for (int dig:way) {new_way.push_back(dig);}
                             temp_moves.push_back(new_way);
                         }
@@ -183,25 +180,28 @@ std::vector<std::vector<int>> Position::fig_moves(int x, int y, bool free , int 
         }
         // down - right
         if (x != 7 and y > 0){
-            if (board[x-7+8*y] == '.') {
+            if (board[d-7] == '.') {
                 if (free and color != 'w'){
                     temp_moves.push_back({x,y,x+1,y-1});
                 }
             }
-            else if (x<6 and y>1 and not equal_color(color, board[x-7+8*y]) ){
-                if (board[x-14+8*y] == '.'){
+            else if (x<6 and y>1 and not equal_color(color, board[d-7]) ){
+                if (board[d-14] == '.'){
                     temp_moves.push_back({x,y,x+2,y-2});
                     Position temp_pos = copy();
                     temp_pos.move({x,y,x+2,y-2});
                     std::vector<std::vector<int>> new_moves = temp_pos.fig_moves(x+2,y-2,false,4);
-                    for (std::vector<int> way:new_moves){
-                        if (color == 'b' and y == 2){
+
+                    if (color == 'b' and y == 2){
+                        for (std::vector<int> &way:new_moves){
                             way[0] = x;
                             way[1] = y;
                             temp_moves.push_back(way);
                         }
-                        else{
-                            std::vector<int> new_way = {x,y};
+                    }
+                    else{
+                        for (const std::vector<int> &way:new_moves){
+                            std::vector<int> new_way{x,y};
                             for (int dig:way) {new_way.push_back(dig);}
                             temp_moves.push_back(new_way);
                         }
@@ -211,25 +211,28 @@ std::vector<std::vector<int>> Position::fig_moves(int x, int y, bool free , int 
         }
         // down - left
         if (x != 0 and y != 0){
-            if (board[x-9+8*y] == '.') {
+            if (board[d-9] == '.') {
                 if (free and color != 'w'){
                     temp_moves.push_back({x,y,x-1,y-1});
                 }
             }
-            else if (x > 1 and y>1 and not equal_color(color,board[x-9+8*y]) ){
-                if (board[x-2+8*(y-2)] == '.'){
+            else if (x > 1 and y>1 and not equal_color(color,board[d-9]) ){
+                if (board[d-18] == '.'){
                     temp_moves.push_back({x,y,x-2,y-2});
                     Position temp_pos = copy();
                     temp_pos.move({x,y,x-2,y-2});
                     std::vector<std::vector<int>> new_moves = temp_pos.fig_moves(x-2,y-2,false,1);
-                    for (std::vector<int> way:new_moves){
-                        if (y == 2 and color == 'b'){
+
+                    if (y == 2 and color == 'b'){
+                        for (std::vector<int> &way:new_moves){
                             way[0] = x;
                             way[1] = y;
                             temp_moves.push_back(way);
                         }
-                        else{
-                            std::vector<int> new_way = {x,y};
+                    }
+                    else{
+                        for (const std::vector<int> &way:new_moves){
+                            std::vector<int> new_way{x,y};
                             for (int dig:way) {new_way.push_back(dig);}
                             temp_moves.push_back(new_way);
                         }
@@ -239,19 +242,20 @@ std::vector<std::vector<int>> Position::fig_moves(int x, int y, bool free , int 
         }
         // up - left
         if (x != 0 and y != 7){
-            if (board[x+7+8*y] == '.') {
+            if (board[d+7] == '.') {
                 if (free and color == 'w'){
                     temp_moves.push_back({x,y, x-1,y+1});
                 }
             }
-            else if (x>1 and y < 6 and not equal_color(color,board[x+7+8*y]) ){
-                if (board[x+14+8*y] == '.'){
+            else if (x>1 and y < 6 and not equal_color(color,board[d+7]) ){
+                if (board[d+14] == '.'){
                     temp_moves.push_back({x,y, x-2,y+2});
                     Position temp_pos = copy();
                     temp_pos.move({x,y,x-2,y+2});
                     std::vector<std::vector<int>> new_moves = temp_pos.fig_moves(x-2,y+2,false,2);
-                    for (std::vector<int> way:new_moves){
-                        if (color == 'w' and y == 5){
+
+                    if (color == 'w' and y == 5){
+                        for (std::vector<int> &way:new_moves){
                             // when simple transforms to queen, fig_moves returns 
                             // doubled first move
                             // it is normal for queen
@@ -259,8 +263,10 @@ std::vector<std::vector<int>> Position::fig_moves(int x, int y, bool free , int 
                             way[1] = y;
                             temp_moves.push_back(way);
                         }
-                        else{
-                            std::vector<int> new_way = {x,y};
+                    }
+                    else{
+                        for (const std::vector<int> &way:new_moves){
+                            std::vector<int> new_way{x,y};
                             for (int dig:way) {new_way.push_back(dig);}
                             temp_moves.push_back(new_way);
                         }
@@ -293,7 +299,7 @@ std::vector<std::vector<int>> Position::fig_moves(int x, int y, bool free , int 
                             temp_pos.move({cur_x,cur_y,x,y,way_x-2,way_y+2});
                             temp_moves.push_back({cur_x,cur_y,x,y,way_x-2,way_y+2});
                             std::vector<std::vector<int>> new_moves = temp_pos.fig_moves(way_x-2,way_y+2,false,2);
-                            for (auto way:new_moves){
+                            for (auto &way:new_moves){
                                 way[0] = x;
                                 way[1] = y;
                                 std::vector<int> new_way = {cur_x,cur_y};
@@ -322,7 +328,7 @@ std::vector<std::vector<int>> Position::fig_moves(int x, int y, bool free , int 
                             auto temp_pos = copy();
                             temp_pos.move({cur_x,cur_y,x,y,way_x+2,way_y-2});
                             std::vector<std::vector<int>> new_moves = temp_pos.fig_moves(way_x+2,way_y-2,false,4);
-                            for (auto way:new_moves){
+                            for (auto &way:new_moves){
                                 way[0] = x;
                                 way[1] = y;
                                 std::vector<int> new_way = {cur_x,cur_y};
@@ -356,7 +362,7 @@ std::vector<std::vector<int>> Position::fig_moves(int x, int y, bool free , int 
                         temp_moves.push_back({cur_x,cur_y,x+2,y+2});
                         temp_pos.move({cur_x,cur_y,x+2,y+2});
                         std::vector<std::vector<int>> new_moves = temp_pos.fig_moves(x+2,y+2,false,3);
-                        for (auto way:new_moves){
+                        for (auto &way:new_moves){
                             way[0] = cur_x;
                             way[1] = cur_y;
                             temp_moves.push_back(way);
@@ -382,7 +388,7 @@ std::vector<std::vector<int>> Position::fig_moves(int x, int y, bool free , int 
                         auto temp_pos = copy();
                         temp_pos.move({cur_x,cur_y,x+2,y+2});
                         std::vector<std::vector<int>> new_moves = temp_pos.fig_moves(x+2,y+2,false,3);
-                        for (auto way:new_moves){
+                        for (auto &way:new_moves){
                             way[0] = cur_x;
                             way[1] = cur_y;
                             temp_moves.push_back(way);
@@ -412,7 +418,7 @@ std::vector<std::vector<int>> Position::fig_moves(int x, int y, bool free , int 
                 // check up - right and down - left lines
                 while (must){
                     if (way_x == 7 or way_y == 7){must = false;}
-                    else if (equal_color(color, board[way_x+9+8*way_y]) ){must=false;}
+                    else if (equal_color(color, board[way_x+9+8*way_y])){must=false;}
                     else if (board[way_x+9+8*way_y] != '.'){
                         // enemy found
                         must = false;
@@ -423,7 +429,7 @@ std::vector<std::vector<int>> Position::fig_moves(int x, int y, bool free , int 
                             auto temp_pos = copy();
                             temp_pos.move({cur_x,cur_y,x,y,way_x+2,way_y+2});
                             std::vector<std::vector<int>> new_moves = temp_pos.fig_moves(way_x+2,way_y+2,false,3);
-                            for (auto way:new_moves){
+                            for (auto &way:new_moves){
                                 way[0] = x;
                                 way[1] = y;
                                 std::vector<int> new_way = {cur_x,cur_y};
@@ -452,7 +458,7 @@ std::vector<std::vector<int>> Position::fig_moves(int x, int y, bool free , int 
                             auto temp_pos = copy();
                             temp_pos.move({cur_x,cur_y,x,y,way_x-2,way_y-2});
                             std::vector<std::vector<int>> new_moves = temp_pos.fig_moves(way_x-2,way_y-2,false,1);
-                            for (auto way:new_moves){
+                            for (auto &way:new_moves){
                                 way[0] = x;
                                 way[1] = y;
                                 std::vector<int> new_way = {cur_x,cur_y};
@@ -484,7 +490,7 @@ std::vector<std::vector<int>> Position::fig_moves(int x, int y, bool free , int 
                         auto temp_pos = copy();
                         temp_pos.move({cur_x,cur_y,x+2,y-2});
                         std::vector<std::vector<int>> new_moves = temp_pos.fig_moves(x+2,y-2,false,4);
-                        for (auto way:new_moves){
+                        for (auto &way:new_moves){
                             way[0] = cur_x;
                             way[1] = cur_y;
                             temp_moves.push_back(way);
@@ -510,7 +516,7 @@ std::vector<std::vector<int>> Position::fig_moves(int x, int y, bool free , int 
                         auto temp_pos = copy();
                         temp_pos.move({cur_x,cur_y,x+2,y-2});
                         std::vector<std::vector<int>> new_moves = temp_pos.fig_moves(x+2,y-2,false,4);
-                        for (auto way:new_moves){
+                        for (auto &way:new_moves){
                             way[0] = cur_x;
                             way[1] = cur_y;
                             temp_moves.push_back(way);
@@ -551,7 +557,7 @@ std::vector<std::vector<int>> Position::fig_moves(int x, int y, bool free , int 
                             auto temp_pos = copy();
                             temp_pos.move({cur_x,cur_y,x,y,way_x+2,way_y-2});
                             std::vector<std::vector<int>> new_moves = temp_pos.fig_moves(way_x+2,way_y-2,false,4);
-                            for (auto way:new_moves){
+                            for (auto &way:new_moves){
                                 way[0] = x;
                                 way[1] = y;
                                 std::vector<int> new_way = {cur_x,cur_y};
@@ -580,7 +586,7 @@ std::vector<std::vector<int>> Position::fig_moves(int x, int y, bool free , int 
                             auto temp_pos = copy();
                             temp_pos.move({cur_x,cur_y,x,y,way_x-2,way_y+2});
                             std::vector<std::vector<int>> new_moves = temp_pos.fig_moves(way_x-2,way_y+2,false,2);
-                            for (auto way:new_moves){
+                            for (auto &way:new_moves){
                                 way[0] = x;
                                 way[1] = y;
                                 std::vector<int> new_way = {cur_x,cur_y};
@@ -607,7 +613,7 @@ std::vector<std::vector<int>> Position::fig_moves(int x, int y, bool free , int 
                         auto temp_pos = copy();
                         temp_pos.move({cur_x,cur_y,x-2,y-2});
                         std::vector<std::vector<int>> new_moves = temp_pos.fig_moves(x-2,y-2,false,1);
-                        for (auto way:new_moves){
+                        for (auto &way:new_moves){
                             way[0] = cur_x;
                             way[1] = cur_y;
                             temp_moves.push_back(way);
@@ -637,7 +643,7 @@ std::vector<std::vector<int>> Position::fig_moves(int x, int y, bool free , int 
                         auto temp_pos = copy();
                         temp_pos.move({cur_x,cur_y,x-2,y-2});
                         std::vector<std::vector<int>> new_moves = temp_pos.fig_moves(x-2,y-2,false,1);
-                        for (auto way:new_moves){
+                        for (auto &way:new_moves){
                             way[0] = cur_x;
                             way[1] = cur_y;
                             temp_moves.push_back(way);
@@ -673,7 +679,7 @@ std::vector<std::vector<int>> Position::fig_moves(int x, int y, bool free , int 
                             auto temp_pos = copy();
                             temp_pos.move({cur_x,cur_y,x,y,way_x+2,way_y+2});
                             std::vector<std::vector<int>> new_moves = temp_pos.fig_moves(way_x+2,way_y+2,false,3);
-                            for (auto way:new_moves){
+                            for (auto &way:new_moves){
                                 way[0] = x;
                                 way[1] = y;
                                 std::vector<int> new_way = {cur_x,cur_y};
@@ -702,7 +708,7 @@ std::vector<std::vector<int>> Position::fig_moves(int x, int y, bool free , int 
                             auto temp_pos = copy();
                             temp_pos.move({cur_x,cur_y,x,y,way_x-2,way_y-2});
                             std::vector<std::vector<int>> new_moves = temp_pos.fig_moves(way_x-2,way_y-2,false,1);
-                            for (auto way:new_moves){
+                            for (auto &way:new_moves){
                                 way[0] = x;
                                 way[1] = y;
                                 std::vector<int> new_way = {cur_x,cur_y};
@@ -729,7 +735,7 @@ std::vector<std::vector<int>> Position::fig_moves(int x, int y, bool free , int 
                         auto temp_pos = copy();
                         temp_pos.move({cur_x,cur_y,x-2,y+2});
                         std::vector<std::vector<int>> new_moves = temp_pos.fig_moves(x-2,y+2,false,2);
-                        for (auto way:new_moves){
+                        for (auto &way:new_moves){
                             way[0] = cur_x;
                             way[1] = cur_y;
                             temp_moves.push_back(way);
@@ -758,7 +764,7 @@ std::vector<std::vector<int>> Position::fig_moves(int x, int y, bool free , int 
                         auto temp_pos = copy();
                         temp_pos.move({cur_x,cur_y,x-2,y+2});
                         std::vector<std::vector<int>> new_moves = temp_pos.fig_moves(x-2,y+2,false,2);
-                        for (auto way:new_moves){
+                        for (auto &way:new_moves){
                             way[0] = cur_x;
                             way[1] = cur_y;
                             temp_moves.push_back(way);

@@ -35,7 +35,11 @@ find_package(Doxygen)
 doxygen_add_docs(Doxygen src)
 
 
+add_subdirectory(raylib-cpp EXCLUDE_FROM_ALL)
 enable_testing()
 add_subdirectory(external/doctest)
 include(external/doctest/doctest.cmake)
 add_subdirectory(src)
+
+
+file(CREATE_LINK "${CMAKE_CURRENT_SOURCE_DIR}/resources" "${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/resources" COPY_ON_ERROR SYMBOLIC)
