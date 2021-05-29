@@ -14,7 +14,6 @@ bool have_color(std::string const& board,char sim){
 }
 
 
-
 std::vector<int> Searcher::find(Position position, int h){
     std::vector<int> result = {};
     // for black
@@ -30,7 +29,6 @@ std::vector<int> Searcher::find(Position position, int h){
             best = move;
         }
     }
-    std::cout << mark << '\n';
     return best;
 }
 
