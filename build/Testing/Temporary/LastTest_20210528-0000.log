@@ -1,0 +1,427 @@
+Start testing: May 29 02:36 MSK
+----------------------------------------------------------
+7/19 Testing: Moving-queen
+7/19 Test: Moving-queen
+Command: "/Users/valerij/Desktop/checkers/build/bin/proj_test" "--test-case=Moving-queen"
+Directory: /Users/valerij/Desktop/checkers/build/src
+"Moving-queen" start time: May 29 02:36 MSK
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "2.3.8"
+[doctest] run with "--help" for options
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |     18 skipped
+[doctest] assertions:      5 |      5 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"Moving-queen" end time: May 29 02:36 MSK
+"Moving-queen" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/19 Testing: Moving-simple-not_tacking
+5/19 Test: Moving-simple-not_tacking
+Command: "/Users/valerij/Desktop/checkers/build/bin/proj_test" "--test-case=Moving-simple-not_tacking"
+Directory: /Users/valerij/Desktop/checkers/build/src
+"Moving-simple-not_tacking" start time: May 29 02:36 MSK
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "2.3.8"
+[doctest] run with "--help" for options
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |     18 skipped
+[doctest] assertions:      6 |      6 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"Moving-simple-not_tacking" end time: May 29 02:36 MSK
+"Moving-simple-not_tacking" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/19 Testing: Moving-simple-taking
+3/19 Test: Moving-simple-taking
+Command: "/Users/valerij/Desktop/checkers/build/bin/proj_test" "--test-case=Moving-simple-taking"
+Directory: /Users/valerij/Desktop/checkers/build/src
+"Moving-simple-taking" start time: May 29 02:36 MSK
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "2.3.8"
+[doctest] run with "--help" for options
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |     18 skipped
+[doctest] assertions:      8 |      8 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"Moving-simple-taking" end time: May 29 02:36 MSK
+"Moving-simple-taking" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/19 Testing: Moving-simple-taking-2
+4/19 Test: Moving-simple-taking-2
+Command: "/Users/valerij/Desktop/checkers/build/bin/proj_test" "--test-case=Moving-simple-taking-2"
+Directory: /Users/valerij/Desktop/checkers/build/src
+"Moving-simple-taking-2" start time: May 29 02:36 MSK
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "2.3.8"
+[doctest] run with "--help" for options
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |     18 skipped
+[doctest] assertions:      6 |      6 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"Moving-simple-taking-2" end time: May 29 02:36 MSK
+"Moving-simple-taking-2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+1/19 Testing: Something works
+1/19 Test: Something works
+Command: "/Users/valerij/Desktop/checkers/build/bin/proj_test" "--test-case=Something works"
+Directory: /Users/valerij/Desktop/checkers/build/src
+"Something works" start time: May 29 02:36 MSK
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "2.3.8"
+[doctest] run with "--help" for options
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |     18 skipped
+[doctest] assertions:      1 |      1 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"Something works" end time: May 29 02:36 MSK
+"Something works" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/19 Testing: small methoods
+2/19 Test: small methoods
+Command: "/Users/valerij/Desktop/checkers/build/bin/proj_test" "--test-case=small methoods"
+Directory: /Users/valerij/Desktop/checkers/build/src
+"small methoods" start time: May 29 02:36 MSK
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "2.3.8"
+[doctest] run with "--help" for options
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |     18 skipped
+[doctest] assertions:      6 |      6 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"small methoods" end time: May 29 02:36 MSK
+"small methoods" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/19 Testing: Short game
+6/19 Test: Short game
+Command: "/Users/valerij/Desktop/checkers/build/bin/proj_test" "--test-case=Short game"
+Directory: /Users/valerij/Desktop/checkers/build/src
+"Short game" start time: May 29 02:36 MSK
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "2.3.8"
+[doctest] run with "--help" for options
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |     18 skipped
+[doctest] assertions:      8 |      8 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"Short game" end time: May 29 02:36 MSK
+"Short game" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/19 Testing: find all moves of simple figure
+8/19 Test: find all moves of simple figure
+Command: "/Users/valerij/Desktop/checkers/build/bin/proj_test" "--test-case=find all moves of simple figure"
+Directory: /Users/valerij/Desktop/checkers/build/src
+"find all moves of simple figure" start time: May 29 02:36 MSK
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "2.3.8"
+[doctest] run with "--help" for options
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |     18 skipped
+[doctest] assertions:     13 |     13 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"find all moves of simple figure" end time: May 29 02:36 MSK
+"find all moves of simple figure" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/19 Testing: all moves of simple figure with taking
+9/19 Test: all moves of simple figure with taking
+Command: "/Users/valerij/Desktop/checkers/build/bin/proj_test" "--test-case=all moves of simple figure with taking"
+Directory: /Users/valerij/Desktop/checkers/build/src
+"all moves of simple figure with taking" start time: May 29 02:36 MSK
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "2.3.8"
+[doctest] run with "--help" for options
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |     18 skipped
+[doctest] assertions:      4 |      4 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"all moves of simple figure with taking" end time: May 29 02:36 MSK
+"all moves of simple figure with taking" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/19 Testing: all moves of queen
+10/19 Test: all moves of queen
+Command: "/Users/valerij/Desktop/checkers/build/bin/proj_test" "--test-case=all moves of queen"
+Directory: /Users/valerij/Desktop/checkers/build/src
+"all moves of queen" start time: May 29 02:36 MSK
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "2.3.8"
+[doctest] run with "--help" for options
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |     18 skipped
+[doctest] assertions:      5 |      5 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"all moves of queen" end time: May 29 02:36 MSK
+"all moves of queen" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/19 Testing: all moves queen taking
+11/19 Test: all moves queen taking
+Command: "/Users/valerij/Desktop/checkers/build/bin/proj_test" "--test-case=all moves queen taking"
+Directory: /Users/valerij/Desktop/checkers/build/src
+"all moves queen taking" start time: May 29 02:36 MSK
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "2.3.8"
+[doctest] run with "--help" for options
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |     18 skipped
+[doctest] assertions:      2 |      2 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"all moves queen taking" end time: May 29 02:36 MSK
+"all moves queen taking" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/19 Testing: Large queen moves
+12/19 Test: Large queen moves
+Command: "/Users/valerij/Desktop/checkers/build/bin/proj_test" "--test-case=Large queen moves"
+Directory: /Users/valerij/Desktop/checkers/build/src
+"Large queen moves" start time: May 29 02:36 MSK
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "2.3.8"
+[doctest] run with "--help" for options
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |     18 skipped
+[doctest] assertions:      2 |      2 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"Large queen moves" end time: May 29 02:36 MSK
+"Large queen moves" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/19 Testing: Simple search
+13/19 Test: Simple search
+Command: "/Users/valerij/Desktop/checkers/build/bin/proj_test" "--test-case=Simple search"
+Directory: /Users/valerij/Desktop/checkers/build/src
+"Simple search" start time: May 29 02:36 MSK
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "2.3.8"
+[doctest] run with "--help" for options
+10000000
+10000000
+10000000
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |     18 skipped
+[doctest] assertions:      6 |      6 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"Simple search" end time: May 29 02:36 MSK
+"Simple search" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/19 Testing: Searcher's things
+15/19 Test: Searcher's things
+Command: "/Users/valerij/Desktop/checkers/build/bin/proj_test" "--test-case=Searcher's things"
+Directory: /Users/valerij/Desktop/checkers/build/src
+"Searcher's things" start time: May 29 02:36 MSK
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "2.3.8"
+[doctest] run with "--help" for options
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |     18 skipped
+[doctest] assertions:      3 |      3 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Searcher's things" end time: May 29 02:36 MSK
+"Searcher's things" time elapsed: 00:00:00
+----------------------------------------------------------
+
+16/19 Testing: all moves mixed figures with taking
+16/19 Test: all moves mixed figures with taking
+Command: "/Users/valerij/Desktop/checkers/build/bin/proj_test" "--test-case=all moves mixed figures with taking"
+Directory: /Users/valerij/Desktop/checkers/build/src
+"all moves mixed figures with taking" start time: May 29 02:36 MSK
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "2.3.8"
+[doctest] run with "--help" for options
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |     18 skipped
+[doctest] assertions:      2 |      2 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"all moves mixed figures with taking" end time: May 29 02:36 MSK
+"all moves mixed figures with taking" time elapsed: 00:00:00
+----------------------------------------------------------
+
+17/19 Testing: all moves of queen with taking
+17/19 Test: all moves of queen with taking
+Command: "/Users/valerij/Desktop/checkers/build/bin/proj_test" "--test-case=all moves of queen with taking"
+Directory: /Users/valerij/Desktop/checkers/build/src
+"all moves of queen with taking" start time: May 29 02:36 MSK
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "2.3.8"
+[doctest] run with "--help" for options
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |     18 skipped
+[doctest] assertions:      2 |      2 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"all moves of queen with taking" end time: May 29 02:36 MSK
+"all moves of queen with taking" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/19 Testing: Large search
+14/19 Test: Large search
+Command: "/Users/valerij/Desktop/checkers/build/bin/proj_test" "--test-case=Large search"
+Directory: /Users/valerij/Desktop/checkers/build/src
+"Large search" start time: May 29 02:36 MSK
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "2.3.8"
+[doctest] run with "--help" for options
+4140
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |     18 skipped
+[doctest] assertions:      2 |      2 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"Large search" end time: May 29 02:36 MSK
+"Large search" time elapsed: 00:00:00
+----------------------------------------------------------
+
+19/19 Testing: search tree with h = 7
+19/19 Test: search tree with h = 7
+Command: "/Users/valerij/Desktop/checkers/build/bin/proj_test" "--test-case=search tree with h = 7"
+Directory: /Users/valerij/Desktop/checkers/build/src
+"search tree with h = 7" start time: May 29 02:36 MSK
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "2.3.8"
+[doctest] run with "--help" for options
+-20
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |     18 skipped
+[doctest] assertions:      2 |      2 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   0.79 sec
+----------------------------------------------------------
+Test Passed.
+"search tree with h = 7" end time: May 29 02:36 MSK
+"search tree with h = 7" time elapsed: 00:00:00
+----------------------------------------------------------
+
+18/19 Testing: Short game with stupid player
+18/19 Test: Short game with stupid player
+Command: "/Users/valerij/Desktop/checkers/build/bin/proj_test" "--test-case=Short game with stupid player"
+Directory: /Users/valerij/Desktop/checkers/build/src
+"Short game with stupid player" start time: May 29 02:36 MSK
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "2.3.8"
+[doctest] run with "--help" for options
+-30
+-20
+-10
+5390
+6220
+7090
+7490
+7900
+8660
+8740
+-50
+10
+20
+30
+520
+520
+540
+540
+5953
+5943
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |     18 skipped
+[doctest] assertions:      2 |      2 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   2.93 sec
+----------------------------------------------------------
+Test Passed.
+"Short game with stupid player" end time: May 29 02:36 MSK
+"Short game with stupid player" time elapsed: 00:00:02
+----------------------------------------------------------
+
+End testing: May 29 02:36 MSK

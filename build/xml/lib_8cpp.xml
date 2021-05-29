@@ -4,15 +4,15 @@
     <compoundname>lib.cpp</compoundname>
     <includes refid="lib_8hpp" local="yes">lib.hpp</includes>
     <incdepgraph>
-      <node id="2">
-        <label>lib.hpp</label>
-        <link refid="lib_8hpp_source"/>
-      </node>
       <node id="1">
         <label>src/lib.cpp</label>
         <link refid="lib_8cpp"/>
         <childnode refid="2" relation="include">
         </childnode>
+      </node>
+      <node id="2">
+        <label>lib.hpp</label>
+        <link refid="lib_8hpp_source"/>
       </node>
     </incdepgraph>
       <sectiondef kind="func">

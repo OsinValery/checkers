@@ -104,9 +104,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a010eadccb7b73deed479b13ca6658d41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83377e38d96f2aa837d08e386dab1ce7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_position.html">Position</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_position.html#a83377e38d96f2aa837d08e386dab1ce7">copy</a> ()</td></tr>
 <tr class="separator:a83377e38d96f2aa837d08e386dab1ce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b5798c980d1c02b44524986d32a0d69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_position.html#a3b5798c980d1c02b44524986d32a0d69">move</a> (std::vector&lt; int &gt; moves)</td></tr>
-<tr class="memdesc:a3b5798c980d1c02b44524986d32a0d69"><td class="mdescLeft">&#160;</td><td class="mdescRight">двигает фигуру по заданной траектории  <a href="class_position.html#a3b5798c980d1c02b44524986d32a0d69">More...</a><br /></td></tr>
-<tr class="separator:a3b5798c980d1c02b44524986d32a0d69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dc42f3d6a40d56c8aa6d6af6719a13c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_position.html#a4dc42f3d6a40d56c8aa6d6af6719a13c">move</a> (std::vector&lt; int &gt; const &amp;moves)</td></tr>
+<tr class="memdesc:a4dc42f3d6a40d56c8aa6d6af6719a13c"><td class="mdescLeft">&#160;</td><td class="mdescRight">двигает фигуру по заданной траектории  <a href="class_position.html#a4dc42f3d6a40d56c8aa6d6af6719a13c">More...</a><br /></td></tr>
+<tr class="separator:a4dc42f3d6a40d56c8aa6d6af6719a13c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c7fb640229a1c494467a4a9b0d65bb7"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_position.html#a6c7fb640229a1c494467a4a9b0d65bb7">all_moves</a> (bool color)</td></tr>
 <tr class="separator:a6c7fb640229a1c494467a4a9b0d65bb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fbc47142032476b8f5165507dd6034a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_position.html#a3fbc47142032476b8f5165507dd6034a">fig_moves</a> (int x, int y, bool free=true, int line=0)</td></tr>
@@ -151,7 +151,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="position_8cpp_source.html#l00108">108</a> of file <a class="el" href="position_8cpp_source.html">position.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="position_8cpp_source.html#l00102">102</a> of file <a class="el" href="position_8cpp_source.html">position.cpp</a>.</p>
 
 </div>
 </div>
@@ -171,7 +171,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 </div><div class="memdoc">
 <p>возвращает копию себя </p>
 
-<p class="definition">Definition at line <a class="el" href="position_8cpp_source.html#l00100">100</a> of file <a class="el" href="position_8cpp_source.html">position.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="position_8cpp_source.html#l00095">95</a> of file <a class="el" href="position_8cpp_source.html">position.cpp</a>.</p>
 
 </div>
 </div>
@@ -229,12 +229,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <p>2,3.4 - диагонали по часовой стрелке</p>
 <p>4 - фигура движется из верх-лево в низ-право </p>
 
-<p class="definition">Definition at line <a class="el" href="position_8cpp_source.html#l00131">131</a> of file <a class="el" href="position_8cpp_source.html">position.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="position_8cpp_source.html#l00124">124</a> of file <a class="el" href="position_8cpp_source.html">position.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a3b5798c980d1c02b44524986d32a0d69"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b5798c980d1c02b44524986d32a0d69">&#9670;&nbsp;</a></span>move()</h2>
+<a id="a4dc42f3d6a40d56c8aa6d6af6719a13c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dc42f3d6a40d56c8aa6d6af6719a13c">&#9670;&nbsp;</a></span>move()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -242,7 +242,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
         <tr>
           <td class="memname">void Position::move </td>
           <td>(</td>
-          <td class="paramtype">std::vector&lt; int &gt;&#160;</td>
+          <td class="paramtype">std::vector&lt; int &gt; const &amp;&#160;</td>
           <td class="paramname"><em>moves</em></td><td>)</td>
           <td></td>
         </tr>
@@ -277,7 +277,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 </div><div class="memdoc">
 <p>функция для красивой печати </p>
 
-<p class="definition">Definition at line <a class="el" href="position_8cpp_source.html#l00061">61</a> of file <a class="el" href="position_8cpp_source.html">position.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="position_8cpp_source.html#l00056">56</a> of file <a class="el" href="position_8cpp_source.html">position.cpp</a>.</p>
 
 </div>
 </div>

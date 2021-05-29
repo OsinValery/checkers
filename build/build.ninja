@@ -36,10 +36,46 @@ include CMakeFiles/rules.ninja
 
 
 #############################################
+# Utility command for install/strip
+
+build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
+  COMMAND = cd /Users/valerij/Desktop/checkers/build && /usr/local/Cellar/cmake/3.19.2/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build install/strip: phony CMakeFiles/install/strip.util
+
+
+#############################################
+# Utility command for install
+
+build CMakeFiles/install.util: CUSTOM_COMMAND all
+  COMMAND = cd /Users/valerij/Desktop/checkers/build && /usr/local/Cellar/cmake/3.19.2/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build install: phony CMakeFiles/install.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build list_install_components: phony
+
+
+#############################################
+# Utility command for Doxygen
+
+build Doxygen: phony CMakeFiles/Doxygen
+
+
+#############################################
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/valerij/Desktop/cpp-starter-project/build && /usr/local/Cellar/cmake/3.19.2/bin/cmake --regenerate-during-build -S/Users/valerij/Desktop/cpp-starter-project -B/Users/valerij/Desktop/cpp-starter-project/build
+  COMMAND = cd /Users/valerij/Desktop/checkers/build && /usr/local/Cellar/cmake/3.19.2/bin/cmake --regenerate-during-build -S/Users/valerij/Desktop/checkers -B/Users/valerij/Desktop/checkers/build
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -51,7 +87,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/valerij/Desktop/cpp-starter-project/build && /usr/local/Cellar/cmake/3.19.2/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/valerij/Desktop/checkers/build && /usr/local/Cellar/cmake/3.19.2/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -59,16 +95,22 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 
 
 #############################################
-# Utility command for Doxygen
+# Utility command for install/local
 
-build Doxygen: phony CMakeFiles/Doxygen
+build CMakeFiles/install/local.util: CUSTOM_COMMAND all
+  COMMAND = cd /Users/valerij/Desktop/checkers/build && /usr/local/Cellar/cmake/3.19.2/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build install/local: phony CMakeFiles/install/local.util
 
 
 #############################################
 # Utility command for test
 
 build CMakeFiles/test.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/valerij/Desktop/cpp-starter-project/build && /usr/local/Cellar/cmake/3.19.2/bin/ctest --force-new-ctest-process
+  COMMAND = cd /Users/valerij/Desktop/checkers/build && /usr/local/Cellar/cmake/3.19.2/bin/ctest --force-new-ctest-process
   DESC = Running tests...
   pool = console
   restat = 1
@@ -80,20 +122,132 @@ build test: phony CMakeFiles/test.util
 # Custom command for CMakeFiles/Doxygen
 
 build CMakeFiles/Doxygen: CUSTOM_COMMAND Doxyfile.Doxygen
-  COMMAND = cd /Users/valerij/Desktop/cpp-starter-project && /usr/local/Cellar/cmake/3.19.2/bin/cmake -E make_directory /Users/valerij/Desktop/cpp-starter-project/build && /Users/valerij/.conan/data/doxygen/1.8.20/_/_/package/2d36ef93f4aac51333b231bcccb770deba4580d7/bin/doxygen /Users/valerij/Desktop/cpp-starter-project/build/Doxyfile.Doxygen
+  COMMAND = cd /Users/valerij/Desktop/checkers && /usr/local/Cellar/cmake/3.19.2/bin/cmake -E make_directory /Users/valerij/Desktop/checkers/build && /Users/valerij/.conan/data/doxygen/1.8.20/_/_/package/2d36ef93f4aac51333b231bcccb770deba4580d7/bin/doxygen /Users/valerij/Desktop/checkers/build/Doxyfile.Doxygen
   DESC = Generate API documentation for Doxygen
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /Users/valerij/Desktop/cpp-starter-project/CMakeLists.txt
+# /Users/valerij/Desktop/checkers/CMakeLists.txt
 # =============================================================================
+
+
+#############################################
+# Utility command for install/strip
+
+build raylib-cpp/CMakeFiles/install/strip.util: CUSTOM_COMMAND raylib-cpp/all
+  COMMAND = cd /Users/valerij/Desktop/checkers/build/raylib-cpp && /usr/local/Cellar/cmake/3.19.2/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build raylib-cpp/install/strip: phony raylib-cpp/CMakeFiles/install/strip.util
+
+
+#############################################
+# Utility command for install
+
+build raylib-cpp/CMakeFiles/install.util: CUSTOM_COMMAND raylib-cpp/all
+  COMMAND = cd /Users/valerij/Desktop/checkers/build/raylib-cpp && /usr/local/Cellar/cmake/3.19.2/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build raylib-cpp/install: phony raylib-cpp/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build raylib-cpp/list_install_components: phony
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build raylib-cpp/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/valerij/Desktop/checkers/build/raylib-cpp && /usr/local/Cellar/cmake/3.19.2/bin/cmake --regenerate-during-build -S/Users/valerij/Desktop/checkers -B/Users/valerij/Desktop/checkers/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build raylib-cpp/rebuild_cache: phony raylib-cpp/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build raylib-cpp/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/valerij/Desktop/checkers/build/raylib-cpp && /usr/local/Cellar/cmake/3.19.2/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build raylib-cpp/edit_cache: phony raylib-cpp/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for install/local
+
+build raylib-cpp/CMakeFiles/install/local.util: CUSTOM_COMMAND raylib-cpp/all
+  COMMAND = cd /Users/valerij/Desktop/checkers/build/raylib-cpp && /usr/local/Cellar/cmake/3.19.2/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build raylib-cpp/install/local: phony raylib-cpp/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for test
+
+build raylib-cpp/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/valerij/Desktop/checkers/build/raylib-cpp && /usr/local/Cellar/cmake/3.19.2/bin/ctest --force-new-ctest-process
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build raylib-cpp/test: phony raylib-cpp/CMakeFiles/test.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/valerij/Desktop/checkers/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for install/strip
+
+build external/doctest/CMakeFiles/install/strip.util: CUSTOM_COMMAND external/doctest/all
+  COMMAND = cd /Users/valerij/Desktop/checkers/build/external/doctest && /usr/local/Cellar/cmake/3.19.2/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build external/doctest/install/strip: phony external/doctest/CMakeFiles/install/strip.util
+
+
+#############################################
+# Utility command for install
+
+build external/doctest/CMakeFiles/install.util: CUSTOM_COMMAND external/doctest/all
+  COMMAND = cd /Users/valerij/Desktop/checkers/build/external/doctest && /usr/local/Cellar/cmake/3.19.2/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build external/doctest/install: phony external/doctest/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build external/doctest/list_install_components: phony
 
 
 #############################################
 # Utility command for rebuild_cache
 
 build external/doctest/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/valerij/Desktop/cpp-starter-project/build/external/doctest && /usr/local/Cellar/cmake/3.19.2/bin/cmake --regenerate-during-build -S/Users/valerij/Desktop/cpp-starter-project -B/Users/valerij/Desktop/cpp-starter-project/build
+  COMMAND = cd /Users/valerij/Desktop/checkers/build/external/doctest && /usr/local/Cellar/cmake/3.19.2/bin/cmake --regenerate-during-build -S/Users/valerij/Desktop/checkers -B/Users/valerij/Desktop/checkers/build
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -105,7 +259,7 @@ build external/doctest/rebuild_cache: phony external/doctest/CMakeFiles/rebuild_
 # Utility command for edit_cache
 
 build external/doctest/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/valerij/Desktop/cpp-starter-project/build/external/doctest && /usr/local/Cellar/cmake/3.19.2/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/valerij/Desktop/checkers/build/external/doctest && /usr/local/Cellar/cmake/3.19.2/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -113,10 +267,22 @@ build external/doctest/edit_cache: phony external/doctest/CMakeFiles/edit_cache.
 
 
 #############################################
+# Utility command for install/local
+
+build external/doctest/CMakeFiles/install/local.util: CUSTOM_COMMAND external/doctest/all
+  COMMAND = cd /Users/valerij/Desktop/checkers/build/external/doctest && /usr/local/Cellar/cmake/3.19.2/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build external/doctest/install/local: phony external/doctest/CMakeFiles/install/local.util
+
+
+#############################################
 # Utility command for test
 
 build external/doctest/CMakeFiles/test.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/valerij/Desktop/cpp-starter-project/build/external/doctest && /usr/local/Cellar/cmake/3.19.2/bin/ctest --force-new-ctest-process
+  COMMAND = cd /Users/valerij/Desktop/checkers/build/external/doctest && /usr/local/Cellar/cmake/3.19.2/bin/ctest --force-new-ctest-process
   DESC = Running tests...
   pool = console
   restat = 1
@@ -134,7 +300,7 @@ build cmake_object_order_depends_target_doctest: phony || external/doctest/CMake
 
 build external/doctest/CMakeFiles/doctest.dir/doctest.cpp.o: CXX_COMPILER__doctest_Debug ../external/doctest/doctest.cpp || cmake_object_order_depends_target_doctest
   DEP_FILE = external/doctest/CMakeFiles/doctest.dir/doctest.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.0.sdk -std=gnu++17
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++17
   INCLUDES = -I../external/doctest
   OBJECT_DIR = external/doctest/CMakeFiles/doctest.dir
   OBJECT_FILE_DIR = external/doctest/CMakeFiles/doctest.dir
@@ -148,7 +314,7 @@ build external/doctest/CMakeFiles/doctest.dir/doctest.cpp.o: CXX_COMPILER__docte
 # Link the static library lib/libdoctest.a
 
 build lib/libdoctest.a: CXX_STATIC_LIBRARY_LINKER__doctest_Debug external/doctest/CMakeFiles/doctest.dir/doctest.cpp.o
-  ARCH_FLAGS = -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.0.sdk
+  ARCH_FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = external/doctest/CMakeFiles/doctest.dir
   POST_BUILD = :
@@ -158,15 +324,39 @@ build lib/libdoctest.a: CXX_STATIC_LIBRARY_LINKER__doctest_Debug external/doctes
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /Users/valerij/Desktop/cpp-starter-project/CMakeLists.txt
+# /Users/valerij/Desktop/checkers/CMakeLists.txt
 # =============================================================================
+
+
+#############################################
+# Utility command for install/strip
+
+build src/CMakeFiles/install/strip.util: CUSTOM_COMMAND src/all
+  COMMAND = cd /Users/valerij/Desktop/checkers/build/src && /usr/local/Cellar/cmake/3.19.2/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build src/install/strip: phony src/CMakeFiles/install/strip.util
+
+
+#############################################
+# Utility command for install
+
+build src/CMakeFiles/install.util: CUSTOM_COMMAND src/all
+  COMMAND = cd /Users/valerij/Desktop/checkers/build/src && /usr/local/Cellar/cmake/3.19.2/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build src/install: phony src/CMakeFiles/install.util
 
 
 #############################################
 # Utility command for rebuild_cache
 
 build src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/valerij/Desktop/cpp-starter-project/build/src && /usr/local/Cellar/cmake/3.19.2/bin/cmake --regenerate-during-build -S/Users/valerij/Desktop/cpp-starter-project -B/Users/valerij/Desktop/cpp-starter-project/build
+  COMMAND = cd /Users/valerij/Desktop/checkers/build/src && /usr/local/Cellar/cmake/3.19.2/bin/cmake --regenerate-during-build -S/Users/valerij/Desktop/checkers -B/Users/valerij/Desktop/checkers/build
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -178,7 +368,7 @@ build src/rebuild_cache: phony src/CMakeFiles/rebuild_cache.util
 # Utility command for edit_cache
 
 build src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/valerij/Desktop/cpp-starter-project/build/src && /usr/local/Cellar/cmake/3.19.2/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/valerij/Desktop/checkers/build/src && /usr/local/Cellar/cmake/3.19.2/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -186,15 +376,33 @@ build src/edit_cache: phony src/CMakeFiles/edit_cache.util
 
 
 #############################################
+# Utility command for install/local
+
+build src/CMakeFiles/install/local.util: CUSTOM_COMMAND src/all
+  COMMAND = cd /Users/valerij/Desktop/checkers/build/src && /usr/local/Cellar/cmake/3.19.2/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build src/install/local: phony src/CMakeFiles/install/local.util
+
+
+#############################################
 # Utility command for test
 
 build src/CMakeFiles/test.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/valerij/Desktop/cpp-starter-project/build/src && /usr/local/Cellar/cmake/3.19.2/bin/ctest --force-new-ctest-process
+  COMMAND = cd /Users/valerij/Desktop/checkers/build/src && /usr/local/Cellar/cmake/3.19.2/bin/ctest --force-new-ctest-process
   DESC = Running tests...
   pool = console
   restat = 1
 
 build src/test: phony src/CMakeFiles/test.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build src/list_install_components: phony
 
 # =============================================================================
 # Object build statements for EXECUTABLE target proj
@@ -206,26 +414,34 @@ build src/test: phony src/CMakeFiles/test.util
 build cmake_object_order_depends_target_proj: phony || src/CMakeFiles/proj.dir
 
 build src/CMakeFiles/proj.dir/main.cpp.o: CXX_COMPILER__proj_Debug ../src/main.cpp || cmake_object_order_depends_target_proj
+  DEFINES = -DGL_SILENCE_DEPRECATION=1
   DEP_FILE = src/CMakeFiles/proj.dir/main.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.0.sdk -std=gnu++17
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -std=gnu++17
+  INCLUDES = -isystem /Users/valerij/.conan/data/raylib/3.5.0/_/_/package/ae7b4a21e86cab515aae772d753e2f259da75301/include -isystem /Users/valerij/.conan/data/glfw/3.3.3/_/_/package/5d1b60934b68854979d2b9196da03a6110a18ba0/include -isystem ../raylib-cpp
   OBJECT_DIR = src/CMakeFiles/proj.dir
   OBJECT_FILE_DIR = src/CMakeFiles/proj.dir
 
 build src/CMakeFiles/proj.dir/lib.cpp.o: CXX_COMPILER__proj_Debug ../src/lib.cpp || cmake_object_order_depends_target_proj
+  DEFINES = -DGL_SILENCE_DEPRECATION=1
   DEP_FILE = src/CMakeFiles/proj.dir/lib.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.0.sdk -std=gnu++17
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -std=gnu++17
+  INCLUDES = -isystem /Users/valerij/.conan/data/raylib/3.5.0/_/_/package/ae7b4a21e86cab515aae772d753e2f259da75301/include -isystem /Users/valerij/.conan/data/glfw/3.3.3/_/_/package/5d1b60934b68854979d2b9196da03a6110a18ba0/include -isystem ../raylib-cpp
   OBJECT_DIR = src/CMakeFiles/proj.dir
   OBJECT_FILE_DIR = src/CMakeFiles/proj.dir
 
 build src/CMakeFiles/proj.dir/position.cpp.o: CXX_COMPILER__proj_Debug ../src/position.cpp || cmake_object_order_depends_target_proj
+  DEFINES = -DGL_SILENCE_DEPRECATION=1
   DEP_FILE = src/CMakeFiles/proj.dir/position.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.0.sdk -std=gnu++17
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -std=gnu++17
+  INCLUDES = -isystem /Users/valerij/.conan/data/raylib/3.5.0/_/_/package/ae7b4a21e86cab515aae772d753e2f259da75301/include -isystem /Users/valerij/.conan/data/glfw/3.3.3/_/_/package/5d1b60934b68854979d2b9196da03a6110a18ba0/include -isystem ../raylib-cpp
   OBJECT_DIR = src/CMakeFiles/proj.dir
   OBJECT_FILE_DIR = src/CMakeFiles/proj.dir
 
 build src/CMakeFiles/proj.dir/searcher.cpp.o: CXX_COMPILER__proj_Debug ../src/searcher.cpp || cmake_object_order_depends_target_proj
+  DEFINES = -DGL_SILENCE_DEPRECATION=1
   DEP_FILE = src/CMakeFiles/proj.dir/searcher.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.0.sdk -std=gnu++17
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -std=gnu++17
+  INCLUDES = -isystem /Users/valerij/.conan/data/raylib/3.5.0/_/_/package/ae7b4a21e86cab515aae772d753e2f259da75301/include -isystem /Users/valerij/.conan/data/glfw/3.3.3/_/_/package/5d1b60934b68854979d2b9196da03a6110a18ba0/include -isystem ../raylib-cpp
   OBJECT_DIR = src/CMakeFiles/proj.dir
   OBJECT_FILE_DIR = src/CMakeFiles/proj.dir
 
@@ -237,8 +453,9 @@ build src/CMakeFiles/proj.dir/searcher.cpp.o: CXX_COMPILER__proj_Debug ../src/se
 #############################################
 # Link the executable bin/proj
 
-build bin/proj: CXX_EXECUTABLE_LINKER__proj_Debug src/CMakeFiles/proj.dir/main.cpp.o src/CMakeFiles/proj.dir/lib.cpp.o src/CMakeFiles/proj.dir/position.cpp.o src/CMakeFiles/proj.dir/searcher.cpp.o
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.0.sdk
+build bin/proj: CXX_EXECUTABLE_LINKER__proj_Debug src/CMakeFiles/proj.dir/main.cpp.o src/CMakeFiles/proj.dir/lib.cpp.o src/CMakeFiles/proj.dir/position.cpp.o src/CMakeFiles/proj.dir/searcher.cpp.o | /Users/valerij/.conan/data/raylib/3.5.0/_/_/package/ae7b4a21e86cab515aae772d753e2f259da75301/lib/libraylib.a /Users/valerij/.conan/data/glfw/3.3.3/_/_/package/5d1b60934b68854979d2b9196da03a6110a18ba0/lib/libglfw3.a
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2
+  LINK_LIBRARIES = /Users/valerij/.conan/data/raylib/3.5.0/_/_/package/ae7b4a21e86cab515aae772d753e2f259da75301/lib/libraylib.a  /Users/valerij/.conan/data/glfw/3.3.3/_/_/package/5d1b60934b68854979d2b9196da03a6110a18ba0/lib/libglfw3.a  -framework  Cocoa  -framework  IOKit  -framework  CoreFoundation  -framework  OpenGL
   OBJECT_DIR = src/CMakeFiles/proj.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -256,28 +473,28 @@ build cmake_object_order_depends_target_proj_test: phony || cmake_object_order_d
 
 build src/CMakeFiles/proj_test.dir/test.cpp.o: CXX_COMPILER__proj_test_Debug ../src/test.cpp || cmake_object_order_depends_target_proj_test
   DEP_FILE = src/CMakeFiles/proj_test.dir/test.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.0.sdk -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -std=gnu++17
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -std=gnu++17
   INCLUDES = -I../external/doctest
   OBJECT_DIR = src/CMakeFiles/proj_test.dir
   OBJECT_FILE_DIR = src/CMakeFiles/proj_test.dir
 
 build src/CMakeFiles/proj_test.dir/lib.cpp.o: CXX_COMPILER__proj_test_Debug ../src/lib.cpp || cmake_object_order_depends_target_proj_test
   DEP_FILE = src/CMakeFiles/proj_test.dir/lib.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.0.sdk -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -std=gnu++17
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -std=gnu++17
   INCLUDES = -I../external/doctest
   OBJECT_DIR = src/CMakeFiles/proj_test.dir
   OBJECT_FILE_DIR = src/CMakeFiles/proj_test.dir
 
 build src/CMakeFiles/proj_test.dir/position.cpp.o: CXX_COMPILER__proj_test_Debug ../src/position.cpp || cmake_object_order_depends_target_proj_test
   DEP_FILE = src/CMakeFiles/proj_test.dir/position.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.0.sdk -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -std=gnu++17
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -std=gnu++17
   INCLUDES = -I../external/doctest
   OBJECT_DIR = src/CMakeFiles/proj_test.dir
   OBJECT_FILE_DIR = src/CMakeFiles/proj_test.dir
 
 build src/CMakeFiles/proj_test.dir/searcher.cpp.o: CXX_COMPILER__proj_test_Debug ../src/searcher.cpp || cmake_object_order_depends_target_proj_test
   DEP_FILE = src/CMakeFiles/proj_test.dir/searcher.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.0.sdk -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -std=gnu++17
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -std=gnu++17
   INCLUDES = -I../external/doctest
   OBJECT_DIR = src/CMakeFiles/proj_test.dir
   OBJECT_FILE_DIR = src/CMakeFiles/proj_test.dir
@@ -291,10 +508,10 @@ build src/CMakeFiles/proj_test.dir/searcher.cpp.o: CXX_COMPILER__proj_test_Debug
 # Link the executable bin/proj_test
 
 build bin/proj_test src/proj_test_tests-b858cb2.cmake: CXX_EXECUTABLE_LINKER__proj_test_Debug src/CMakeFiles/proj_test.dir/test.cpp.o src/CMakeFiles/proj_test.dir/lib.cpp.o src/CMakeFiles/proj_test.dir/position.cpp.o src/CMakeFiles/proj_test.dir/searcher.cpp.o | lib/libdoctest.a || lib/libdoctest.a
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.0.sdk
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2
   LINK_LIBRARIES = lib/libdoctest.a
   OBJECT_DIR = src/CMakeFiles/proj_test.dir
-  POST_BUILD = cd /Users/valerij/Desktop/cpp-starter-project/build/src && /usr/local/Cellar/cmake/3.19.2/bin/cmake -D TEST_TARGET=proj_test -D TEST_EXECUTABLE=/Users/valerij/Desktop/cpp-starter-project/build/bin/proj_test -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/Users/valerij/Desktop/cpp-starter-project/build/src -D TEST_SPEC= -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_LIST=proj_test_TESTS -D TEST_JUNIT_OUTPUT_DIR= -D CTEST_FILE=/Users/valerij/Desktop/cpp-starter-project/build/src/proj_test_tests-b858cb2.cmake -P /Users/valerij/Desktop/cpp-starter-project/external/doctest/doctestAddTests.cmake
+  POST_BUILD = cd /Users/valerij/Desktop/checkers/build/src && /usr/local/Cellar/cmake/3.19.2/bin/cmake -D TEST_TARGET=proj_test -D TEST_EXECUTABLE=/Users/valerij/Desktop/checkers/build/bin/proj_test -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/Users/valerij/Desktop/checkers/build/src -D TEST_SPEC= -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_LIST=proj_test_TESTS -D TEST_JUNIT_OUTPUT_DIR= -D CTEST_FILE=/Users/valerij/Desktop/checkers/build/src/proj_test_tests-b858cb2.cmake -P /Users/valerij/Desktop/checkers/external/doctest/doctestAddTests.cmake
   PRE_LINK = :
   RESTAT = 1
   TARGET_FILE = bin/proj_test
@@ -317,21 +534,28 @@ build proj_test: phony bin/proj_test
 # =============================================================================
 
 #############################################
-# Folder: /Users/valerij/Desktop/cpp-starter-project/build
+# Folder: /Users/valerij/Desktop/checkers/build
 
 build all: phony external/doctest/all src/all
 
 # =============================================================================
 
 #############################################
-# Folder: /Users/valerij/Desktop/cpp-starter-project/build/external/doctest
+# Folder: /Users/valerij/Desktop/checkers/build/external/doctest
 
 build external/doctest/all: phony lib/libdoctest.a
 
 # =============================================================================
 
 #############################################
-# Folder: /Users/valerij/Desktop/cpp-starter-project/build/src
+# Folder: /Users/valerij/Desktop/checkers/build/raylib-cpp
+
+build raylib-cpp/all: phony
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/valerij/Desktop/checkers/build/src
 
 build src/all: phony bin/proj bin/proj_test
 
@@ -342,14 +566,14 @@ build src/all: phony bin/proj bin/proj_test
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../cmake/CompilerWarnings.cmake ../cmake/StandardProjectSettings.cmake ../cmake/conan.cmake ../conanfile.txt ../external/doctest/CMakeLists.txt ../external/doctest/doctest.cmake ../src/CMakeLists.txt /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/CMakeParseArguments.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/Compiler/Clang.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/FindDoxygen.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/FindPackageMessage.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/Platform/Apple-Clang.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeDoxyfile.in CMakeDoxygenDefaults.cmake CMakeFiles/3.19.2/CMakeCXXCompiler.cmake CMakeFiles/3.19.2/CMakeSystem.cmake conanbuildinfo.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../cmake/CompilerWarnings.cmake ../cmake/StandardProjectSettings.cmake ../cmake/conan.cmake ../conanfile.txt ../external/doctest/CMakeLists.txt ../external/doctest/doctest.cmake ../raylib-cpp/CMakeLists.txt ../src/CMakeLists.txt /Users/valerij/.conan/data/glfw/3.3.3/_/_/package/5d1b60934b68854979d2b9196da03a6110a18ba0/lib/cmake/conan-official-glfw-targets.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/CMakeParseArguments.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/FindDoxygen.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/FindPackageMessage.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/Platform/Apple-GNU-CXX.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/Platform/Apple-GNU.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeDoxyfile.in CMakeDoxygenDefaults.cmake CMakeFiles/3.19.2/CMakeCXXCompiler.cmake CMakeFiles/3.19.2/CMakeSystem.cmake conanbuildinfo.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt ../cmake/CompilerWarnings.cmake ../cmake/StandardProjectSettings.cmake ../cmake/conan.cmake ../conanfile.txt ../external/doctest/CMakeLists.txt ../external/doctest/doctest.cmake ../src/CMakeLists.txt /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/CMakeParseArguments.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/Compiler/Clang.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/FindDoxygen.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/FindPackageMessage.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/Platform/Apple-Clang.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeDoxyfile.in CMakeDoxygenDefaults.cmake CMakeFiles/3.19.2/CMakeCXXCompiler.cmake CMakeFiles/3.19.2/CMakeSystem.cmake conanbuildinfo.cmake: phony
+build ../CMakeLists.txt ../cmake/CompilerWarnings.cmake ../cmake/StandardProjectSettings.cmake ../cmake/conan.cmake ../conanfile.txt ../external/doctest/CMakeLists.txt ../external/doctest/doctest.cmake ../raylib-cpp/CMakeLists.txt ../src/CMakeLists.txt /Users/valerij/.conan/data/glfw/3.3.3/_/_/package/5d1b60934b68854979d2b9196da03a6110a18ba0/lib/cmake/conan-official-glfw-targets.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/CMakeParseArguments.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/FindDoxygen.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/FindPackageMessage.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/Platform/Apple-GNU-CXX.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/Platform/Apple-GNU.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.19.2/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeDoxyfile.in CMakeDoxygenDefaults.cmake CMakeFiles/3.19.2/CMakeCXXCompiler.cmake CMakeFiles/3.19.2/CMakeSystem.cmake conanbuildinfo.cmake: phony
 
 
 #############################################

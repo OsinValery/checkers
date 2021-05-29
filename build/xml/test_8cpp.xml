@@ -17,6 +17,9 @@
       <node id="6">
         <label>string</label>
       </node>
+      <node id="9">
+        <label>random</label>
+      </node>
       <node id="7">
         <label>searcher.hpp</label>
         <link refid="searcher_8hpp_source"/>
@@ -27,23 +30,8 @@
         <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="9">
-        <label>random</label>
-      </node>
-      <node id="3">
-        <label>lib.hpp</label>
-        <link refid="lib_8hpp_source"/>
-      </node>
       <node id="5">
         <label>vector</label>
-      </node>
-      <node id="4">
-        <label>position.hpp</label>
-        <link refid="position_8hpp_source"/>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
       </node>
       <node id="1">
         <label>src/test.cpp</label>
@@ -65,8 +53,20 @@
         <childnode refid="9" relation="include">
         </childnode>
       </node>
+      <node id="3">
+        <label>lib.hpp</label>
+        <link refid="lib_8hpp_source"/>
+      </node>
       <node id="8">
         <label>chrono</label>
+      </node>
+      <node id="4">
+        <label>position.hpp</label>
+        <link refid="position_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
       </node>
     </incdepgraph>
       <sectiondef kind="var">
@@ -467,6 +467,19 @@
         </inbodydescription>
         <location file="src/test.cpp" line="467" column="1" bodyfile="src/test.cpp" bodystart="467" bodyend="505"/>
       </memberdef>
+      <memberdef kind="function" id="test_8cpp_1a1aa97dd69b9d09f4c531414e155e5a9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST_CASE</definition>
+        <argsstring>(&quot;search tree with h = 7&quot;)</argsstring>
+        <name>TEST_CASE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/test.cpp" line="509" column="1" bodyfile="src/test.cpp" bodystart="509" bodyend="523"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
@@ -547,7 +560,7 @@
 <codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>CHECK(test.<ref refid="class_position_1a9857183667d8c73b3fd9def4646f6588" kindref="member">board</ref><sp/>==<sp/>test2.board);</highlight></codeline>
 <codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>CHECK(test.<ref refid="class_position_1a4cd31918b9ea0bfe34d70ea172404138" kindref="member">move_of</ref><sp/>==<sp/>test2.move_of);</highlight></codeline>
 <codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>test.<ref refid="class_position_1a3b5798c980d1c02b44524986d32a0d69" kindref="member">move</ref>({0,<sp/>2,<sp/>1,<sp/>3});</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>test.<ref refid="class_position_1a4dc42f3d6a40d56c8aa6d6af6719a13c" kindref="member">move</ref>({0,<sp/>2,<sp/>1,<sp/>3});</highlight></codeline>
 <codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>CHECK(test2.board<sp/>!=<sp/>test.<ref refid="class_position_1a9857183667d8c73b3fd9def4646f6588" kindref="member">board</ref>);</highlight></codeline>
 <codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>CHECK(test2.move_of<sp/>!=<sp/>test.<ref refid="class_position_1a4cd31918b9ea0bfe34d70ea172404138" kindref="member">move_of</ref>);</highlight></codeline>
 <codeline lineno="78"><highlight class="normal">}</highlight></codeline>
@@ -566,24 +579,24 @@
 <codeline lineno="91"><highlight class="normal"></highlight></codeline>
 <codeline lineno="92"><highlight class="normal"></highlight></codeline>
 <codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>test.<ref refid="class_position_1a010eadccb7b73deed479b13ca6658d41" kindref="member">set_board</ref>(board,</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>test.<ref refid="class_position_1a3b5798c980d1c02b44524986d32a0d69" kindref="member">move</ref>({3,<sp/>3,<sp/>5,<sp/>5});</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>test.<ref refid="class_position_1a4dc42f3d6a40d56c8aa6d6af6719a13c" kindref="member">move</ref>({3,<sp/>3,<sp/>5,<sp/>5});</highlight></codeline>
 <codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>REQUIRE(test.<ref refid="class_position_1a9857183667d8c73b3fd9def4646f6588" kindref="member">board</ref><sp/>==<sp/>result);</highlight></codeline>
 <codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>цвет<sp/>передан<sp/>чёрным</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>CHECK(test.<ref refid="class_position_1a4cd31918b9ea0bfe34d70ea172404138" kindref="member">move_of</ref><sp/>==<sp/>1);</highlight></codeline>
 <codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>test.<ref refid="class_position_1a010eadccb7b73deed479b13ca6658d41" kindref="member">set_board</ref>(board2,</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>test.<ref refid="class_position_1a3b5798c980d1c02b44524986d32a0d69" kindref="member">move</ref>({0,<sp/>0,<sp/>2,<sp/>2,<sp/>4,<sp/>4,<sp/>6,<sp/>6});</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>test.<ref refid="class_position_1a4dc42f3d6a40d56c8aa6d6af6719a13c" kindref="member">move</ref>({0,<sp/>0,<sp/>2,<sp/>2,<sp/>4,<sp/>4,<sp/>6,<sp/>6});</highlight></codeline>
 <codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>REQUIRE(test.<ref refid="class_position_1a9857183667d8c73b3fd9def4646f6588" kindref="member">board</ref><sp/>==<sp/>result2);</highlight></codeline>
 <codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>CHECK(test.<ref refid="class_position_1a4cd31918b9ea0bfe34d70ea172404138" kindref="member">move_of</ref><sp/>==<sp/>1);</highlight></codeline>
 <codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>test.<ref refid="class_position_1a010eadccb7b73deed479b13ca6658d41" kindref="member">set_board</ref>(board3,</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>test.<ref refid="class_position_1a3b5798c980d1c02b44524986d32a0d69" kindref="member">move</ref>({0,<sp/>6,<sp/>2,<sp/>4,<sp/>4,<sp/>6,<sp/>6,<sp/>4,<sp/>4,<sp/>2,<sp/>2,<sp/>0,<sp/>0,<sp/>2});</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>test.<ref refid="class_position_1a4dc42f3d6a40d56c8aa6d6af6719a13c" kindref="member">move</ref>({0,<sp/>6,<sp/>2,<sp/>4,<sp/>4,<sp/>6,<sp/>6,<sp/>4,<sp/>4,<sp/>2,<sp/>2,<sp/>0,<sp/>0,<sp/>2});</highlight></codeline>
 <codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>REQUIRE(test.<ref refid="class_position_1a9857183667d8c73b3fd9def4646f6588" kindref="member">board</ref><sp/>==<sp/>result31);</highlight></codeline>
 <codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>CHECK(test.<ref refid="class_position_1a4cd31918b9ea0bfe34d70ea172404138" kindref="member">move_of</ref><sp/>==<sp/>1);</highlight></codeline>
 <codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>not<sp/>full<sp/>way</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>test.<ref refid="class_position_1a010eadccb7b73deed479b13ca6658d41" kindref="member">set_board</ref>(board3,</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>test.<ref refid="class_position_1a3b5798c980d1c02b44524986d32a0d69" kindref="member">move</ref>({0,<sp/>6,<sp/>2,<sp/>4,<sp/>4,<sp/>6,<sp/>6,<sp/>4});</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>test.<ref refid="class_position_1a4dc42f3d6a40d56c8aa6d6af6719a13c" kindref="member">move</ref>({0,<sp/>6,<sp/>2,<sp/>4,<sp/>4,<sp/>6,<sp/>6,<sp/>4});</highlight></codeline>
 <codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>REQUIRE(test.<ref refid="class_position_1a9857183667d8c73b3fd9def4646f6588" kindref="member">board</ref><sp/>==<sp/>result32);</highlight></codeline>
 <codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>test.<ref refid="class_position_1a010eadccb7b73deed479b13ca6658d41" kindref="member">set_board</ref>(board3,</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>test.<ref refid="class_position_1a3b5798c980d1c02b44524986d32a0d69" kindref="member">move</ref>({0,<sp/>6,<sp/>2,<sp/>4});</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>test.<ref refid="class_position_1a4dc42f3d6a40d56c8aa6d6af6719a13c" kindref="member">move</ref>({0,<sp/>6,<sp/>2,<sp/>4});</highlight></codeline>
 <codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>REQUIRE(test.<ref refid="class_position_1a9857183667d8c73b3fd9def4646f6588" kindref="member">board</ref><sp/>==<sp/>result33);</highlight></codeline>
 <codeline lineno="113"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="114"><highlight class="normal"></highlight></codeline>
@@ -605,22 +618,22 @@
 <codeline lineno="130"><highlight class="normal"></highlight></codeline>
 <codeline lineno="131"><highlight class="normal"></highlight></codeline>
 <codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>test.<ref refid="class_position_1a010eadccb7b73deed479b13ca6658d41" kindref="member">set_board</ref>(board,</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>test.<ref refid="class_position_1a3b5798c980d1c02b44524986d32a0d69" kindref="member">move</ref>({2,<sp/>6,<sp/>4,<sp/>4});</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>test.<ref refid="class_position_1a4dc42f3d6a40d56c8aa6d6af6719a13c" kindref="member">move</ref>({2,<sp/>6,<sp/>4,<sp/>4});</highlight></codeline>
 <codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>REQUIRE(test.<ref refid="class_position_1a9857183667d8c73b3fd9def4646f6588" kindref="member">board</ref><sp/>==<sp/>result);</highlight></codeline>
 <codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>CHECK(test.<ref refid="class_position_1a4cd31918b9ea0bfe34d70ea172404138" kindref="member">move_of</ref><sp/>==<sp/>0);</highlight></codeline>
 <codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>рубить<sp/>назад</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>test.<ref refid="class_position_1a010eadccb7b73deed479b13ca6658d41" kindref="member">set_board</ref>(board2,</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>test.<ref refid="class_position_1a3b5798c980d1c02b44524986d32a0d69" kindref="member">move</ref>({5,<sp/>1,<sp/>7,<sp/>3});</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>test.<ref refid="class_position_1a4dc42f3d6a40d56c8aa6d6af6719a13c" kindref="member">move</ref>({5,<sp/>1,<sp/>7,<sp/>3});</highlight></codeline>
 <codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>REQUIRE(test.<ref refid="class_position_1a9857183667d8c73b3fd9def4646f6588" kindref="member">board</ref><sp/>==<sp/>result2);</highlight></codeline>
 <codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>CHECK(test.<ref refid="class_position_1a4cd31918b9ea0bfe34d70ea172404138" kindref="member">move_of</ref><sp/>==<sp/>0);</highlight></codeline>
 <codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>transform<sp/>to<sp/>queen<sp/>by<sp/>the<sp/>way</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>test.<ref refid="class_position_1a010eadccb7b73deed479b13ca6658d41" kindref="member">set_board</ref>(board3,</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>test.<ref refid="class_position_1a3b5798c980d1c02b44524986d32a0d69" kindref="member">move</ref>({0,<sp/>2,<sp/>2,<sp/>0,<sp/>4,<sp/>2});</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>test.<ref refid="class_position_1a4dc42f3d6a40d56c8aa6d6af6719a13c" kindref="member">move</ref>({0,<sp/>2,<sp/>2,<sp/>0,<sp/>4,<sp/>2});</highlight></codeline>
 <codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>REQUIRE(test.<ref refid="class_position_1a9857183667d8c73b3fd9def4646f6588" kindref="member">board</ref><sp/>==<sp/>result3);</highlight></codeline>
 <codeline lineno="145"><highlight class="normal"></highlight></codeline>
 <codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>long<sp/>way<sp/>to<sp/>queen</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>test.<ref refid="class_position_1a010eadccb7b73deed479b13ca6658d41" kindref="member">set_board</ref>(board4,</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>test.<ref refid="class_position_1a3b5798c980d1c02b44524986d32a0d69" kindref="member">move</ref>({0,<sp/>6,<sp/>2,<sp/>4,<sp/>4,<sp/>2,<sp/>6,<sp/>0});</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>test.<ref refid="class_position_1a4dc42f3d6a40d56c8aa6d6af6719a13c" kindref="member">move</ref>({0,<sp/>6,<sp/>2,<sp/>4,<sp/>4,<sp/>2,<sp/>6,<sp/>0});</highlight></codeline>
 <codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>REQUIRE(test.<ref refid="class_position_1a9857183667d8c73b3fd9def4646f6588" kindref="member">board</ref><sp/>==<sp/>result4);</highlight></codeline>
 <codeline lineno="150"><highlight class="normal"></highlight></codeline>
 <codeline lineno="151"><highlight class="normal">}</highlight></codeline>
@@ -634,22 +647,22 @@
 <codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>result2<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;._._._.__._._._.._w_._.__._._._.._._._.__._._._.._b_._.__._._._.&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="160"><highlight class="normal"></highlight></codeline>
 <codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>test.<ref refid="class_position_1a010eadccb7b73deed479b13ca6658d41" kindref="member">set_board</ref>(board1,</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>test.<ref refid="class_position_1a3b5798c980d1c02b44524986d32a0d69" kindref="member">move</ref>({1,<sp/>1,<sp/>2,<sp/>2});</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>test.<ref refid="class_position_1a4dc42f3d6a40d56c8aa6d6af6719a13c" kindref="member">move</ref>({1,<sp/>1,<sp/>2,<sp/>2});</highlight></codeline>
 <codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>REQUIRE(test.<ref refid="class_position_1a9857183667d8c73b3fd9def4646f6588" kindref="member">board</ref><sp/>==<sp/>result1);</highlight></codeline>
 <codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>CHECK(test.<ref refid="class_position_1a4cd31918b9ea0bfe34d70ea172404138" kindref="member">move_of</ref><sp/>==<sp/>1);</highlight></codeline>
-<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>test.<ref refid="class_position_1a3b5798c980d1c02b44524986d32a0d69" kindref="member">move</ref>({1,<sp/>7,<sp/>2,<sp/>6});</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>test.<ref refid="class_position_1a4dc42f3d6a40d56c8aa6d6af6719a13c" kindref="member">move</ref>({1,<sp/>7,<sp/>2,<sp/>6});</highlight></codeline>
 <codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>REQUIRE(test.<ref refid="class_position_1a9857183667d8c73b3fd9def4646f6588" kindref="member">board</ref><sp/>==<sp/>result2);</highlight></codeline>
 <codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>CHECK(test.<ref refid="class_position_1a4cd31918b9ea0bfe34d70ea172404138" kindref="member">move_of</ref><sp/>==<sp/>0);</highlight></codeline>
 <codeline lineno="168"><highlight class="normal"></highlight></codeline>
 <codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>test.<ref refid="class_position_1a010eadccb7b73deed479b13ca6658d41" kindref="member">set_board</ref>(gen_start(),<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>test.<ref refid="class_position_1a3b5798c980d1c02b44524986d32a0d69" kindref="member">move</ref>({0,2,<sp/>1,3});</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>test.<ref refid="class_position_1a4dc42f3d6a40d56c8aa6d6af6719a13c" kindref="member">move</ref>({0,2,<sp/>1,3});</highlight></codeline>
 <codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>result<sp/>=<sp/><sp/></highlight><highlight class="stringliteral">&quot;w_w_w_w__w_w_w_w._w_w_w__w_._._.._._._.__b_b_b_bb_b_b_b__b_b_b_b&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>REQUIRE(test.<ref refid="class_position_1a9857183667d8c73b3fd9def4646f6588" kindref="member">board</ref><sp/>==<sp/>result);</highlight></codeline>
 <codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>create<sp/>queen</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/>board1<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;._._._.__._._._b._._._.__._._._.._._._.__._._._.._._._.__._._._.&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>result1<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;._._._B__._._._.._._._.__._._._.._._._.__._._._.._._._.__._._._.&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>test.<ref refid="class_position_1a010eadccb7b73deed479b13ca6658d41" kindref="member">set_board</ref>(board1,</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>test.<ref refid="class_position_1a3b5798c980d1c02b44524986d32a0d69" kindref="member">move</ref>({7,1,<sp/>6,<sp/>0});</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>test.<ref refid="class_position_1a4dc42f3d6a40d56c8aa6d6af6719a13c" kindref="member">move</ref>({7,1,<sp/>6,<sp/>0});</highlight></codeline>
 <codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>CHECK(test.<ref refid="class_position_1a9857183667d8c73b3fd9def4646f6588" kindref="member">board</ref><sp/>==<sp/>result1);</highlight></codeline>
 <codeline lineno="179"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="180"><highlight class="normal"></highlight></codeline>
@@ -668,7 +681,7 @@
 <codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>game.<ref refid="class_position_1a010eadccb7b73deed479b13ca6658d41" kindref="member">set_board</ref>(gen_start(),</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="194"><highlight class="normal"></highlight></codeline>
 <codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>move:moves){</highlight></codeline>
-<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>game.<ref refid="class_position_1a3b5798c980d1c02b44524986d32a0d69" kindref="member">move</ref>(move);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>game.<ref refid="class_position_1a4dc42f3d6a40d56c8aa6d6af6719a13c" kindref="member">move</ref>(move);</highlight></codeline>
 <codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>color<sp/>=<sp/>1<sp/>-<sp/>color;</highlight></codeline>
 <codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CHECK(game.<ref refid="class_position_1a4cd31918b9ea0bfe34d70ea172404138" kindref="member">move_of</ref><sp/>==<sp/>color);</highlight></codeline>
 <codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -682,7 +695,7 @@
 <codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>result<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;._._._.__b_._._.._._._.__._._W_.._._._.__._._._.._._._.__._._._.&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="208"><highlight class="normal"></highlight></codeline>
 <codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/>test.<ref refid="class_position_1a010eadccb7b73deed479b13ca6658d41" kindref="member">set_board</ref>(board,</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>test.<ref refid="class_position_1a3b5798c980d1c02b44524986d32a0d69" kindref="member">move</ref>({2,<sp/>6,<sp/>5,<sp/>3});</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>test.<ref refid="class_position_1a4dc42f3d6a40d56c8aa6d6af6719a13c" kindref="member">move</ref>({2,<sp/>6,<sp/>5,<sp/>3});</highlight></codeline>
 <codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>CHECK(test.<ref refid="class_position_1a9857183667d8c73b3fd9def4646f6588" kindref="member">board</ref><sp/>==<sp/>result);</highlight></codeline>
 <codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/>CHECK(test.<ref refid="class_position_1a4cd31918b9ea0bfe34d70ea172404138" kindref="member">move_of</ref><sp/>==<sp/>1);</highlight></codeline>
 <codeline lineno="213"><highlight class="normal"></highlight></codeline>
@@ -690,11 +703,11 @@
 <codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/>result<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;._._B_.__._._._.._._._.__._._._.._._._.__._._._.._._._.__._._._W&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>test.<ref refid="class_position_1a010eadccb7b73deed479b13ca6658d41" kindref="member">set_board</ref>(board,</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/>test.<ref refid="class_position_1a3b5798c980d1c02b44524986d32a0d69" kindref="member">move</ref>({3,1,<sp/>4,0});</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/>test.<ref refid="class_position_1a4dc42f3d6a40d56c8aa6d6af6719a13c" kindref="member">move</ref>({3,1,<sp/>4,0});</highlight></codeline>
 <codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/>CHECK(test.<ref refid="class_position_1a9857183667d8c73b3fd9def4646f6588" kindref="member">board</ref><sp/>==<sp/>result);</highlight></codeline>
 <codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/>CHECK(test.<ref refid="class_position_1a4cd31918b9ea0bfe34d70ea172404138" kindref="member">move_of</ref><sp/>==<sp/>0);</highlight></codeline>
 <codeline lineno="221"><highlight class="normal"></highlight></codeline>
-<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/>test.<ref refid="class_position_1a3b5798c980d1c02b44524986d32a0d69" kindref="member">move</ref>({7,7,<sp/>0,0});</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/>test.<ref refid="class_position_1a4dc42f3d6a40d56c8aa6d6af6719a13c" kindref="member">move</ref>({7,7,<sp/>0,0});</highlight></codeline>
 <codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/>result<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;W_._B_.__._._._.._._._.__._._._.._._._.__._._._.._._._.__._._._.&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/>CHECK(result<sp/>==<sp/>test.<ref refid="class_position_1a9857183667d8c73b3fd9def4646f6588" kindref="member">board</ref>);</highlight></codeline>
 <codeline lineno="225"><highlight class="normal">}</highlight></codeline>
@@ -804,7 +817,7 @@
 <codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/>CHECK(contains_all(found,result));</highlight></codeline>
 <codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/>CHECK(test.<ref refid="class_position_1a9857183667d8c73b3fd9def4646f6588" kindref="member">board</ref><sp/>==<sp/>board);</highlight></codeline>
 <codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>can<sp/>use<sp/>the<sp/>result<sp/>in<sp/>future</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/>test.<ref refid="class_position_1a3b5798c980d1c02b44524986d32a0d69" kindref="member">move</ref>(found[4]);</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/>test.<ref refid="class_position_1a4dc42f3d6a40d56c8aa6d6af6719a13c" kindref="member">move</ref>(found[4]);</highlight></codeline>
 <codeline lineno="333"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="334"><highlight class="normal"></highlight></codeline>
 <codeline lineno="335"><highlight class="normal">TEST_CASE(</highlight><highlight class="stringliteral">&quot;all<sp/>moves<sp/>queen<sp/>taking&quot;</highlight><highlight class="normal">){</highlight></codeline>
@@ -894,7 +907,7 @@
 <codeline lineno="419"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_searcher" kindref="compound">Searcher</ref><sp/>analizer;</highlight></codeline>
 <codeline lineno="420"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>board<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;._._._.__w_._._.._w_w_w__._._B_.._w_w_w__._._._.._w_w_w__._._._.&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="421"><highlight class="normal"><sp/><sp/><sp/><sp/>test.<ref refid="class_position_1a010eadccb7b73deed479b13ca6658d41" kindref="member">set_board</ref>(board,</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="422"><highlight class="normal"><sp/><sp/><sp/><sp/>CHECK(analizer.<ref refid="class_searcher_1ad62bfd90ecff5defb2ce8124a999e3dc" kindref="member">estimate_board</ref>(board,</highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>==<sp/>0);</highlight></codeline>
+<codeline lineno="422"><highlight class="normal"><sp/><sp/><sp/><sp/>CHECK(analizer.<ref refid="class_searcher_1ad62bfd90ecff5defb2ce8124a999e3dc" kindref="member">estimate_board</ref>(board,</highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>&lt;=<sp/>0);</highlight></codeline>
 <codeline lineno="423"><highlight class="normal"><sp/><sp/><sp/><sp/>CHECK(test.<ref refid="class_position_1a9857183667d8c73b3fd9def4646f6588" kindref="member">board</ref><sp/>==<sp/>board);</highlight></codeline>
 <codeline lineno="424"><highlight class="normal"><sp/><sp/><sp/><sp/>board<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;._._._.__._._._.._._._.__._._._.._._w_.__._._._.._._._b__b_._._.&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="425"><highlight class="normal"><sp/><sp/><sp/><sp/>CHECK(analizer.<ref refid="class_searcher_1ad62bfd90ecff5defb2ce8124a999e3dc" kindref="member">estimate_board</ref>(board,</highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/>&gt;<sp/>0);</highlight></codeline>
@@ -948,8 +961,8 @@
 <codeline lineno="473"><highlight class="normal"></highlight></codeline>
 <codeline lineno="474"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;10;i++){</highlight></codeline>
 <codeline lineno="475"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>found<sp/>=<sp/>position.<ref refid="class_position_1a6c7fb640229a1c494467a4a9b0d65bb7" kindref="member">all_moves</ref>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="476"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>position.<ref refid="class_position_1a3b5798c980d1c02b44524986d32a0d69" kindref="member">move</ref>(found[0]);</highlight></codeline>
-<codeline lineno="477"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>position.<ref refid="class_position_1a3b5798c980d1c02b44524986d32a0d69" kindref="member">move</ref>(analizer.<ref refid="class_searcher_1a8140f189be693ad99a65bdf7396c663f" kindref="member">find</ref>(position,5));</highlight></codeline>
+<codeline lineno="476"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>position.<ref refid="class_position_1a4dc42f3d6a40d56c8aa6d6af6719a13c" kindref="member">move</ref>(found[0]);</highlight></codeline>
+<codeline lineno="477"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>position.<ref refid="class_position_1a4dc42f3d6a40d56c8aa6d6af6719a13c" kindref="member">move</ref>(analizer.<ref refid="class_searcher_1a8140f189be693ad99a65bdf7396c663f" kindref="member">find</ref>(position,5));</highlight></codeline>
 <codeline lineno="478"><highlight class="normal"></highlight></codeline>
 <codeline lineno="479"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="480"><highlight class="normal"><sp/><sp/><sp/><sp/>CHECK(analizer.<ref refid="class_searcher_1ad62bfd90ecff5defb2ce8124a999e3dc" kindref="member">estimate_board</ref>(position.<ref refid="class_position_1a9857183667d8c73b3fd9def4646f6588" kindref="member">board</ref>,</highlight><highlight class="keyword">false</highlight><highlight class="normal">)&gt;=0);</highlight></codeline>
@@ -970,9 +983,9 @@
 <codeline lineno="495"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>n<sp/>=<sp/>dist(gen);</highlight></codeline>
 <codeline lineno="496"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(n&gt;d-1)<sp/>n<sp/>=<sp/>dist(gen);</highlight></codeline>
 <codeline lineno="497"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>my<sp/>move</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="498"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>position.<ref refid="class_position_1a3b5798c980d1c02b44524986d32a0d69" kindref="member">move</ref>(found[n]);</highlight></codeline>
+<codeline lineno="498"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>position.<ref refid="class_position_1a4dc42f3d6a40d56c8aa6d6af6719a13c" kindref="member">move</ref>(found[n]);</highlight></codeline>
 <codeline lineno="499"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>bot<sp/>move</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="500"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>position.<ref refid="class_position_1a3b5798c980d1c02b44524986d32a0d69" kindref="member">move</ref>(analizer.<ref refid="class_searcher_1a8140f189be693ad99a65bdf7396c663f" kindref="member">find</ref>(position,5));</highlight></codeline>
+<codeline lineno="500"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>position.<ref refid="class_position_1a4dc42f3d6a40d56c8aa6d6af6719a13c" kindref="member">move</ref>(analizer.<ref refid="class_searcher_1a8140f189be693ad99a65bdf7396c663f" kindref="member">find</ref>(position,5));</highlight></codeline>
 <codeline lineno="501"><highlight class="normal"></highlight></codeline>
 <codeline lineno="502"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="503"><highlight class="normal"><sp/><sp/><sp/><sp/>CHECK(analizer.<ref refid="class_searcher_1ad62bfd90ecff5defb2ce8124a999e3dc" kindref="member">estimate_board</ref>(position.<ref refid="class_position_1a9857183667d8c73b3fd9def4646f6588" kindref="member">board</ref>,</highlight><highlight class="keyword">false</highlight><highlight class="normal">)&gt;=0);</highlight></codeline>
@@ -981,10 +994,26 @@
 <codeline lineno="506"><highlight class="normal"></highlight></codeline>
 <codeline lineno="507"><highlight class="normal"></highlight></codeline>
 <codeline lineno="508"><highlight class="normal"></highlight></codeline>
-<codeline lineno="509"><highlight class="normal"></highlight></codeline>
-<codeline lineno="510"><highlight class="normal"></highlight></codeline>
-<codeline lineno="511"><highlight class="normal"></highlight></codeline>
-<codeline lineno="512"><highlight class="normal"></highlight></codeline>
+<codeline lineno="509"><highlight class="normal">TEST_CASE(</highlight><highlight class="stringliteral">&quot;search<sp/>tree<sp/>with<sp/>h<sp/>=<sp/>7&quot;</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="510"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>H<sp/>=<sp/>7;</highlight></codeline>
+<codeline lineno="511"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_position" kindref="compound">Position</ref><sp/>position;</highlight></codeline>
+<codeline lineno="512"><highlight class="normal"><sp/><sp/><sp/><sp/>position.<ref refid="class_position_1a010eadccb7b73deed479b13ca6658d41" kindref="member">set_board</ref>(gen_start(),</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="513"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_searcher" kindref="compound">Searcher</ref><sp/>analizer;</highlight></codeline>
+<codeline lineno="514"><highlight class="normal"><sp/><sp/><sp/><sp/>position.<ref refid="class_position_1a4dc42f3d6a40d56c8aa6d6af6719a13c" kindref="member">move</ref>({2,2,3,3});</highlight></codeline>
+<codeline lineno="515"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>start<sp/>=<sp/>std::chrono::steady_clock::now();</highlight></codeline>
+<codeline lineno="516"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>found<sp/>=<sp/>analizer.<ref refid="class_searcher_1a8140f189be693ad99a65bdf7396c663f" kindref="member">find</ref>(position,H);</highlight></codeline>
+<codeline lineno="517"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>end<sp/>=<sp/>std::chrono::steady_clock::now();</highlight></codeline>
+<codeline lineno="518"><highlight class="normal"><sp/><sp/><sp/><sp/>std::chrono::duration&lt;double&gt;<sp/>elapsed_seconds<sp/>=<sp/>end<sp/>-<sp/>start;</highlight></codeline>
+<codeline lineno="519"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>time<sp/>=<sp/>elapsed_seconds.count();</highlight></codeline>
+<codeline lineno="520"><highlight class="normal"><sp/><sp/><sp/><sp/>CHECK(time&lt;2);</highlight></codeline>
+<codeline lineno="521"><highlight class="normal"><sp/><sp/><sp/><sp/>position.<ref refid="class_position_1a4dc42f3d6a40d56c8aa6d6af6719a13c" kindref="member">move</ref>(found);</highlight></codeline>
+<codeline lineno="522"><highlight class="normal"><sp/><sp/><sp/><sp/>CHECK(analizer.<ref refid="class_searcher_1ad62bfd90ecff5defb2ce8124a999e3dc" kindref="member">estimate_board</ref>(position.<ref refid="class_position_1a9857183667d8c73b3fd9def4646f6588" kindref="member">board</ref>,</highlight><highlight class="keyword">false</highlight><highlight class="normal">)&gt;=0);</highlight></codeline>
+<codeline lineno="523"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="524"><highlight class="normal"></highlight></codeline>
+<codeline lineno="525"><highlight class="normal"></highlight></codeline>
+<codeline lineno="526"><highlight class="normal"></highlight></codeline>
+<codeline lineno="527"><highlight class="normal"></highlight></codeline>
+<codeline lineno="528"><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="src/test.cpp"/>
   </compounddef>

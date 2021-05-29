@@ -1,4 +1,4 @@
-# Install script for directory: /Users/valerij/Desktop/cpp-starter-project/external/doctest
+# Install script for directory: /Users/valerij/Desktop/checkers/external/doctest
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,6 +34,6 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/Library/Developer/CommandLineTools/usr/bin/objdump")
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 

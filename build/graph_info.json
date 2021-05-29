@@ -1,11 +1,31 @@
 {
  "options": [
   [
+   "glfw:fPIC",
+   "True"
+  ],
+  [
+   "glfw:shared",
+   "False"
+  ],
+  [
+   "glfw:vulkan_static",
+   "False"
+  ],
+  [
    "libuuid:fPIC",
    "True"
   ],
   [
    "libuuid:shared",
+   "False"
+  ],
+  [
+   "raylib:fPIC",
+   "True"
+  ],
+  [
+   "raylib:shared",
    "False"
   ],
   [

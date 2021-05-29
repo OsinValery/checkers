@@ -34,6 +34,30 @@
         </inbodydescription>
         <location file="src/searcher.hpp" line="17" column="13" bodyfile="src/searcher.hpp" bodystart="17" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="class_searcher_1a4a3029efae29747c484b96d3700b4a42" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; int &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;int&gt; &gt; Searcher::weights</definition>
+        <argsstring></argsstring>
+        <name>weights</name>
+        <initializer>= {
+            {500, 0, 500, 0, 500, 0, 500, 0},
+            {0, 490, 0, 495, 0, 495, 0, 490},
+            {480, 0, 485, 0, 490, 0, 487, 0},
+            {0, 450, 0, 470, 0, 470, 0, 450},
+            {430, 0, 460, 0, 460, 0, 440,0},
+            {0, 420, 0, 430, 0, 430, 0, 420},
+            {410, 0, 410, 0, 410, 0, 410, 0},
+            {0, 400, 0, 400, 0, 400, 0, 400}
+        }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>веса для полей(это для чёрных, для белых это поля 7 - x,y) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/searcher.hpp" line="22" column="21" bodyfile="src/searcher.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
       <memberdef kind="function" id="class_searcher_1a8140f189be693ad99a65bdf7396c663f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -76,7 +100,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/searcher.hpp" line="26" column="21" bodyfile="src/searcher.cpp" bodystart="18" bodyend="35"/>
+        <location file="src/searcher.hpp" line="40" column="21" bodyfile="src/searcher.cpp" bodystart="18" bodyend="35"/>
       </memberdef>
       <memberdef kind="function" id="class_searcher_1ad62bfd90ecff5defb2ce8124a999e3dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>long int</type>
@@ -118,24 +142,29 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/searcher.hpp" line="34" column="18" bodyfile="src/searcher.cpp" bodystart="37" bodyend="83"/>
+        <location file="src/searcher.hpp" line="48" column="18" bodyfile="src/searcher.cpp" bodystart="37" bodyend="83"/>
       </memberdef>
-      <memberdef kind="function" id="class_searcher_1aacfcf539ac5df47fc396b9b35c1f0e09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_searcher_1a81ab67b8eb544c3b483bc3c539f0739c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>long int</type>
         <definition>long int Searcher::analize_move</definition>
-        <argsstring>(Position position, std::vector&lt; int &gt; move, int h)</argsstring>
+        <argsstring>(Position position, std::vector&lt; int &gt; const &amp;move, int h, long int alfa=-10000000)</argsstring>
         <name>analize_move</name>
         <param>
           <type><ref refid="class_position" kindref="compound">Position</ref></type>
           <declname>position</declname>
         </param>
         <param>
-          <type>std::vector&lt; int &gt;</type>
+          <type>std::vector&lt; int &gt; const &amp;</type>
           <declname>move</declname>
         </param>
         <param>
           <type>int</type>
           <declname>h</declname>
+        </param>
+        <param>
+          <type>long int</type>
+          <declname>alfa</declname>
+          <defval>-10000000</defval>
         </param>
         <briefdescription>
 <para>строит дерево для данного хода </para>
@@ -165,12 +194,20 @@
 <para>- высота узла до листа, при h = 1 возвращается <ref refid="class_searcher_1ad62bfd90ecff5defb2ce8124a999e3dc" kindref="member">estimate_board()</ref> </para>
 </parameterdescription>
 </parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alfa</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- параметр для альфа-бетта отсечений </para>
+</parameterdescription>
+</parameteritem>
 </parameterlist>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/searcher.hpp" line="42" column="18" bodyfile="src/searcher.cpp" bodystart="85" bodyend="121"/>
+        <location file="src/searcher.hpp" line="57" column="18" bodyfile="src/searcher.cpp" bodystart="98" bodyend="137"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -178,13 +215,14 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="src/searcher.hpp" line="8" column="1" bodyfile="src/searcher.hpp" bodystart="8" bodyend="43"/>
+    <location file="src/searcher.hpp" line="8" column="1" bodyfile="src/searcher.hpp" bodystart="8" bodyend="59"/>
     <listofallmembers>
-      <member refid="class_searcher_1aacfcf539ac5df47fc396b9b35c1f0e09" prot="public" virt="non-virtual"><scope>Searcher</scope><name>analize_move</name></member>
+      <member refid="class_searcher_1a81ab67b8eb544c3b483bc3c539f0739c" prot="public" virt="non-virtual"><scope>Searcher</scope><name>analize_move</name></member>
       <member refid="class_searcher_1ad62bfd90ecff5defb2ce8124a999e3dc" prot="public" virt="non-virtual"><scope>Searcher</scope><name>estimate_board</name></member>
       <member refid="class_searcher_1a8140f189be693ad99a65bdf7396c663f" prot="public" virt="non-virtual"><scope>Searcher</scope><name>find</name></member>
       <member refid="class_searcher_1a7f0d52a713d4c221d494fa455cc5bf98" prot="public" virt="non-virtual"><scope>Searcher</scope><name>queen_weight</name></member>
       <member refid="class_searcher_1a90ba4cb83bd6f4d837ccaed9b1835119" prot="public" virt="non-virtual"><scope>Searcher</scope><name>simple_weight</name></member>
+      <member refid="class_searcher_1a4a3029efae29747c484b96d3700b4a42" prot="public" virt="non-virtual"><scope>Searcher</scope><name>weights</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

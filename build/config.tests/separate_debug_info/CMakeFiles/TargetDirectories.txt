@@ -1,3 +1,0 @@
-/Users/valerij/Desktop/cpp-starter-project/build/config.tests/separate_debug_info/CMakeFiles/rebuild_cache.dir
-/Users/valerij/Desktop/cpp-starter-project/build/config.tests/separate_debug_info/CMakeFiles/edit_cache.dir
-/Users/valerij/Desktop/cpp-starter-project/build/config.tests/separate_debug_info/CMakeFiles/objcopytest.dir

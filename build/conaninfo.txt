@@ -1,13 +1,14 @@
 [settings]
     arch=x86_64
     build_type=Debug
-    compiler=apple-clang
-    compiler.libcxx=libc++
-    compiler.version=12.0
+    compiler=gcc
+    compiler.libcxx=libstdc++11
+    compiler.version=10
     os=Macos
 
 [requires]
     doxygen/1.Y.Z
+    raylib/3.Y.Z
 
 [options]
 
@@ -16,21 +17,29 @@
     arch=x86_64
     arch_build=x86_64
     build_type=Debug
-    compiler=apple-clang
-    compiler.libcxx=libc++
-    compiler.version=12.0
+    compiler=gcc
+    compiler.libcxx=libstdc++11
+    compiler.version=10
     os=Macos
     os_build=Macos
 
 [full_requires]
     doxygen/1.8.20:2d36ef93f4aac51333b231bcccb770deba4580d7
-    libuuid/1.0.3:d98fae1010d1fb9e7f79a1e8a72bbf129d8660a2
-    xapian-core/1.4.18:9282a40774a88010b7c4ad6c26e9598ec76fb393
-    zlib/1.2.11:d98fae1010d1fb9e7f79a1e8a72bbf129d8660a2
+    glfw/3.3.3:5d1b60934b68854979d2b9196da03a6110a18ba0
+    libuuid/1.0.3:aab919749d3d14196cb2cc17238f63a960d2722e
+    opengl/system:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
+    raylib/3.5.0:ae7b4a21e86cab515aae772d753e2f259da75301
+    xapian-core/1.4.18:1f3407b75fae86b013316f59a8df80a9399da133
+    zlib/1.2.11:aab919749d3d14196cb2cc17238f63a960d2722e
 
 [full_options]
+    glfw:fPIC=True
+    glfw:shared=False
+    glfw:vulkan_static=False
     libuuid:fPIC=True
     libuuid:shared=False
+    raylib:fPIC=True
+    raylib:shared=False
     xapian-core:fPIC=True
     xapian-core:shared=False
     zlib:fPIC=True
@@ -42,4 +51,4 @@
 
 [env]
     CONAN_CMAKE_PROGRAM="/usr/local/Cellar/cmake/3.19.2/bin/cmake"
-    CXX=/Library/Developer/CommandLineTools/usr/bin/c++
+    CXX=/usr/local/bin/g++-10

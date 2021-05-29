@@ -104,9 +104,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ad62bfd90ecff5defb2ce8124a999e3dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">на листьях дерева позицию оценивает <br  />
  он умножает ценность фигуры на вес поля для всех фигур  <a href="class_searcher.html#ad62bfd90ecff5defb2ce8124a999e3dc">More...</a><br /></td></tr>
 <tr class="separator:ad62bfd90ecff5defb2ce8124a999e3dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacfcf539ac5df47fc396b9b35c1f0e09"><td class="memItemLeft" align="right" valign="top">long int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_searcher.html#aacfcf539ac5df47fc396b9b35c1f0e09">analize_move</a> (<a class="el" href="class_position.html">Position</a> position, std::vector&lt; int &gt; move, int h)</td></tr>
-<tr class="memdesc:aacfcf539ac5df47fc396b9b35c1f0e09"><td class="mdescLeft">&#160;</td><td class="mdescRight">строит дерево для данного хода  <a href="class_searcher.html#aacfcf539ac5df47fc396b9b35c1f0e09">More...</a><br /></td></tr>
-<tr class="separator:aacfcf539ac5df47fc396b9b35c1f0e09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81ab67b8eb544c3b483bc3c539f0739c"><td class="memItemLeft" align="right" valign="top">long int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_searcher.html#a81ab67b8eb544c3b483bc3c539f0739c">analize_move</a> (<a class="el" href="class_position.html">Position</a> position, std::vector&lt; int &gt; const &amp;move, int h, long int alfa=-10000000)</td></tr>
+<tr class="memdesc:a81ab67b8eb544c3b483bc3c539f0739c"><td class="mdescLeft">&#160;</td><td class="mdescRight">строит дерево для данного хода  <a href="class_searcher.html#a81ab67b8eb544c3b483bc3c539f0739c">More...</a><br /></td></tr>
+<tr class="separator:a81ab67b8eb544c3b483bc3c539f0739c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -114,14 +114,16 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a7f0d52a713d4c221d494fa455cc5bf98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90ba4cb83bd6f4d837ccaed9b1835119"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_searcher.html#a90ba4cb83bd6f4d837ccaed9b1835119">simple_weight</a> = 1</td></tr>
 <tr class="separator:a90ba4cb83bd6f4d837ccaed9b1835119"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a3029efae29747c484b96d3700b4a42"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_searcher.html#a4a3029efae29747c484b96d3700b4a42">weights</a></td></tr>
+<tr class="separator:a4a3029efae29747c484b96d3700b4a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>класс реализует логику поиска лучшего хода за чёрных(для бота) </p>
 
 <p class="definition">Definition at line <a class="el" href="searcher_8hpp_source.html#l00008">8</a> of file <a class="el" href="searcher_8hpp_source.html">searcher.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="aacfcf539ac5df47fc396b9b35c1f0e09"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aacfcf539ac5df47fc396b9b35c1f0e09">&#9670;&nbsp;</a></span>analize_move()</h2>
+<a id="a81ab67b8eb544c3b483bc3c539f0739c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81ab67b8eb544c3b483bc3c539f0739c">&#9670;&nbsp;</a></span>analize_move()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -135,14 +137,20 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; int &gt;&#160;</td>
+          <td class="paramtype">std::vector&lt; int &gt; const &amp;&#160;</td>
           <td class="paramname"><em>move</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>h</em>&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long int&#160;</td>
+          <td class="paramname"><em>alfa</em> = <code>-10000000</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -158,11 +166,12 @@ Public Attributes</h2></td></tr>
     <tr><td class="paramname">position</td><td>-текущая позиция в узле дерева </td></tr>
     <tr><td class="paramname">move</td><td>- исследуемых ход - ребро дерева </td></tr>
     <tr><td class="paramname">h</td><td>- высота узла до листа, при h = 1 возвращается <a class="el" href="class_searcher.html#ad62bfd90ecff5defb2ce8124a999e3dc" title="на листьях дерева позицию оценивает   он умножает ценность фигуры на вес поля для всех фигур">estimate_board()</a> </td></tr>
+    <tr><td class="paramname">alfa</td><td>- параметр для альфа-бетта отсечений </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="searcher_8cpp_source.html#l00085">85</a> of file <a class="el" href="searcher_8cpp_source.html">searcher.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="searcher_8cpp_source.html#l00098">98</a> of file <a class="el" href="searcher_8cpp_source.html">searcher.cpp</a>.</p>
 
 </div>
 </div>
@@ -280,6 +289,33 @@ Public Attributes</h2></td></tr>
 <p>ценность фигур, дамки и обычной </p>
 
 <p class="definition">Definition at line <a class="el" href="searcher_8hpp_source.html#l00017">17</a> of file <a class="el" href="searcher_8hpp_source.html">searcher.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a4a3029efae29747c484b96d3700b4a42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a3029efae29747c484b96d3700b4a42">&#9670;&nbsp;</a></span>weights</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::vector&lt;int&gt; &gt; Searcher::weights</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">            {500, 0, 500, 0, 500, 0, 500, 0},</div>
+<div class="line">            {0, 490, 0, 495, 0, 495, 0, 490},</div>
+<div class="line">            {480, 0, 485, 0, 490, 0, 487, 0},</div>
+<div class="line">            {0, 450, 0, 470, 0, 470, 0, 450},</div>
+<div class="line">            {430, 0, 460, 0, 460, 0, 440,0},</div>
+<div class="line">            {0, 420, 0, 430, 0, 430, 0, 420},</div>
+<div class="line">            {410, 0, 410, 0, 410, 0, 410, 0},</div>
+<div class="line">            {0, 400, 0, 400, 0, 400, 0, 400}</div>
+<div class="line">        }</div>
+</div><!-- fragment --><p>веса для полей(это для чёрных, для белых это поля 7 - x,y) </p>
+
+<p class="definition">Definition at line <a class="el" href="searcher_8hpp_source.html#l00022">22</a> of file <a class="el" href="searcher_8hpp_source.html">searcher.hpp</a>.</p>
 
 </div>
 </div>

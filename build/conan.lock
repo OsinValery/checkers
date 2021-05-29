@@ -2,9 +2,10 @@
  "graph_lock": {
   "nodes": {
    "0": {
-    "options": "libuuid:fPIC=True\nlibuuid:shared=False\nxapian-core:fPIC=True\nxapian-core:shared=False\nzlib:fPIC=True\nzlib:minizip=deprecated\nzlib:shared=False",
+    "options": "glfw:fPIC=True\nglfw:shared=False\nglfw:vulkan_static=False\nlibuuid:fPIC=True\nlibuuid:shared=False\nraylib:fPIC=True\nraylib:shared=False\nxapian-core:fPIC=True\nxapian-core:shared=False\nzlib:fPIC=True\nzlib:minizip=deprecated\nzlib:shared=False",
     "requires": [
-     "1"
+     "1",
+     "5"
     ],
     "path": "../conanfile.txt",
     "context": "host"
@@ -23,7 +24,7 @@
    "2": {
     "ref": "xapian-core/1.4.18",
     "options": "fPIC=True\nshared=False\nlibuuid:fPIC=True\nlibuuid:shared=False\nzlib:fPIC=True\nzlib:minizip=deprecated\nzlib:shared=False",
-    "package_id": "9282a40774a88010b7c4ad6c26e9598ec76fb393",
+    "package_id": "1f3407b75fae86b013316f59a8df80a9399da133",
     "prev": "0",
     "requires": [
      "3",
@@ -34,14 +35,42 @@
    "3": {
     "ref": "libuuid/1.0.3",
     "options": "fPIC=True\nshared=False",
-    "package_id": "d98fae1010d1fb9e7f79a1e8a72bbf129d8660a2",
+    "package_id": "aab919749d3d14196cb2cc17238f63a960d2722e",
     "prev": "0",
     "context": "host"
    },
    "4": {
     "ref": "zlib/1.2.11",
     "options": "fPIC=True\nminizip=deprecated\nshared=False",
-    "package_id": "d98fae1010d1fb9e7f79a1e8a72bbf129d8660a2",
+    "package_id": "aab919749d3d14196cb2cc17238f63a960d2722e",
+    "prev": "0",
+    "context": "host"
+   },
+   "5": {
+    "ref": "raylib/3.5.0",
+    "options": "fPIC=True\nshared=False\nglfw:fPIC=True\nglfw:shared=False\nglfw:vulkan_static=False",
+    "package_id": "ae7b4a21e86cab515aae772d753e2f259da75301",
+    "prev": "0",
+    "requires": [
+     "6",
+     "7"
+    ],
+    "context": "host"
+   },
+   "6": {
+    "ref": "glfw/3.3.3",
+    "options": "fPIC=True\nshared=False\nvulkan_static=False",
+    "package_id": "5d1b60934b68854979d2b9196da03a6110a18ba0",
+    "prev": "0",
+    "requires": [
+     "7"
+    ],
+    "context": "host"
+   },
+   "7": {
+    "ref": "opengl/system",
+    "options": "",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
     "prev": "0",
     "context": "host"
    }
@@ -49,5 +78,5 @@
   "revisions_enabled": false
  },
  "version": "0.4",
- "profile_host": "[settings]\narch=x86_64\narch_build=x86_64\nbuild_type=Debug\ncompiler=apple-clang\ncompiler.libcxx=libc++\ncompiler.version=12.0\nos=Macos\nos_build=Macos\n[options]\n[build_requires]\n[env]\nCONAN_CMAKE_PROGRAM=\"/usr/local/Cellar/cmake/3.19.2/bin/cmake\"\nCXX=/Library/Developer/CommandLineTools/usr/bin/c++"
+ "profile_host": "[settings]\narch=x86_64\narch_build=x86_64\nbuild_type=Debug\ncompiler=gcc\ncompiler.libcxx=libstdc++11\ncompiler.version=10\nos=Macos\nos_build=Macos\n[options]\n[build_requires]\n[env]\nCONAN_CMAKE_PROGRAM=\"/usr/local/Cellar/cmake/3.19.2/bin/cmake\"\nCXX=/usr/local/bin/g++-10"
 }

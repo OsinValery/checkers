@@ -1,47 +1,47 @@
 [
 {
-  "directory": "/Users/valerij/Desktop/cpp-starter-project/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I../external/doctest -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.0.sdk -std=gnu++17 -o external/doctest/CMakeFiles/doctest.dir/doctest.cpp.o -c /Users/valerij/Desktop/cpp-starter-project/external/doctest/doctest.cpp",
-  "file": "/Users/valerij/Desktop/cpp-starter-project/external/doctest/doctest.cpp"
+  "directory": "/Users/valerij/Desktop/checkers/build",
+  "command": "/usr/local/bin/g++-10 -I../external/doctest -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -std=gnu++17 -o external/doctest/CMakeFiles/doctest.dir/doctest.cpp.o -c /Users/valerij/Desktop/checkers/external/doctest/doctest.cpp",
+  "file": "/Users/valerij/Desktop/checkers/external/doctest/doctest.cpp"
 },
 {
-  "directory": "/Users/valerij/Desktop/cpp-starter-project/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.0.sdk -std=gnu++17 -o src/CMakeFiles/proj.dir/main.cpp.o -c /Users/valerij/Desktop/cpp-starter-project/src/main.cpp",
-  "file": "/Users/valerij/Desktop/cpp-starter-project/src/main.cpp"
+  "directory": "/Users/valerij/Desktop/checkers/build",
+  "command": "/usr/local/bin/g++-10 -DGL_SILENCE_DEPRECATION=1 -isystem /Users/valerij/.conan/data/raylib/3.5.0/_/_/package/ae7b4a21e86cab515aae772d753e2f259da75301/include -isystem /Users/valerij/.conan/data/glfw/3.3.3/_/_/package/5d1b60934b68854979d2b9196da03a6110a18ba0/include -isystem ../raylib-cpp -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -std=gnu++17 -o src/CMakeFiles/proj.dir/main.cpp.o -c /Users/valerij/Desktop/checkers/src/main.cpp",
+  "file": "/Users/valerij/Desktop/checkers/src/main.cpp"
 },
 {
-  "directory": "/Users/valerij/Desktop/cpp-starter-project/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.0.sdk -std=gnu++17 -o src/CMakeFiles/proj.dir/lib.cpp.o -c /Users/valerij/Desktop/cpp-starter-project/src/lib.cpp",
-  "file": "/Users/valerij/Desktop/cpp-starter-project/src/lib.cpp"
+  "directory": "/Users/valerij/Desktop/checkers/build",
+  "command": "/usr/local/bin/g++-10 -DGL_SILENCE_DEPRECATION=1 -isystem /Users/valerij/.conan/data/raylib/3.5.0/_/_/package/ae7b4a21e86cab515aae772d753e2f259da75301/include -isystem /Users/valerij/.conan/data/glfw/3.3.3/_/_/package/5d1b60934b68854979d2b9196da03a6110a18ba0/include -isystem ../raylib-cpp -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -std=gnu++17 -o src/CMakeFiles/proj.dir/lib.cpp.o -c /Users/valerij/Desktop/checkers/src/lib.cpp",
+  "file": "/Users/valerij/Desktop/checkers/src/lib.cpp"
 },
 {
-  "directory": "/Users/valerij/Desktop/cpp-starter-project/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.0.sdk -std=gnu++17 -o src/CMakeFiles/proj.dir/position.cpp.o -c /Users/valerij/Desktop/cpp-starter-project/src/position.cpp",
-  "file": "/Users/valerij/Desktop/cpp-starter-project/src/position.cpp"
+  "directory": "/Users/valerij/Desktop/checkers/build",
+  "command": "/usr/local/bin/g++-10 -DGL_SILENCE_DEPRECATION=1 -isystem /Users/valerij/.conan/data/raylib/3.5.0/_/_/package/ae7b4a21e86cab515aae772d753e2f259da75301/include -isystem /Users/valerij/.conan/data/glfw/3.3.3/_/_/package/5d1b60934b68854979d2b9196da03a6110a18ba0/include -isystem ../raylib-cpp -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -std=gnu++17 -o src/CMakeFiles/proj.dir/position.cpp.o -c /Users/valerij/Desktop/checkers/src/position.cpp",
+  "file": "/Users/valerij/Desktop/checkers/src/position.cpp"
 },
 {
-  "directory": "/Users/valerij/Desktop/cpp-starter-project/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.0.sdk -std=gnu++17 -o src/CMakeFiles/proj.dir/searcher.cpp.o -c /Users/valerij/Desktop/cpp-starter-project/src/searcher.cpp",
-  "file": "/Users/valerij/Desktop/cpp-starter-project/src/searcher.cpp"
+  "directory": "/Users/valerij/Desktop/checkers/build",
+  "command": "/usr/local/bin/g++-10 -DGL_SILENCE_DEPRECATION=1 -isystem /Users/valerij/.conan/data/raylib/3.5.0/_/_/package/ae7b4a21e86cab515aae772d753e2f259da75301/include -isystem /Users/valerij/.conan/data/glfw/3.3.3/_/_/package/5d1b60934b68854979d2b9196da03a6110a18ba0/include -isystem ../raylib-cpp -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -std=gnu++17 -o src/CMakeFiles/proj.dir/searcher.cpp.o -c /Users/valerij/Desktop/checkers/src/searcher.cpp",
+  "file": "/Users/valerij/Desktop/checkers/src/searcher.cpp"
 },
 {
-  "directory": "/Users/valerij/Desktop/cpp-starter-project/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I../external/doctest -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.0.sdk -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -std=gnu++17 -o src/CMakeFiles/proj_test.dir/test.cpp.o -c /Users/valerij/Desktop/cpp-starter-project/src/test.cpp",
-  "file": "/Users/valerij/Desktop/cpp-starter-project/src/test.cpp"
+  "directory": "/Users/valerij/Desktop/checkers/build",
+  "command": "/usr/local/bin/g++-10 -I../external/doctest -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -std=gnu++17 -o src/CMakeFiles/proj_test.dir/test.cpp.o -c /Users/valerij/Desktop/checkers/src/test.cpp",
+  "file": "/Users/valerij/Desktop/checkers/src/test.cpp"
 },
 {
-  "directory": "/Users/valerij/Desktop/cpp-starter-project/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I../external/doctest -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.0.sdk -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -std=gnu++17 -o src/CMakeFiles/proj_test.dir/lib.cpp.o -c /Users/valerij/Desktop/cpp-starter-project/src/lib.cpp",
-  "file": "/Users/valerij/Desktop/cpp-starter-project/src/lib.cpp"
+  "directory": "/Users/valerij/Desktop/checkers/build",
+  "command": "/usr/local/bin/g++-10 -I../external/doctest -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -std=gnu++17 -o src/CMakeFiles/proj_test.dir/lib.cpp.o -c /Users/valerij/Desktop/checkers/src/lib.cpp",
+  "file": "/Users/valerij/Desktop/checkers/src/lib.cpp"
 },
 {
-  "directory": "/Users/valerij/Desktop/cpp-starter-project/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I../external/doctest -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.0.sdk -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -std=gnu++17 -o src/CMakeFiles/proj_test.dir/position.cpp.o -c /Users/valerij/Desktop/cpp-starter-project/src/position.cpp",
-  "file": "/Users/valerij/Desktop/cpp-starter-project/src/position.cpp"
+  "directory": "/Users/valerij/Desktop/checkers/build",
+  "command": "/usr/local/bin/g++-10 -I../external/doctest -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -std=gnu++17 -o src/CMakeFiles/proj_test.dir/position.cpp.o -c /Users/valerij/Desktop/checkers/src/position.cpp",
+  "file": "/Users/valerij/Desktop/checkers/src/position.cpp"
 },
 {
-  "directory": "/Users/valerij/Desktop/cpp-starter-project/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I../external/doctest -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.0.sdk -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -std=gnu++17 -o src/CMakeFiles/proj_test.dir/searcher.cpp.o -c /Users/valerij/Desktop/cpp-starter-project/src/searcher.cpp",
-  "file": "/Users/valerij/Desktop/cpp-starter-project/src/searcher.cpp"
+  "directory": "/Users/valerij/Desktop/checkers/build",
+  "command": "/usr/local/bin/g++-10 -I../external/doctest -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -std=gnu++17 -o src/CMakeFiles/proj_test.dir/searcher.cpp.o -c /Users/valerij/Desktop/checkers/src/searcher.cpp",
+  "file": "/Users/valerij/Desktop/checkers/src/searcher.cpp"
 }
 ]

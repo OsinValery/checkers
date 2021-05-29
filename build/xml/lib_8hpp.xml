@@ -10,6 +10,14 @@
         <label>src/main.cpp</label>
         <link refid="main_8cpp_source"/>
       </node>
+      <node id="2">
+        <label>src/lib.cpp</label>
+        <link refid="lib_8cpp_source"/>
+      </node>
+      <node id="4">
+        <label>src/test.cpp</label>
+        <link refid="test_8cpp_source"/>
+      </node>
       <node id="1">
         <label>src/lib.hpp</label>
         <link refid="lib_8hpp"/>
@@ -19,14 +27,6 @@
         </childnode>
         <childnode refid="4" relation="include">
         </childnode>
-      </node>
-      <node id="4">
-        <label>src/test.cpp</label>
-        <link refid="test_8cpp_source"/>
-      </node>
-      <node id="2">
-        <label>src/lib.cpp</label>
-        <link refid="lib_8cpp_source"/>
       </node>
     </invincdepgraph>
       <sectiondef kind="func">

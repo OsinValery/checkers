@@ -49,7 +49,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/position.hpp" line="28" column="14" bodyfile="src/position.cpp" bodystart="61" bodyend="98"/>
+        <location file="src/position.hpp" line="29" column="14" bodyfile="src/position.cpp" bodystart="56" bodyend="93"/>
       </memberdef>
       <memberdef kind="function" id="class_position_1a010eadccb7b73deed479b13ca6658d41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -71,7 +71,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/position.hpp" line="35" column="14" bodyfile="src/position.cpp" bodystart="16" bodyend="19"/>
+        <location file="src/position.hpp" line="36" column="14" bodyfile="src/position.cpp" bodystart="16" bodyend="19"/>
       </memberdef>
       <memberdef kind="function" id="class_position_1a83377e38d96f2aa837d08e386dab1ce7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_position" kindref="compound">Position</ref></type>
@@ -85,15 +85,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/position.hpp" line="40" column="18" bodyfile="src/position.cpp" bodystart="100" bodyend="105"/>
+        <location file="src/position.hpp" line="41" column="18" bodyfile="src/position.cpp" bodystart="95" bodyend="99"/>
       </memberdef>
-      <memberdef kind="function" id="class_position_1a3b5798c980d1c02b44524986d32a0d69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_position_1a4dc42f3d6a40d56c8aa6d6af6719a13c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void Position::move</definition>
-        <argsstring>(std::vector&lt; int &gt; moves)</argsstring>
+        <argsstring>(std::vector&lt; int &gt; const &amp;moves)</argsstring>
         <name>move</name>
         <param>
-          <type>std::vector&lt; int &gt;</type>
+          <type>std::vector&lt; int &gt; const &amp;</type>
           <declname>moves</declname>
         </param>
         <briefdescription>
@@ -113,7 +113,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/position.hpp" line="49" column="14" bodyfile="src/position.cpp" bodystart="21" bodyend="59"/>
+        <location file="src/position.hpp" line="50" column="14" bodyfile="src/position.cpp" bodystart="21" bodyend="54"/>
       </memberdef>
       <memberdef kind="function" id="class_position_1a6c7fb640229a1c494467a4a9b0d65bb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; std::vector&lt; int &gt; &gt;</type>
@@ -140,7 +140,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/position.hpp" line="55" column="21" bodyfile="src/position.cpp" bodystart="108" bodyend="128"/>
+        <location file="src/position.hpp" line="56" column="21" bodyfile="src/position.cpp" bodystart="102" bodyend="122"/>
       </memberdef>
       <memberdef kind="function" id="class_position_1a3fbc47142032476b8f5165507dd6034a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; std::vector&lt; int &gt; &gt;</type>
@@ -210,7 +210,7 @@ line задаёт номер диагонали, откуда движется �
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/position.hpp" line="73" column="21" bodyfile="src/position.cpp" bodystart="131" bodyend="773"/>
+        <location file="src/position.hpp" line="74" column="21" bodyfile="src/position.cpp" bodystart="124" bodyend="779"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -219,13 +219,13 @@ line задаёт номер диагонали, откуда движется �
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="src/position.hpp" line="9" column="1" bodyfile="src/position.hpp" bodystart="9" bodyend="75"/>
+    <location file="src/position.hpp" line="9" column="1" bodyfile="src/position.hpp" bodystart="9" bodyend="76"/>
     <listofallmembers>
       <member refid="class_position_1a6c7fb640229a1c494467a4a9b0d65bb7" prot="public" virt="non-virtual"><scope>Position</scope><name>all_moves</name></member>
       <member refid="class_position_1a9857183667d8c73b3fd9def4646f6588" prot="public" virt="non-virtual"><scope>Position</scope><name>board</name></member>
       <member refid="class_position_1a83377e38d96f2aa837d08e386dab1ce7" prot="public" virt="non-virtual"><scope>Position</scope><name>copy</name></member>
       <member refid="class_position_1a3fbc47142032476b8f5165507dd6034a" prot="public" virt="non-virtual"><scope>Position</scope><name>fig_moves</name></member>
-      <member refid="class_position_1a3b5798c980d1c02b44524986d32a0d69" prot="public" virt="non-virtual"><scope>Position</scope><name>move</name></member>
+      <member refid="class_position_1a4dc42f3d6a40d56c8aa6d6af6719a13c" prot="public" virt="non-virtual"><scope>Position</scope><name>move</name></member>
       <member refid="class_position_1a4cd31918b9ea0bfe34d70ea172404138" prot="public" virt="non-virtual"><scope>Position</scope><name>move_of</name></member>
       <member refid="class_position_1acbfdf523b403104849ffb368bd5d260a" prot="public" virt="non-virtual"><scope>Position</scope><name>print</name></member>
       <member refid="class_position_1a010eadccb7b73deed479b13ca6658d41" prot="public" virt="non-virtual"><scope>Position</scope><name>set_board</name></member>

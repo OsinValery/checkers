@@ -1,1 +1,3 @@
-[![Build Status](https://travis-ci.org/krsch/cpp-starter-project.svg?branch=master)](https://travis-ci.org/krsch/cpp-starter-project)
+проект собирается cmake, 
+чтобы поиграть, запустите main.cpp и напишите help для получения списка всех команд
+документация в ./build/www/index.html

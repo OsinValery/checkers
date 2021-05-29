@@ -1,30 +1,41 @@
 [includedirs]
-/Users/valerij/.conan/data/xapian-core/1.4.18/_/_/package/9282a40774a88010b7c4ad6c26e9598ec76fb393/include
-/Users/valerij/.conan/data/libuuid/1.0.3/_/_/package/d98fae1010d1fb9e7f79a1e8a72bbf129d8660a2/include
-/Users/valerij/.conan/data/libuuid/1.0.3/_/_/package/d98fae1010d1fb9e7f79a1e8a72bbf129d8660a2/include/uuid
-/Users/valerij/.conan/data/zlib/1.2.11/_/_/package/d98fae1010d1fb9e7f79a1e8a72bbf129d8660a2/include
+/Users/valerij/.conan/data/raylib/3.5.0/_/_/package/ae7b4a21e86cab515aae772d753e2f259da75301/include
+/Users/valerij/.conan/data/xapian-core/1.4.18/_/_/package/1f3407b75fae86b013316f59a8df80a9399da133/include
+/Users/valerij/.conan/data/glfw/3.3.3/_/_/package/5d1b60934b68854979d2b9196da03a6110a18ba0/include
+/Users/valerij/.conan/data/libuuid/1.0.3/_/_/package/aab919749d3d14196cb2cc17238f63a960d2722e/include
+/Users/valerij/.conan/data/libuuid/1.0.3/_/_/package/aab919749d3d14196cb2cc17238f63a960d2722e/include/uuid
+/Users/valerij/.conan/data/zlib/1.2.11/_/_/package/aab919749d3d14196cb2cc17238f63a960d2722e/include
 
 [libdirs]
-/Users/valerij/.conan/data/xapian-core/1.4.18/_/_/package/9282a40774a88010b7c4ad6c26e9598ec76fb393/lib
-/Users/valerij/.conan/data/libuuid/1.0.3/_/_/package/d98fae1010d1fb9e7f79a1e8a72bbf129d8660a2/lib
-/Users/valerij/.conan/data/zlib/1.2.11/_/_/package/d98fae1010d1fb9e7f79a1e8a72bbf129d8660a2/lib
+/Users/valerij/.conan/data/raylib/3.5.0/_/_/package/ae7b4a21e86cab515aae772d753e2f259da75301/lib
+/Users/valerij/.conan/data/xapian-core/1.4.18/_/_/package/1f3407b75fae86b013316f59a8df80a9399da133/lib
+/Users/valerij/.conan/data/glfw/3.3.3/_/_/package/5d1b60934b68854979d2b9196da03a6110a18ba0/lib
+/Users/valerij/.conan/data/libuuid/1.0.3/_/_/package/aab919749d3d14196cb2cc17238f63a960d2722e/lib
+/Users/valerij/.conan/data/zlib/1.2.11/_/_/package/aab919749d3d14196cb2cc17238f63a960d2722e/lib
 
 [bindirs]
 /Users/valerij/.conan/data/doxygen/1.8.20/_/_/package/2d36ef93f4aac51333b231bcccb770deba4580d7/bin
-/Users/valerij/.conan/data/xapian-core/1.4.18/_/_/package/9282a40774a88010b7c4ad6c26e9598ec76fb393/bin
+/Users/valerij/.conan/data/xapian-core/1.4.18/_/_/package/1f3407b75fae86b013316f59a8df80a9399da133/bin
 
 [resdirs]
 
 
 [builddirs]
 /Users/valerij/.conan/data/doxygen/1.8.20/_/_/package/2d36ef93f4aac51333b231bcccb770deba4580d7/
-/Users/valerij/.conan/data/xapian-core/1.4.18/_/_/package/9282a40774a88010b7c4ad6c26e9598ec76fb393/
-/Users/valerij/.conan/data/xapian-core/1.4.18/_/_/package/9282a40774a88010b7c4ad6c26e9598ec76fb393/lib/cmake
-/Users/valerij/.conan/data/libuuid/1.0.3/_/_/package/d98fae1010d1fb9e7f79a1e8a72bbf129d8660a2/
-/Users/valerij/.conan/data/zlib/1.2.11/_/_/package/d98fae1010d1fb9e7f79a1e8a72bbf129d8660a2/
+/Users/valerij/.conan/data/raylib/3.5.0/_/_/package/ae7b4a21e86cab515aae772d753e2f259da75301/
+/Users/valerij/.conan/data/raylib/3.5.0/_/_/package/ae7b4a21e86cab515aae772d753e2f259da75301/lib/cmake
+/Users/valerij/.conan/data/xapian-core/1.4.18/_/_/package/1f3407b75fae86b013316f59a8df80a9399da133/
+/Users/valerij/.conan/data/xapian-core/1.4.18/_/_/package/1f3407b75fae86b013316f59a8df80a9399da133/lib/cmake
+/Users/valerij/.conan/data/glfw/3.3.3/_/_/package/5d1b60934b68854979d2b9196da03a6110a18ba0/
+/Users/valerij/.conan/data/glfw/3.3.3/_/_/package/5d1b60934b68854979d2b9196da03a6110a18ba0/lib/cmake
+/Users/valerij/.conan/data/libuuid/1.0.3/_/_/package/aab919749d3d14196cb2cc17238f63a960d2722e/
+/Users/valerij/.conan/data/zlib/1.2.11/_/_/package/aab919749d3d14196cb2cc17238f63a960d2722e/
+/Users/valerij/.conan/data/opengl/system/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/
 
 [libs]
+raylib
 xapian
+glfw3
 uuid
 z
 
@@ -32,7 +43,7 @@ z
 
 
 [defines]
-
+GL_SILENCE_DEPRECATION=1
 
 [cppflags]
 
@@ -53,7 +64,10 @@ z
 
 
 [frameworks]
-
+Cocoa
+IOKit
+CoreFoundation
+OpenGL
 
 [frameworkdirs]
 
@@ -123,21 +137,88 @@ doxygen
 
 
 
+[includedirs_raylib]
+/Users/valerij/.conan/data/raylib/3.5.0/_/_/package/ae7b4a21e86cab515aae772d753e2f259da75301/include
+
+[libdirs_raylib]
+/Users/valerij/.conan/data/raylib/3.5.0/_/_/package/ae7b4a21e86cab515aae772d753e2f259da75301/lib
+
+[bindirs_raylib]
+
+
+[resdirs_raylib]
+
+
+[builddirs_raylib]
+/Users/valerij/.conan/data/raylib/3.5.0/_/_/package/ae7b4a21e86cab515aae772d753e2f259da75301/
+/Users/valerij/.conan/data/raylib/3.5.0/_/_/package/ae7b4a21e86cab515aae772d753e2f259da75301/lib/cmake
+
+[libs_raylib]
+raylib
+
+[system_libs_raylib]
+
+
+[defines_raylib]
+
+
+[cppflags_raylib]
+
+
+[cxxflags_raylib]
+
+
+[cflags_raylib]
+
+
+[sharedlinkflags_raylib]
+
+
+[exelinkflags_raylib]
+
+
+[sysroot_raylib]
+
+
+[frameworks_raylib]
+
+
+[frameworkdirs_raylib]
+
+
+[rootpath_raylib]
+/Users/valerij/.conan/data/raylib/3.5.0/_/_/package/ae7b4a21e86cab515aae772d753e2f259da75301
+
+[name_raylib]
+raylib
+
+[version_raylib]
+3.5.0
+
+[generatornames_raylib]
+cmake_find_package=raylib
+cmake_find_package_multi=raylib
+pkg_config=raylib
+
+[generatorfilenames_raylib]
+
+
+
 [includedirs_xapian-core]
-/Users/valerij/.conan/data/xapian-core/1.4.18/_/_/package/9282a40774a88010b7c4ad6c26e9598ec76fb393/include
+/Users/valerij/.conan/data/xapian-core/1.4.18/_/_/package/1f3407b75fae86b013316f59a8df80a9399da133/include
 
 [libdirs_xapian-core]
-/Users/valerij/.conan/data/xapian-core/1.4.18/_/_/package/9282a40774a88010b7c4ad6c26e9598ec76fb393/lib
+/Users/valerij/.conan/data/xapian-core/1.4.18/_/_/package/1f3407b75fae86b013316f59a8df80a9399da133/lib
 
 [bindirs_xapian-core]
-/Users/valerij/.conan/data/xapian-core/1.4.18/_/_/package/9282a40774a88010b7c4ad6c26e9598ec76fb393/bin
+/Users/valerij/.conan/data/xapian-core/1.4.18/_/_/package/1f3407b75fae86b013316f59a8df80a9399da133/bin
 
 [resdirs_xapian-core]
 
 
 [builddirs_xapian-core]
-/Users/valerij/.conan/data/xapian-core/1.4.18/_/_/package/9282a40774a88010b7c4ad6c26e9598ec76fb393/
-/Users/valerij/.conan/data/xapian-core/1.4.18/_/_/package/9282a40774a88010b7c4ad6c26e9598ec76fb393/lib/cmake
+/Users/valerij/.conan/data/xapian-core/1.4.18/_/_/package/1f3407b75fae86b013316f59a8df80a9399da133/
+/Users/valerij/.conan/data/xapian-core/1.4.18/_/_/package/1f3407b75fae86b013316f59a8df80a9399da133/lib/cmake
 
 [libs_xapian-core]
 xapian
@@ -173,7 +254,7 @@ xapian
 
 
 [rootpath_xapian-core]
-/Users/valerij/.conan/data/xapian-core/1.4.18/_/_/package/9282a40774a88010b7c4ad6c26e9598ec76fb393
+/Users/valerij/.conan/data/xapian-core/1.4.18/_/_/package/1f3407b75fae86b013316f59a8df80a9399da133
 
 [name_xapian-core]
 xapian-core
@@ -190,12 +271,82 @@ pkg_config=xapian-core
 
 
 
+[includedirs_glfw]
+/Users/valerij/.conan/data/glfw/3.3.3/_/_/package/5d1b60934b68854979d2b9196da03a6110a18ba0/include
+
+[libdirs_glfw]
+/Users/valerij/.conan/data/glfw/3.3.3/_/_/package/5d1b60934b68854979d2b9196da03a6110a18ba0/lib
+
+[bindirs_glfw]
+
+
+[resdirs_glfw]
+
+
+[builddirs_glfw]
+/Users/valerij/.conan/data/glfw/3.3.3/_/_/package/5d1b60934b68854979d2b9196da03a6110a18ba0/
+/Users/valerij/.conan/data/glfw/3.3.3/_/_/package/5d1b60934b68854979d2b9196da03a6110a18ba0/lib/cmake
+
+[libs_glfw]
+glfw3
+
+[system_libs_glfw]
+
+
+[defines_glfw]
+
+
+[cppflags_glfw]
+
+
+[cxxflags_glfw]
+
+
+[cflags_glfw]
+
+
+[sharedlinkflags_glfw]
+
+
+[exelinkflags_glfw]
+
+
+[sysroot_glfw]
+
+
+[frameworks_glfw]
+Cocoa
+IOKit
+CoreFoundation
+
+[frameworkdirs_glfw]
+
+
+[rootpath_glfw]
+/Users/valerij/.conan/data/glfw/3.3.3/_/_/package/5d1b60934b68854979d2b9196da03a6110a18ba0
+
+[name_glfw]
+glfw
+
+[version_glfw]
+3.3.3
+
+[generatornames_glfw]
+cmake_find_package=glfw
+cmake_find_package_multi=glfw
+pkg_config=glfw3
+
+[generatorfilenames_glfw]
+cmake_find_package=glfw3
+cmake_find_package_multi=glfw3
+
+
 [includedirs_libuuid]
-/Users/valerij/.conan/data/libuuid/1.0.3/_/_/package/d98fae1010d1fb9e7f79a1e8a72bbf129d8660a2/include
-/Users/valerij/.conan/data/libuuid/1.0.3/_/_/package/d98fae1010d1fb9e7f79a1e8a72bbf129d8660a2/include/uuid
+/Users/valerij/.conan/data/libuuid/1.0.3/_/_/package/aab919749d3d14196cb2cc17238f63a960d2722e/include
+/Users/valerij/.conan/data/libuuid/1.0.3/_/_/package/aab919749d3d14196cb2cc17238f63a960d2722e/include/uuid
 
 [libdirs_libuuid]
-/Users/valerij/.conan/data/libuuid/1.0.3/_/_/package/d98fae1010d1fb9e7f79a1e8a72bbf129d8660a2/lib
+/Users/valerij/.conan/data/libuuid/1.0.3/_/_/package/aab919749d3d14196cb2cc17238f63a960d2722e/lib
 
 [bindirs_libuuid]
 
@@ -204,7 +355,7 @@ pkg_config=xapian-core
 
 
 [builddirs_libuuid]
-/Users/valerij/.conan/data/libuuid/1.0.3/_/_/package/d98fae1010d1fb9e7f79a1e8a72bbf129d8660a2/
+/Users/valerij/.conan/data/libuuid/1.0.3/_/_/package/aab919749d3d14196cb2cc17238f63a960d2722e/
 
 [libs_libuuid]
 uuid
@@ -240,7 +391,7 @@ uuid
 
 
 [rootpath_libuuid]
-/Users/valerij/.conan/data/libuuid/1.0.3/_/_/package/d98fae1010d1fb9e7f79a1e8a72bbf129d8660a2
+/Users/valerij/.conan/data/libuuid/1.0.3/_/_/package/aab919749d3d14196cb2cc17238f63a960d2722e
 
 [name_libuuid]
 libuuid
@@ -256,10 +407,10 @@ libuuid
 
 
 [includedirs_zlib]
-/Users/valerij/.conan/data/zlib/1.2.11/_/_/package/d98fae1010d1fb9e7f79a1e8a72bbf129d8660a2/include
+/Users/valerij/.conan/data/zlib/1.2.11/_/_/package/aab919749d3d14196cb2cc17238f63a960d2722e/include
 
 [libdirs_zlib]
-/Users/valerij/.conan/data/zlib/1.2.11/_/_/package/d98fae1010d1fb9e7f79a1e8a72bbf129d8660a2/lib
+/Users/valerij/.conan/data/zlib/1.2.11/_/_/package/aab919749d3d14196cb2cc17238f63a960d2722e/lib
 
 [bindirs_zlib]
 
@@ -268,7 +419,7 @@ libuuid
 
 
 [builddirs_zlib]
-/Users/valerij/.conan/data/zlib/1.2.11/_/_/package/d98fae1010d1fb9e7f79a1e8a72bbf129d8660a2/
+/Users/valerij/.conan/data/zlib/1.2.11/_/_/package/aab919749d3d14196cb2cc17238f63a960d2722e/
 
 [libs_zlib]
 z
@@ -304,7 +455,7 @@ z
 
 
 [rootpath_zlib]
-/Users/valerij/.conan/data/zlib/1.2.11/_/_/package/d98fae1010d1fb9e7f79a1e8a72bbf129d8660a2
+/Users/valerij/.conan/data/zlib/1.2.11/_/_/package/aab919749d3d14196cb2cc17238f63a960d2722e
 
 [name_zlib]
 zlib
@@ -320,14 +471,85 @@ cmake_find_package_multi=ZLIB
 
 
 
+[includedirs_opengl]
+
+
+[libdirs_opengl]
+
+
+[bindirs_opengl]
+
+
+[resdirs_opengl]
+
+
+[builddirs_opengl]
+/Users/valerij/.conan/data/opengl/system/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/
+
+[libs_opengl]
+
+
+[system_libs_opengl]
+
+
+[defines_opengl]
+GL_SILENCE_DEPRECATION=1
+
+[cppflags_opengl]
+
+
+[cxxflags_opengl]
+
+
+[cflags_opengl]
+
+
+[sharedlinkflags_opengl]
+
+
+[exelinkflags_opengl]
+
+
+[sysroot_opengl]
+
+
+[frameworks_opengl]
+OpenGL
+
+[frameworkdirs_opengl]
+
+
+[rootpath_opengl]
+/Users/valerij/.conan/data/opengl/system/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
+
+[name_opengl]
+opengl
+
+[version_opengl]
+system
+
+[generatornames_opengl]
+
+
+[generatorfilenames_opengl]
+cmake_find_package=opengl_system
+cmake_find_package_multi=opengl_system
+
+
 [USER_doxygen]
+[USER_glfw]
 [USER_libuuid]
+[USER_opengl]
+[USER_raylib]
 [USER_xapian-core]
 [USER_zlib]
 [ENV_doxygen]
 PATH=["/Users/valerij/.conan/data/doxygen/1.8.20/_/_/package/2d36ef93f4aac51333b231bcccb770deba4580d7/bin"]
+[ENV_raylib]
 [ENV_xapian-core]
-AUTOMAKE_CONAN_INCLUDES=["/Users/valerij/.conan/data/xapian-core/1.4.18/_/_/package/9282a40774a88010b7c4ad6c26e9598ec76fb393/bin/share/aclocal"]
-PATH=["/Users/valerij/.conan/data/xapian-core/1.4.18/_/_/package/9282a40774a88010b7c4ad6c26e9598ec76fb393/bin"]
+AUTOMAKE_CONAN_INCLUDES=["/Users/valerij/.conan/data/xapian-core/1.4.18/_/_/package/1f3407b75fae86b013316f59a8df80a9399da133/bin/share/aclocal"]
+PATH=["/Users/valerij/.conan/data/xapian-core/1.4.18/_/_/package/1f3407b75fae86b013316f59a8df80a9399da133/bin"]
+[ENV_glfw]
 [ENV_libuuid]
 [ENV_zlib]
+[ENV_opengl]

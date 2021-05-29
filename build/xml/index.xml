@@ -6,16 +6,17 @@
     <member refid="class_position_1acbfdf523b403104849ffb368bd5d260a" kind="function"><name>print</name></member>
     <member refid="class_position_1a010eadccb7b73deed479b13ca6658d41" kind="function"><name>set_board</name></member>
     <member refid="class_position_1a83377e38d96f2aa837d08e386dab1ce7" kind="function"><name>copy</name></member>
-    <member refid="class_position_1a3b5798c980d1c02b44524986d32a0d69" kind="function"><name>move</name></member>
+    <member refid="class_position_1a4dc42f3d6a40d56c8aa6d6af6719a13c" kind="function"><name>move</name></member>
     <member refid="class_position_1a6c7fb640229a1c494467a4a9b0d65bb7" kind="function"><name>all_moves</name></member>
     <member refid="class_position_1a3fbc47142032476b8f5165507dd6034a" kind="function"><name>fig_moves</name></member>
   </compound>
   <compound refid="class_searcher" kind="class"><name>Searcher</name>
     <member refid="class_searcher_1a7f0d52a713d4c221d494fa455cc5bf98" kind="variable"><name>queen_weight</name></member>
     <member refid="class_searcher_1a90ba4cb83bd6f4d837ccaed9b1835119" kind="variable"><name>simple_weight</name></member>
+    <member refid="class_searcher_1a4a3029efae29747c484b96d3700b4a42" kind="variable"><name>weights</name></member>
     <member refid="class_searcher_1a8140f189be693ad99a65bdf7396c663f" kind="function"><name>find</name></member>
     <member refid="class_searcher_1ad62bfd90ecff5defb2ce8124a999e3dc" kind="function"><name>estimate_board</name></member>
-    <member refid="class_searcher_1aacfcf539ac5df47fc396b9b35c1f0e09" kind="function"><name>analize_move</name></member>
+    <member refid="class_searcher_1a81ab67b8eb544c3b483bc3c539f0739c" kind="function"><name>analize_move</name></member>
   </compound>
   <compound refid="lib_8cpp" kind="file"><name>lib.cpp</name>
     <member refid="lib_8cpp_1a8abe6cc07d3222213569068a53724de2" kind="function"><name>not_random</name></member>
@@ -67,6 +68,7 @@
     <member refid="test_8cpp_1a6af970465f62767b778f8f2e60cf4eda" kind="function"><name>TEST_CASE</name></member>
     <member refid="test_8cpp_1af8a997172198f542f4725038ad9aa133" kind="function"><name>TEST_CASE</name></member>
     <member refid="test_8cpp_1ad7f5be872d9ee3db4c654667ec16c0ac" kind="function"><name>TEST_CASE</name></member>
+    <member refid="test_8cpp_1a1aa97dd69b9d09f4c531414e155e5a9b" kind="function"><name>TEST_CASE</name></member>
   </compound>
   <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
   </compound>

@@ -15,6 +15,21 @@ class Searcher{
          * ценность фигур, дамки и обычной
          */
         int simple_weight = 1;
+        int weight = 500;       //< weight of field for queen
+
+        /**
+         * веса для полей(это для чёрных, для белых это поля 7 - x,y)
+         */
+        std::vector<std::vector<int>> weights = {
+            {500, 0, 500, 0, 500, 0, 500, 0},
+            {0, 490, 0, 495, 0, 495, 0, 490},
+            {480, 0, 485, 0, 490, 0, 487, 0},
+            {0, 450, 0, 470, 0, 470, 0, 450},
+            {430, 0, 460, 0, 460, 0, 440,0},
+            {0, 420, 0, 430, 0, 430, 0, 420},
+            {410, 0, 410, 0, 410, 0, 410, 0},
+            {0, 400, 0, 400, 0, 400, 0, 400}
+        };
 
         /** 
          * \brief самая главная функция, она ищет лучший ход за чёрных
@@ -38,7 +53,9 @@ class Searcher{
          * \param position  -текущая позиция в узле дерева
          * \param move - исследуемых ход - ребро дерева
          * \param h - высота узла до листа, при h = 1 возвращается estimate_board()
+         * \param alfa - параметр для альфа-бетта отсечений
          */
-        long int analize_move(Position position, std::vector<int> move, int h);
+        long int analize_move(Position position, std::vector<int> const& move, 
+                        int h, long int alfa = -10000000);
 };
 

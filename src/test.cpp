@@ -419,7 +419,7 @@ TEST_CASE("Searcher's things"){
     Searcher analizer;
     std::string board = "._._._.__w_._._.._w_w_w__._._B_.._w_w_w__._._._.._w_w_w__._._._.";
     test.set_board(board,true);
-    CHECK(analizer.estimate_board(board,true) == 0);
+    CHECK(analizer.estimate_board(board,true) <= 0);
     CHECK(test.board == board);
     board = "._._._.__._._._.._._._.__._._._.._._w_.__._._._.._._._b__b_._._.";
     CHECK(analizer.estimate_board(board,false) > 0);
@@ -505,6 +505,22 @@ TEST_CASE("Short game with stupid player"){
 }
 
 
+
+TEST_CASE("search tree with h = 7"){
+    int H = 7;
+    Position position;
+    position.set_board(gen_start(),true);
+    Searcher analizer;
+    position.move({2,2,3,3});
+    auto start = std::chrono::steady_clock::now();
+    auto found = analizer.find(position,H);
+    auto end = std::chrono::steady_clock::now();
+    std::chrono::duration<double> elapsed_seconds = end - start;
+    double time = elapsed_seconds.count();
+    CHECK(time<2);
+    position.move(found);
+    CHECK(analizer.estimate_board(position.board,false)>=0);
+}
 
 
 

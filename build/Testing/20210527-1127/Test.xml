@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20210527-1127-Experimental"
+	Name="(empty)"
+	Generator="ctest-3.19.2"
+	CompilerName=""
+	CompilerVersion=""
+	OSName="macOS"
+	Hostname="MacBook-Pro-Valerij.local"
+	OSRelease="11.2.3"
+	OSVersion="20D91"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="142"
+	ProcessorCacheSize="32768"
+	NumberOfLogicalCPU="8"
+	NumberOfPhysicalCPU="4"
+	TotalVirtualMemory="1024"
+	TotalPhysicalMemory="8192"
+	LogicalProcessorsPerPhysical="8"
+	ProcessorClockFrequency="1400"
+	>
+	<Testing>
+		<StartDateTime>May 28 02:58 MSK</StartDateTime>
+		<StartTestTime>1622159909</StartTestTime>
+		<TestList>
+			<Test>./src/Moving-simple-taking-2</Test>
+			<Test>./src/Moving-simple-not_tacking</Test>
+			<Test>./src/Moving-queen</Test>
+			<Test>./src/Moving-simple-taking</Test>
+			<Test>./src/Something_works</Test>
+			<Test>./src/small_methoods</Test>
+			<Test>./src/Short_game</Test>
+			<Test>./src/find_all_moves_of_simple_figure</Test>
+			<Test>./src/all_moves_of_simple_figure_with_taking</Test>
+			<Test>./src/all_moves_of_queen</Test>
+			<Test>./src/all_moves_queen_taking</Test>
+			<Test>./src/Large_queen_moves</Test>
+			<Test>./src/Simple_search</Test>
+			<Test>./src/Searcher's_things</Test>
+			<Test>./src/all_moves_mixed_figures_with_taking</Test>
+			<Test>./src/all_moves_of_queen_with_taking</Test>
+			<Test>./src/Large_search</Test>
+			<Test>./src/Short_game_with_stupid_player</Test>
+		</TestList>
+		<Test Status="passed">
+			<Name>Moving-simple-taking-2</Name>
+			<Path>./src</Path>
+			<FullName>./src/Moving-simple-taking-2</FullName>
+			<FullCommandLine>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=Moving-simple-taking-2"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0154439</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=Moving-simple-taking-2"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyLTslPLkktLolVgDIUylKLijPz8xQyixWUjPSM9SyUuKLhiopK8xTKM0syFJR0dTNScwqUFNLyixTyC0qAOoq5bKkLkOwFuyw5sTi12EoBDAwVamCMgsTi4tQUGN9AIS0xMwfONzRXKM7OLChITUEyDaShCOxkqGlmMN1mOE1D0h5cklhSCtQaHOrs7BocrMgFACsFXjQ=</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>Moving-simple-not_tacking</Name>
+			<Path>./src</Path>
+			<FullName>./src/Moving-simple-not_tacking</FullName>
+			<FullCommandLine>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=Moving-simple-not_tacking"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0161733</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=Moving-simple-not_tacking"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyLTslPLkktLolVgDIUylKLijPz8xQyixWUjPSM9SyUuKLhiopK8xTKM0syFJR0dTNScwqUFNLyixTyC0qAOoq5bKkLkOwFuyw5sTi12EoBDAwVamCMgsTi4tQUGN9AIS0xMwfONzRXKM7OLChITUEyDaShCOxkqGlmMN1mOE1D0h5cklhSCtQaHOrs7BocrMgFACsFXjQ=</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>Moving-queen</Name>
+			<Path>./src</Path>
+			<FullName>./src/Moving-queen</FullName>
+			<FullCommandLine>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=Moving-queen"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0169008</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=Moving-queen"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyLTslPLkktLolVgDIUylKLijPz8xQyixWUjPSM9SyUuKLhiopK8xTKM0syFJR0dTNScwqUFNLyixTyC0qAOoq5bKkLkOwFuyw5sTi12EoBDAwVamCMgsTi4tQUGN9AIS0xMwfONzRXKM7OLChITUEyDaShCOxkqGmmMN2mOE1D0h5cklhSCtQaHOrs7BocrMgFACqQXjI=</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>Moving-simple-taking</Name>
+			<Path>./src</Path>
+			<FullName>./src/Moving-simple-taking</FullName>
+			<FullCommandLine>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=Moving-simple-taking"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0172343</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=Moving-simple-taking"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyLTslPLkktLolVgDIUylKLijPz8xQyixWUjPSM9SyUuKLhiopK8xTKM0syFJR0dTNScwqUFNLyixTyC0qAOoq5bKkLkOwFuyw5sTi12EoBDAwVamCMgsTi4tQUGN9AIS0xMwfONzRXKM7OLChITUEyDaShCOxkqGkWMN0WOE1D0h5cklhSCtQaHOrs7BocrMgFACvvXjg=</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>Something works</Name>
+			<Path>./src</Path>
+			<FullName>./src/Something_works</FullName>
+			<FullCommandLine>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=Something works"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0175872</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=Something works"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyLTslPLkktLolVgDIUylKLijPz8xQyixWUjPSM9SyUuKLhiopK8xTKM0syFJR0dTNScwqUFNLyixTyC0qAOoq5bKkLkOwFuyw5sTi12EoBDAwVamCMgsTi4tQUGN9AIS0xMwfONzRXKM7OLChITUEyDaShCOxk4k1D0h5cklhSCtQaHOrs7BocrMgFACi8Xio=</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>small methoods</Name>
+			<Path>./src</Path>
+			<FullName>./src/small_methoods</FullName>
+			<FullCommandLine>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=small methoods"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0187579</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=small methoods"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyLTslPLkktLolVgDIUylKLijPz8xQyixWUjPSM9SyUuKLhiopK8xTKM0syFJR0dTNScwqUFNLyixTyC0qAOoq5bKkLkOwFuyw5sTi12EoBDAwVamCMgsTi4tQUGN9AIS0xMwfONzRXKM7OLChITUEyDaShCOxkqGlmMN1mOE1D0h5cklhSCtQaHOrs7BocrMgFACsFXjQ=</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>Short game</Name>
+			<Path>./src</Path>
+			<FullName>./src/Short_game</FullName>
+			<FullCommandLine>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=Short game"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0189882</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=Short game"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyLTslPLkktLolVgDIUylKLijPz8xQyixWUjPSM9SyUuKLhiopK8xTKM0syFJR0dTNScwqUFNLyixTyC0qAOoq5bKkLkOwFuyw5sTi12EoBDAwVamCMgsTi4tQUGN9AIS0xMwfONzRXKM7OLChITUEyDaShCOxkqGkWMN0WOE1D0h5cklhSCtQaHOrs7BocrMgFACvvXjg=</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>find all moves of simple figure</Name>
+			<Path>./src</Path>
+			<FullName>./src/find_all_moves_of_simple_figure</FullName>
+			<FullCommandLine>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=find all moves of simple figure"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0199151</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=find all moves of simple figure"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyLTslPLkktLolVgDIUylKLijPz8xQyixWUjPSM9SyUuKLhiopK8xTKM0syFJR0dTNScwqUFNLyixTyC0qAOoq5bKkLkOwFuyw5sTi12EoBDAwVamCMgsTi4tQUGN9AIS0xMwfONzRXKM7OLChITUEyDaShCOxkiGmGxjDVxjhNQ9IeXJJYUgrUGhzq7OwaHKzIBQAxjV5Q====</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>all moves of simple figure with taking</Name>
+			<Path>./src</Path>
+			<FullName>./src/all_moves_of_simple_figure_with_taking</FullName>
+			<FullCommandLine>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=all moves of simple figure with taking"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0200797</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=all moves of simple figure with taking"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyLTslPLkktLolVgDIUylKLijPz8xQyixWUjPSM9SyUuKLhiopK8xTKM0syFJR0dTNScwqUFNLyixTyC0qAOoq5bKkLkOwFuyw5sTi12EoBDAwVamCMgsTi4tQUGN9AIS0xMwfONzRXKM7OLChITUEyDaShCOxkqGkmMN0mOE1D0h5cklhSCtQaHOrs7BocrMgFACobXjA=</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>all moves of queen</Name>
+			<Path>./src</Path>
+			<FullName>./src/all_moves_of_queen</FullName>
+			<FullCommandLine>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=all moves of queen"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.019205</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=all moves of queen"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyLTslPLkktLolVgDIUylKLijPz8xQyixWUjPSM9SyUuKLhiopK8xTKM0syFJR0dTNScwqUFNLyixTyC0qAOoq5bKkLkOwFuyw5sTi12EoBDAwVamCMgsTi4tQUGN9AIS0xMwfONzRXKM7OLChITUEyDaShCOxkqGmmMN2mOE1D0h5cklhSCtQaHOrs7BocrMgFACqQXjI=</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>all moves queen taking</Name>
+			<Path>./src</Path>
+			<FullName>./src/all_moves_queen_taking</FullName>
+			<FullCommandLine>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=all moves queen taking"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0170365</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=all moves queen taking"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyLTslPLkktLolVgDIUylKLijPz8xQyixWUjPSM9SyUuKLhiopK8xTKM0syFJR0dTNScwqUFNLyixTyC0qAOoq5bKkLkOwFuyw5sTi12EoBDAwVamCMgsTi4tQUGN9AIS0xMwfONzRXKM7OLChITUEyDaShCOxkqGlGMN1GOE1D0h5cklhSCtQaHOrs7BocrMgFACkxXiw=</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>Large queen moves</Name>
+			<Path>./src</Path>
+			<FullName>./src/Large_queen_moves</FullName>
+			<FullCommandLine>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=Large queen moves"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0153511</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=Large queen moves"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyLTslPLkktLolVgDIUylKLijPz8xQyixWUjPSM9SyUuKLhiopK8xTKM0syFJR0dTNScwqUFNLyixTyC0qAOoq5bKkLkOwFuyw5sTi12EoBDAwVamCMgsTi4tQUGN9AIS0xMwfONzRXKM7OLChITUEyDaShCOxkqGlGMN1GOE1D0h5cklhSCtQaHOrs7BocrMgFACkxXiw=</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>Simple search</Name>
+			<Path>./src</Path>
+			<FullName>./src/Simple_search</FullName>
+			<FullCommandLine>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=Simple search"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0136953</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=Simple search"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJytjzELwjAQhff8ijN7S6NQRXAq/oLgVBxCk9JgaULuqos/3hqaksXNt9w7uO/xrtWuI4N0h9XA0wS0bgKLwPfloTxx1m5HYZ7gZWkAXhSDGT2H3gVwnhYCmaii0szM5b/KGsXOnUKDZ4gS8E7GK0Sj015Br+y47eII+LDeG52lfYEQn1nT6kTXP9MyXJKieUHlrWmuUu7YB2KxYqU=</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>Searcher's things</Name>
+			<Path>./src</Path>
+			<FullName>./src/Searcher's_things</FullName>
+			<FullCommandLine>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=Searcher's things"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.00972241</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=Searcher's things"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyLTslPLkktLolVgDIUylKLijPz8xQyixWUjPSM9SyUuKLhiopK8xTKM0syFJR0dTNScwqUFNLyixTyC0qAOoq5bKkLkOwFuyw5sTi12EoBDAwVamCMgsTi4tQUGN9AIS0xMwfONzRXKM7OLChITUEyDaShCOxkqGnGMN3GOE1D0h5cklhSCtQaHOrs7BocrMgFACmmXi4=</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>all moves mixed figures with taking</Name>
+			<Path>./src</Path>
+			<FullName>./src/all_moves_mixed_figures_with_taking</FullName>
+			<FullCommandLine>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=all moves mixed figures with taking"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.00791454</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=all moves mixed figures with taking"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyLTslPLkktLolVgDIUylKLijPz8xQyixWUjPSM9SyUuKLhiopK8xTKM0syFJR0dTNScwqUFNLyixTyC0qAOoq5bKkLkOwFuyw5sTi12EoBDAwVamCMgsTi4tQUGN9AIS0xMwfONzRXKM7OLChITUEyDaShCOxkqGlGMN1GOE1D0h5cklhSCtQaHOrs7BocrMgFACkxXiw=</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>all moves of queen with taking</Name>
+			<Path>./src</Path>
+			<FullName>./src/all_moves_of_queen_with_taking</FullName>
+			<FullCommandLine>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=all moves of queen with taking"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.00801118</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=all moves of queen with taking"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyLTslPLkktLolVgDIUylKLijPz8xQyixWUjPSM9SyUuKLhiopK8xTKM0syFJR0dTNScwqUFNLyixTyC0qAOoq5bKkLkOwFuyw5sTi12EoBDAwVamCMgsTi4tQUGN9AIS0xMwfONzRXKM7OLChITUEyDaShCOxkqGlGMN1GOE1D0h5cklhSCtQaHOrs7BocrMgFACkxXiw=</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>Large search</Name>
+			<Path>./src</Path>
+			<FullName>./src/Large_search</FullName>
+			<FullCommandLine>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=Large search"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0594959</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=Large search"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJytjjELgzAUhPf8itfsikmhlUIn8ReETtIhmIihYkJebJf++NpgJEu33nQH77t3nbJ90BjusBl4ao/GzmAQKC+PZU1Jtx/5ZYaXCSPQohj15CgM1oN1YSWQ1OxUket/lT2P83qJGi8QxeCdjJOIWqVcwSDNtGd2BnwY57TK2r6Aj7u3Np5o/rMtw0WQYVlRcWuaVogD+QCB9V8F====</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>Short game with stupid player</Name>
+			<Path>./src</Path>
+			<FullName>./src/Short_game_with_stupid_player</FullName>
+			<FullCommandLine>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=Short game with stupid player"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>5.71611</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=Short game with stupid player"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJytkE0KgzAQhfeeYpq9oom/ha6kJ5CupAvRSENFQya2mx6+STDiprsO4fFmeN/ApB2WXnPUd9gMvLhCscwgEAiNWFSSoN1Dap3hLfQDSBg++CQJjIuCRWpDYMDi7SVxRY3SIrdaJkZZYedpVpkAzW2MZekWDlKn1BtWZo6jheXM7PLfOhzkTu475HgGVwl8vJEdIh98H8PYiWnvkwLwKaTkw2GbBZT7i20b9TT9ue2AN7rTq0GbW11fm+YUfAHVIGyW====</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<EndDateTime>May 28 02:58 MSK</EndDateTime>
+		<EndTestTime>1622159915</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>
