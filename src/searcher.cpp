@@ -89,11 +89,14 @@ long int Searcher::estimate_board(std::string board,bool color){
     минимизатор на текущем узле уже получил значение beta, подсчитывая свои дочерние поддеревья.
     он может и дальше продолжать абсолютоно бесполезную работу, ища n< beta, так как любой n< alfa
     поэтомо родительский узел(который ищет максимум) n никогда не выберет
+<<<<<<< HEAD
     это было alfa отсечение
     бетта отсечение - дать текущеме узлу лучшее значение дедушки, и заинициализировать 
     текущее значение best этим значением, и у parent узле возможно вернётся оно-же, и далее не пойдёт 
     вычисление, так как минимизатор дошёл до числа, равного best у parent для parent текущего
     тут это не ускоряет сильно
+=======
+>>>>>>> f788d8ff3968cf45179b4321ae5d16d666ac80ea
     альфа - бета отсечения не считают бесполезные ветки дерева вычислений
 */
 long int Searcher::analize_move(Position position, std::vector<int> const& move, 
@@ -115,7 +118,10 @@ long int Searcher::analize_move(Position position, std::vector<int> const& move,
     if (color == 1){
         // it was move of black, now it is for white
         std::vector<std::vector<int>> moves = position.all_moves(true);
+<<<<<<< HEAD
         if (moves.empty()) return 0;
+=======
+>>>>>>> f788d8ff3968cf45179b4321ae5d16d666ac80ea
         for (const auto &move1:moves){
             cur = analize_move(position,move1,h-1,best);
             if (cur < best){
@@ -127,7 +133,10 @@ long int Searcher::analize_move(Position position, std::vector<int> const& move,
     else{
         // for black
         std::vector<std::vector<int>> moves = position.all_moves(false);
+<<<<<<< HEAD
         if (moves.empty()) return 0;
+=======
+>>>>>>> f788d8ff3968cf45179b4321ae5d16d666ac80ea
         for (const auto &move1:moves){
             cur = analize_move(position,move1,h-1,best);
             if (cur > best){
