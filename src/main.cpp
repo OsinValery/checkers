@@ -194,10 +194,16 @@ int main() {
                                     // bot do move
                                     can_move = false;
                                     way = analizer.find(position,H);
-                                    position.move(way);
-                                    way = {};
-                                    choose_pos = choose_null;
-                                    can_move = true;
+                                    if (!way.empty()){
+                                        position.move(way);
+                                        way = {};
+                                        choose_pos = choose_null;
+                                        can_move = true;
+                                    }
+                                    else{
+                                        playing = false;
+
+                                    }
                                 }
                                 else{
                                     // clear move date for other player
