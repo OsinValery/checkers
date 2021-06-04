@@ -294,11 +294,20 @@ int main() {
         }
 
         // draw board
+        for (int y = 0;y<8;y+=1)
+            for (int x = (y+1) % 2;x<8;x+=2)
+                DrawRectangle(
+                    board_pos[0]+x*field_size,
+                    board_pos[1]-(y+1)*field_size,
+                    field_size,
+                    field_size,
+                    GREEN
+                );
         for (int i = 0;i<9;i+=1){
             DrawRectangle(
                 board_pos[0] ,
                 board_pos[1] - (8-i)*field_size ,
-                8 * field_size,
+                8 * field_size + board_line_width,
                 board_line_width,
                 BLUE
             );
