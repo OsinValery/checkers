@@ -353,26 +353,9 @@ build src/install: phony src/CMakeFiles/install.util
 
 
 #############################################
-# Utility command for rebuild_cache
+# Utility command for list_install_components
 
-build src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/valerij/Desktop/checkers/build/src && /usr/local/Cellar/cmake/3.19.2/bin/cmake --regenerate-during-build -S/Users/valerij/Desktop/checkers -B/Users/valerij/Desktop/checkers/build
-  DESC = Running CMake to regenerate build system...
-  pool = console
-  restat = 1
-
-build src/rebuild_cache: phony src/CMakeFiles/rebuild_cache.util
-
-
-#############################################
-# Utility command for edit_cache
-
-build src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/valerij/Desktop/checkers/build/src && /usr/local/Cellar/cmake/3.19.2/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-  DESC = No interactive CMake dialog available...
-  restat = 1
-
-build src/edit_cache: phony src/CMakeFiles/edit_cache.util
+build src/list_install_components: phony
 
 
 #############################################
@@ -400,67 +383,133 @@ build src/test: phony src/CMakeFiles/test.util
 
 
 #############################################
-# Utility command for list_install_components
+# Utility command for edit_cache
 
-build src/list_install_components: phony
+build src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/valerij/Desktop/checkers/build/src && /usr/local/Cellar/cmake/3.19.2/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
 
-# =============================================================================
-# Object build statements for EXECUTABLE target proj
-
-
-#############################################
-# Order-only phony target for proj
-
-build cmake_object_order_depends_target_proj: phony || src/CMakeFiles/proj.dir
-
-build src/CMakeFiles/proj.dir/main.cpp.o: CXX_COMPILER__proj_Debug ../src/main.cpp || cmake_object_order_depends_target_proj
-  DEFINES = -DGL_SILENCE_DEPRECATION=1
-  DEP_FILE = src/CMakeFiles/proj.dir/main.cpp.o.d
-  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -std=gnu++17
-  INCLUDES = -isystem /Users/valerij/.conan/data/raylib/3.5.0/_/_/package/ae7b4a21e86cab515aae772d753e2f259da75301/include -isystem /Users/valerij/.conan/data/glfw/3.3.3/_/_/package/5d1b60934b68854979d2b9196da03a6110a18ba0/include -isystem ../raylib-cpp
-  OBJECT_DIR = src/CMakeFiles/proj.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/proj.dir
-
-build src/CMakeFiles/proj.dir/lib.cpp.o: CXX_COMPILER__proj_Debug ../src/lib.cpp || cmake_object_order_depends_target_proj
-  DEFINES = -DGL_SILENCE_DEPRECATION=1
-  DEP_FILE = src/CMakeFiles/proj.dir/lib.cpp.o.d
-  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -std=gnu++17
-  INCLUDES = -isystem /Users/valerij/.conan/data/raylib/3.5.0/_/_/package/ae7b4a21e86cab515aae772d753e2f259da75301/include -isystem /Users/valerij/.conan/data/glfw/3.3.3/_/_/package/5d1b60934b68854979d2b9196da03a6110a18ba0/include -isystem ../raylib-cpp
-  OBJECT_DIR = src/CMakeFiles/proj.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/proj.dir
-
-build src/CMakeFiles/proj.dir/position.cpp.o: CXX_COMPILER__proj_Debug ../src/position.cpp || cmake_object_order_depends_target_proj
-  DEFINES = -DGL_SILENCE_DEPRECATION=1
-  DEP_FILE = src/CMakeFiles/proj.dir/position.cpp.o.d
-  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -std=gnu++17
-  INCLUDES = -isystem /Users/valerij/.conan/data/raylib/3.5.0/_/_/package/ae7b4a21e86cab515aae772d753e2f259da75301/include -isystem /Users/valerij/.conan/data/glfw/3.3.3/_/_/package/5d1b60934b68854979d2b9196da03a6110a18ba0/include -isystem ../raylib-cpp
-  OBJECT_DIR = src/CMakeFiles/proj.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/proj.dir
-
-build src/CMakeFiles/proj.dir/searcher.cpp.o: CXX_COMPILER__proj_Debug ../src/searcher.cpp || cmake_object_order_depends_target_proj
-  DEFINES = -DGL_SILENCE_DEPRECATION=1
-  DEP_FILE = src/CMakeFiles/proj.dir/searcher.cpp.o.d
-  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -std=gnu++17
-  INCLUDES = -isystem /Users/valerij/.conan/data/raylib/3.5.0/_/_/package/ae7b4a21e86cab515aae772d753e2f259da75301/include -isystem /Users/valerij/.conan/data/glfw/3.3.3/_/_/package/5d1b60934b68854979d2b9196da03a6110a18ba0/include -isystem ../raylib-cpp
-  OBJECT_DIR = src/CMakeFiles/proj.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/proj.dir
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target proj
+build src/edit_cache: phony src/CMakeFiles/edit_cache.util
 
 
 #############################################
-# Link the executable bin/proj
+# Utility command for rebuild_cache
 
-build bin/proj: CXX_EXECUTABLE_LINKER__proj_Debug src/CMakeFiles/proj.dir/main.cpp.o src/CMakeFiles/proj.dir/lib.cpp.o src/CMakeFiles/proj.dir/position.cpp.o src/CMakeFiles/proj.dir/searcher.cpp.o | /Users/valerij/.conan/data/raylib/3.5.0/_/_/package/ae7b4a21e86cab515aae772d753e2f259da75301/lib/libraylib.a /Users/valerij/.conan/data/glfw/3.3.3/_/_/package/5d1b60934b68854979d2b9196da03a6110a18ba0/lib/libglfw3.a
+build src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/valerij/Desktop/checkers/build/src && /usr/local/Cellar/cmake/3.19.2/bin/cmake --regenerate-during-build -S/Users/valerij/Desktop/checkers -B/Users/valerij/Desktop/checkers/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build src/rebuild_cache: phony src/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Object build statements for EXECUTABLE target window
+
+
+#############################################
+# Order-only phony target for window
+
+build cmake_object_order_depends_target_window: phony || src/CMakeFiles/window.dir
+
+build src/CMakeFiles/window.dir/main.cpp.o: CXX_COMPILER__window_Debug ../src/main.cpp || cmake_object_order_depends_target_window
+  DEFINES = -DGL_SILENCE_DEPRECATION=1
+  DEP_FILE = src/CMakeFiles/window.dir/main.cpp.o.d
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -std=gnu++17
+  INCLUDES = -isystem /Users/valerij/.conan/data/raylib/3.5.0/_/_/package/ae7b4a21e86cab515aae772d753e2f259da75301/include -isystem /Users/valerij/.conan/data/glfw/3.3.3/_/_/package/5d1b60934b68854979d2b9196da03a6110a18ba0/include -isystem ../raylib-cpp
+  OBJECT_DIR = src/CMakeFiles/window.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/window.dir
+
+build src/CMakeFiles/window.dir/lib.cpp.o: CXX_COMPILER__window_Debug ../src/lib.cpp || cmake_object_order_depends_target_window
+  DEFINES = -DGL_SILENCE_DEPRECATION=1
+  DEP_FILE = src/CMakeFiles/window.dir/lib.cpp.o.d
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -std=gnu++17
+  INCLUDES = -isystem /Users/valerij/.conan/data/raylib/3.5.0/_/_/package/ae7b4a21e86cab515aae772d753e2f259da75301/include -isystem /Users/valerij/.conan/data/glfw/3.3.3/_/_/package/5d1b60934b68854979d2b9196da03a6110a18ba0/include -isystem ../raylib-cpp
+  OBJECT_DIR = src/CMakeFiles/window.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/window.dir
+
+build src/CMakeFiles/window.dir/position.cpp.o: CXX_COMPILER__window_Debug ../src/position.cpp || cmake_object_order_depends_target_window
+  DEFINES = -DGL_SILENCE_DEPRECATION=1
+  DEP_FILE = src/CMakeFiles/window.dir/position.cpp.o.d
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -std=gnu++17
+  INCLUDES = -isystem /Users/valerij/.conan/data/raylib/3.5.0/_/_/package/ae7b4a21e86cab515aae772d753e2f259da75301/include -isystem /Users/valerij/.conan/data/glfw/3.3.3/_/_/package/5d1b60934b68854979d2b9196da03a6110a18ba0/include -isystem ../raylib-cpp
+  OBJECT_DIR = src/CMakeFiles/window.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/window.dir
+
+build src/CMakeFiles/window.dir/searcher.cpp.o: CXX_COMPILER__window_Debug ../src/searcher.cpp || cmake_object_order_depends_target_window
+  DEFINES = -DGL_SILENCE_DEPRECATION=1
+  DEP_FILE = src/CMakeFiles/window.dir/searcher.cpp.o.d
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -std=gnu++17
+  INCLUDES = -isystem /Users/valerij/.conan/data/raylib/3.5.0/_/_/package/ae7b4a21e86cab515aae772d753e2f259da75301/include -isystem /Users/valerij/.conan/data/glfw/3.3.3/_/_/package/5d1b60934b68854979d2b9196da03a6110a18ba0/include -isystem ../raylib-cpp
+  OBJECT_DIR = src/CMakeFiles/window.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/window.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target window
+
+
+#############################################
+# Link the executable bin/window
+
+build bin/window: CXX_EXECUTABLE_LINKER__window_Debug src/CMakeFiles/window.dir/main.cpp.o src/CMakeFiles/window.dir/lib.cpp.o src/CMakeFiles/window.dir/position.cpp.o src/CMakeFiles/window.dir/searcher.cpp.o | /Users/valerij/.conan/data/raylib/3.5.0/_/_/package/ae7b4a21e86cab515aae772d753e2f259da75301/lib/libraylib.a /Users/valerij/.conan/data/glfw/3.3.3/_/_/package/5d1b60934b68854979d2b9196da03a6110a18ba0/lib/libglfw3.a
   FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2
   LINK_LIBRARIES = /Users/valerij/.conan/data/raylib/3.5.0/_/_/package/ae7b4a21e86cab515aae772d753e2f259da75301/lib/libraylib.a  /Users/valerij/.conan/data/glfw/3.3.3/_/_/package/5d1b60934b68854979d2b9196da03a6110a18ba0/lib/libglfw3.a  -framework  Cocoa  -framework  IOKit  -framework  CoreFoundation  -framework  OpenGL
-  OBJECT_DIR = src/CMakeFiles/proj.dir
+  OBJECT_DIR = src/CMakeFiles/window.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = bin/proj
-  TARGET_PDB = proj.dbg
+  TARGET_FILE = bin/window
+  TARGET_PDB = window.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target console
+
+
+#############################################
+# Order-only phony target for console
+
+build cmake_object_order_depends_target_console: phony || src/CMakeFiles/console.dir
+
+build src/CMakeFiles/console.dir/console.cpp.o: CXX_COMPILER__console_Debug ../src/console.cpp || cmake_object_order_depends_target_console
+  DEP_FILE = src/CMakeFiles/console.dir/console.cpp.o.d
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -std=gnu++17
+  OBJECT_DIR = src/CMakeFiles/console.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/console.dir
+
+build src/CMakeFiles/console.dir/lib.cpp.o: CXX_COMPILER__console_Debug ../src/lib.cpp || cmake_object_order_depends_target_console
+  DEP_FILE = src/CMakeFiles/console.dir/lib.cpp.o.d
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -std=gnu++17
+  OBJECT_DIR = src/CMakeFiles/console.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/console.dir
+
+build src/CMakeFiles/console.dir/position.cpp.o: CXX_COMPILER__console_Debug ../src/position.cpp || cmake_object_order_depends_target_console
+  DEP_FILE = src/CMakeFiles/console.dir/position.cpp.o.d
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -std=gnu++17
+  OBJECT_DIR = src/CMakeFiles/console.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/console.dir
+
+build src/CMakeFiles/console.dir/searcher.cpp.o: CXX_COMPILER__console_Debug ../src/searcher.cpp || cmake_object_order_depends_target_console
+  DEP_FILE = src/CMakeFiles/console.dir/searcher.cpp.o.d
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -std=gnu++17
+  OBJECT_DIR = src/CMakeFiles/console.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/console.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target console
+
+
+#############################################
+# Link the executable bin/console
+
+build bin/console: CXX_EXECUTABLE_LINKER__console_Debug src/CMakeFiles/console.dir/console.cpp.o src/CMakeFiles/console.dir/lib.cpp.o src/CMakeFiles/console.dir/position.cpp.o src/CMakeFiles/console.dir/searcher.cpp.o
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2
+  OBJECT_DIR = src/CMakeFiles/console.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = bin/console
+  TARGET_PDB = console.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target proj_test
@@ -520,13 +569,15 @@ build bin/proj_test src/proj_test_tests-b858cb2.cmake: CXX_EXECUTABLE_LINKER__pr
 # =============================================================================
 # Target aliases.
 
+build console: phony bin/console
+
 build doctest: phony lib/libdoctest.a
 
 build libdoctest.a: phony lib/libdoctest.a
 
-build proj: phony bin/proj
-
 build proj_test: phony bin/proj_test
+
+build window: phony bin/window
 
 # =============================================================================
 # Folder targets.
@@ -557,7 +608,7 @@ build raylib-cpp/all: phony
 #############################################
 # Folder: /Users/valerij/Desktop/checkers/build/src
 
-build src/all: phony bin/proj bin/proj_test
+build src/all: phony bin/window bin/console bin/proj_test
 
 # =============================================================================
 # Built-in targets

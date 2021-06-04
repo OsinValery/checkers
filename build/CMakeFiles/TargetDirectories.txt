@@ -23,10 +23,11 @@
 /Users/valerij/Desktop/checkers/build/external/doctest/CMakeFiles/doctest.dir
 /Users/valerij/Desktop/checkers/build/src/CMakeFiles/install/strip.dir
 /Users/valerij/Desktop/checkers/build/src/CMakeFiles/install.dir
-/Users/valerij/Desktop/checkers/build/src/CMakeFiles/rebuild_cache.dir
-/Users/valerij/Desktop/checkers/build/src/CMakeFiles/edit_cache.dir
+/Users/valerij/Desktop/checkers/build/src/CMakeFiles/list_install_components.dir
 /Users/valerij/Desktop/checkers/build/src/CMakeFiles/install/local.dir
 /Users/valerij/Desktop/checkers/build/src/CMakeFiles/test.dir
-/Users/valerij/Desktop/checkers/build/src/CMakeFiles/list_install_components.dir
-/Users/valerij/Desktop/checkers/build/src/CMakeFiles/proj.dir
+/Users/valerij/Desktop/checkers/build/src/CMakeFiles/edit_cache.dir
+/Users/valerij/Desktop/checkers/build/src/CMakeFiles/rebuild_cache.dir
+/Users/valerij/Desktop/checkers/build/src/CMakeFiles/window.dir
+/Users/valerij/Desktop/checkers/build/src/CMakeFiles/console.dir
 /Users/valerij/Desktop/checkers/build/src/CMakeFiles/proj_test.dir

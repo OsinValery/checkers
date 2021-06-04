@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "bin/proj"
+			"path" : "bin/console"
 		}
 	],
 	"backtrace" : 1,
@@ -124,31 +124,6 @@
 					"fragment" : "-std=gnu++17"
 				}
 			],
-			"defines" : 
-			[
-				{
-					"backtrace" : 2,
-					"define" : "GL_SILENCE_DEPRECATION=1"
-				}
-			],
-			"includes" : 
-			[
-				{
-					"backtrace" : 2,
-					"isSystem" : true,
-					"path" : "/Users/valerij/.conan/data/raylib/3.5.0/_/_/package/ae7b4a21e86cab515aae772d753e2f259da75301/include"
-				},
-				{
-					"backtrace" : 2,
-					"isSystem" : true,
-					"path" : "/Users/valerij/.conan/data/glfw/3.3.3/_/_/package/5d1b60934b68854979d2b9196da03a6110a18ba0/include"
-				},
-				{
-					"backtrace" : 2,
-					"isSystem" : true,
-					"path" : "/Users/valerij/Desktop/checkers/raylib-cpp"
-				}
-			],
 			"language" : "CXX",
 			"languageStandard" : 
 			{
@@ -167,7 +142,7 @@
 			]
 		}
 	],
-	"id" : "proj::@145eef247bfb46b6828c",
+	"id" : "console::@145eef247bfb46b6828c",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -179,52 +154,12 @@
 			{
 				"fragment" : "",
 				"role" : "flags"
-			},
-			{
-				"fragment" : "/Users/valerij/.conan/data/raylib/3.5.0/_/_/package/ae7b4a21e86cab515aae772d753e2f259da75301/lib/libraylib.a",
-				"role" : "libraries"
-			},
-			{
-				"fragment" : "/Users/valerij/.conan/data/glfw/3.3.3/_/_/package/5d1b60934b68854979d2b9196da03a6110a18ba0/lib/libglfw3.a",
-				"role" : "libraries"
-			},
-			{
-				"fragment" : "-framework",
-				"role" : "libraries"
-			},
-			{
-				"fragment" : "Cocoa",
-				"role" : "libraries"
-			},
-			{
-				"fragment" : "-framework",
-				"role" : "libraries"
-			},
-			{
-				"fragment" : "IOKit",
-				"role" : "libraries"
-			},
-			{
-				"fragment" : "-framework",
-				"role" : "libraries"
-			},
-			{
-				"fragment" : "CoreFoundation",
-				"role" : "libraries"
-			},
-			{
-				"fragment" : "-framework",
-				"role" : "libraries"
-			},
-			{
-				"fragment" : "OpenGL",
-				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
-	"name" : "proj",
-	"nameOnDisk" : "proj",
+	"name" : "console",
+	"nameOnDisk" : "console",
 	"paths" : 
 	{
 		"build" : "src",
@@ -248,7 +183,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/main.cpp",
+			"path" : "src/console.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
