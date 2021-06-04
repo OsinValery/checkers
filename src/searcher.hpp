@@ -20,7 +20,7 @@ class Searcher{
         /**
          * веса для полей(это для чёрных, для белых это поля 7 - x,y)
          */
-        std::vector<std::vector<int>> weights = {
+        std::vector<std::vector<int>> weights{
             {500, 0, 500, 0, 500, 0, 500, 0},
             {0, 490, 0, 495, 0, 495, 0, 490},
             {480, 0, 485, 0, 490, 0, 487, 0},
@@ -46,7 +46,7 @@ class Searcher{
          * \param board доска для оценки
          * \param color с точки зрения какого цвета оценивать доску \n true для белых
          */
-        long int estimate_board(std::string board,bool color);
+        int estimate_board(std::string const& board,bool color);
 
         /**
          * \brief строит дерево для данного хода
@@ -55,7 +55,7 @@ class Searcher{
          * \param h - высота узла до листа, при h = 1 возвращается estimate_board()
          * \param alfa - параметр для альфа-бетта отсечений
          */
-        long int analize_move(Position position, std::vector<int> const& move, 
+        int analize_move(Position position, std::vector<int> const& move, 
                         int h, long int alfa = -10000000);
 };
 

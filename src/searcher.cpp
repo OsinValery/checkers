@@ -20,8 +20,8 @@ std::vector<int> Searcher::find(Position position, int h){
     std::vector<std::vector<int>> possible = position.all_moves(false);
     if (possible.empty()) {return result;}
     auto best = possible[0];
-    long int mark = -1900000000000;
-    long int cur = 0;
+    int mark = -19000000;
+    int cur = 0;
     for (const auto &move : possible){
         cur= analize_move(position,move,h,mark);
         if (cur > mark){
@@ -32,10 +32,10 @@ std::vector<int> Searcher::find(Position position, int h){
     return best;
 }
 
-long int Searcher::estimate_board(std::string board,bool color){
+int Searcher::estimate_board(std::string const& board,bool color){
     // color = true - white
     int value = 0;
-    int d = 0;
+    unsigned int d = 0;
     int white = 0;
     int black = 0;
     for (int y = 0; y < 8; y++)
@@ -89,39 +89,32 @@ long int Searcher::estimate_board(std::string board,bool color){
     минимизатор на текущем узле уже получил значение beta, подсчитывая свои дочерние поддеревья.
     он может и дальше продолжать абсолютоно бесполезную работу, ища n< beta, так как любой n< alfa
     поэтомо родительский узел(который ищет максимум) n никогда не выберет
-<<<<<<< HEAD
     это было alfa отсечение
     бетта отсечение - дать текущеме узлу лучшее значение дедушки, и заинициализировать 
     текущее значение best этим значением, и у parent узле возможно вернётся оно-же, и далее не пойдёт 
     вычисление, так как минимизатор дошёл до числа, равного best у parent для parent текущего
     тут это не ускоряет сильно
-=======
->>>>>>> f788d8ff3968cf45179b4321ae5d16d666ac80ea
     альфа - бета отсечения не считают бесполезные ветки дерева вычислений
 */
-long int Searcher::analize_move(Position position, std::vector<int> const& move, 
+int Searcher::analize_move(Position position, std::vector<int> const& move, 
                 int h, long int alfa){
     // h in 1 3 5 - it is for black
     position.move(move);
     if (h == 0){
         return estimate_board(position.board,false);
     }
-    long int cur = 0;
-    long int best = 10000000;
-    int color = h % 2;
-    if (color == 0){best = -10000000;}
+    int cur = 0;
+    int best;
 
     // возможно не нужно
-    if (not have_color(position.board,'w')) return  10000000;
-    if (not have_color(position.board,'b')) return -10000000;
+    if (!have_color(position.board,'w')) return  10000000;
+    if (!have_color(position.board,'b')) return -10000000;
 
-    if (color == 1){
+    if (h & 1){
         // it was move of black, now it is for white
-        std::vector<std::vector<int>> moves = position.all_moves(true);
-<<<<<<< HEAD
+        auto moves = position.all_moves(true);
         if (moves.empty()) return 0;
-=======
->>>>>>> f788d8ff3968cf45179b4321ae5d16d666ac80ea
+        best = 10000000;
         for (const auto &move1:moves){
             cur = analize_move(position,move1,h-1,best);
             if (cur < best){
@@ -132,11 +125,9 @@ long int Searcher::analize_move(Position position, std::vector<int> const& move,
     }
     else{
         // for black
-        std::vector<std::vector<int>> moves = position.all_moves(false);
-<<<<<<< HEAD
+        auto moves = position.all_moves(false);
         if (moves.empty()) return 0;
-=======
->>>>>>> f788d8ff3968cf45179b4321ae5d16d666ac80ea
+        best = -10000000;
         for (const auto &move1:moves){
             cur = analize_move(position,move1,h-1,best);
             if (cur > best){
