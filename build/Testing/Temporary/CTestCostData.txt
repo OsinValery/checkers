@@ -1,10 +1,10 @@
 Something 0 1
 small 0 1
-Moving-simple-taking 130 0.0266964
-Moving-simple-taking-2 130 0.0266894
-Moving-simple-not_tacking 131 0.0266766
+Moving-simple-taking 137 0.0264483
+Moving-simple-taking-2 137 0.0264638
+Moving-simple-not_tacking 138 0.0264626
 Short 0 1
-Moving-queen 131 0.0266672
+Moving-queen 138 0.0264486
 find 0 0
 all 0 0
 all 0 0
@@ -1907,19 +1907,124 @@ all 0 0
 all 0 0
 Short 0 0
 search 0 0
-Something works 1 0.0200811
-small methoods 1 0.0208188
-Short game 1 0.0217649
-find all moves of simple figure 1 0.0222401
-all moves of simple figure with taking 1 0.0237295
-all moves of queen 1 0.0238071
-all moves queen taking 1 0.0211537
-Large queen moves 1 0.0189902
-Simple search 1 0.0173622
-Large search 1 0.056264
-Searcher's things 1 0.0129518
-all moves mixed figures with taking 1 0.0110313
-all moves of queen with taking 1 0.00901415
-Short game with stupid player 1 2.70078
-search tree with h = 7 1 0.804793
+Something 0 1
+small 0 1
+Short 0 1
+find 0 0
+all 0 0
+all 0 0
+all 0 0
+Large 0 0
+Simple 0 1
+Large 0 1
+Searcher's 0 1
+all 0 0
+all 0 0
+Short 0 0
+search 0 0
+Something 0 1
+small 0 1
+Short 0 1
+find 0 0
+all 0 0
+all 0 0
+all 0 0
+Large 0 0
+Simple 0 1
+Large 0 1
+Searcher's 0 1
+all 0 0
+all 0 0
+Short 0 0
+search 0 0
+Something 0 1
+small 0 1
+Short 0 1
+find 0 0
+all 0 0
+all 0 0
+all 0 0
+Large 0 0
+Simple 0 1
+Large 0 1
+Searcher's 0 1
+all 0 0
+all 0 0
+Short 0 0
+search 0 0
+Something 0 1
+small 0 1
+Short 0 1
+find 0 0
+all 0 0
+all 0 0
+all 0 0
+Large 0 0
+Simple 0 1
+Large 0 1
+Searcher's 0 1
+all 0 0
+all 0 0
+Short 0 0
+search 0 0
+Something 0 1
+small 0 1
+Short 0 1
+find 0 0
+all 0 0
+all 0 0
+all 0 0
+Large 0 0
+Simple 0 1
+Large 0 1
+Searcher's 0 1
+all 0 0
+all 0 0
+Short 0 0
+search 0 0
+Something 0 1
+small 0 1
+Short 0 1
+find 0 0
+all 0 0
+all 0 0
+all 0 0
+Large 0 0
+Simple 0 1
+Large 0 1
+Searcher's 0 1
+all 0 0
+all 0 0
+Short 0 0
+search 0 0
+Something 0 1
+small 0 1
+Short 0 1
+find 0 0
+all 0 0
+all 0 0
+all 0 0
+Large 0 0
+Simple 0 1
+Large 0 1
+Searcher's 0 1
+all 0 0
+all 0 0
+Short 0 0
+search 0 0
+Something works 1 0.0256202
+small methoods 1 0.0260158
+Short game 1 0.0254332
+find all moves of simple figure 1 0.0260797
+all moves of simple figure with taking 1 0.026897
+all moves of queen 1 0.0272892
+all moves queen taking 1 0.0241935
+Large queen moves 1 0.0219721
+Simple search 1 0.0190125
+Large search 1 0.056865
+Searcher's things 1 0.0145255
+all moves mixed figures with taking 1 0.0124968
+all moves of queen with taking 1 0.0109546
+Short game with stupid player 1 2.10019
+search tree with h = 7 1 0.798125
 ---

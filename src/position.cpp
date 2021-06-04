@@ -131,7 +131,7 @@ std::vector<std::vector<int>> Position::fig_moves(int x, int y, bool free , int 
     // 2 - down-right
     // 3 - down-left
     // 4 - up-left
-    unsigned long d = x + 8 * y;
+    int d = x + 8 * y;
     std::vector<std::vector<int>> temp_moves;
     bool is_queen = not islower(board[d]);
     char color = tolower(board[d]);
@@ -154,7 +154,7 @@ std::vector<std::vector<int>> Position::fig_moves(int x, int y, bool free , int 
                     temp_moves.push_back({x,y, x+1,y+1});
                 }
             }
-            else if (x<6 and y<6 and not equal_color(color,board[d+9]) ){
+            else if (x<6 and y<6 and !equal_color(color,board[d+9]) ){
                 if (board[d+18] == '.'){
                     temp_moves.push_back({x,y,x+2,y+2});
                     Position temp_pos = copy();
@@ -185,7 +185,7 @@ std::vector<std::vector<int>> Position::fig_moves(int x, int y, bool free , int 
                     temp_moves.push_back({x,y,x+1,y-1});
                 }
             }
-            else if (x<6 and y>1 and not equal_color(color, board[d-7]) ){
+            else if (x<6 and y>1 and !equal_color(color, board[d-7]) ){
                 if (board[d-14] == '.'){
                     temp_moves.push_back({x,y,x+2,y-2});
                     Position temp_pos = copy();
@@ -216,7 +216,7 @@ std::vector<std::vector<int>> Position::fig_moves(int x, int y, bool free , int 
                     temp_moves.push_back({x,y,x-1,y-1});
                 }
             }
-            else if (x > 1 and y>1 and not equal_color(color,board[d-9]) ){
+            else if (x > 1 and y>1 and !equal_color(color,board[d-9]) ){
                 if (board[d-18] == '.'){
                     temp_moves.push_back({x,y,x-2,y-2});
                     Position temp_pos = copy();
@@ -247,7 +247,7 @@ std::vector<std::vector<int>> Position::fig_moves(int x, int y, bool free , int 
                     temp_moves.push_back({x,y, x-1,y+1});
                 }
             }
-            else if (x>1 and y < 6 and not equal_color(color,board[d+7]) ){
+            else if (x>1 and y < 6 and !equal_color(color,board[d+7]) ){
                 if (board[d+14] == '.'){
                     temp_moves.push_back({x,y, x-2,y+2});
                     Position temp_pos = copy();
@@ -282,17 +282,18 @@ std::vector<std::vector<int>> Position::fig_moves(int x, int y, bool free , int 
         if (not free and line == 3){
             // up - right
             bool end = false;
-            while (not end){
+            while (!end){
                 // check right and left lines
                 bool must = true;
                 int way_x = x;
                 int way_y = y;
                 while (must){
+                    int x8y = way_x + 8 * way_y;
                     if (way_x == 0 or way_y == 7){must = false;}
-                    else if (equal_color(color, board[way_x+7+8*way_y]) ){must = false;}
-                    else if (board[way_x+7+8*way_y] != '.'){
+                    else if (equal_color(color, board[x8y+7]) ){must = false;}
+                    else if (board[x8y+7] != '.'){
                         // враг на подветке найден
-                        if (way_x<2 or way_y>5 or board[way_x+18+8*way_y] != '.' ){must = false;}
+                        if (way_x<2 or way_y>5 or board[x8y+18] != '.' ){must = false;}
                         else{
                             must = false;
                             auto temp_pos = copy();
@@ -317,12 +318,13 @@ std::vector<std::vector<int>> Position::fig_moves(int x, int y, bool free , int 
                 way_y = y;
                 way_x = x;
                 while (must){
+                    int x8y = way_x + 8 * way_y;
                     if (way_x == 7 or way_y == 0){must = false;}
-                    else if (equal_color(color,board[way_x-7+8*way_y]) ){must=false;}
-                    else if (board[way_x+1+8*(way_y-1)] != '.' ){
+                    else if (equal_color(color,board[x8y-7]) ){must=false;}
+                    else if (board[x8y-7] != '.' ){
                         // враг найден на поддереве
                         must = false;
-                        if (way_x>5 or way_y<2 or board[way_x-14+8*way_y] != '.' ){}
+                        if (way_x>5 or way_y<2 or board[x8y-14] != '.' ){}
                         else{
                             temp_moves.push_back({cur_x,cur_y,x,y,way_x+2,way_y-2});
                             auto temp_pos = copy();
@@ -376,12 +378,13 @@ std::vector<std::vector<int>> Position::fig_moves(int x, int y, bool free , int 
         else if (free){
             bool must = true;
             while(must){
+                int d = x + 8 * y;
                 if (x==7 or y == 7){must=false;}
-                else if (equal_color(color,board[x+9+8*y]) ){must=false;}
-                else if (board[x+9+8*y] != '.' ) {
+                else if (equal_color(color,board[d+9]) ){must=false;}
+                else if (board[d+9] != '.' ) {
                     must = false;
                     // враг на линии
-                    if (x>5 or y>5 or board[x+18+8*y] != '.' ){}
+                    if (x>5 or y>5 or board[d+18] != '.' ){}
                     else{
                         // take
                         temp_moves.push_back({cur_x,cur_y,x+2,y+2});
@@ -410,19 +413,20 @@ std::vector<std::vector<int>> Position::fig_moves(int x, int y, bool free , int 
         if (not free and line == 4){
             // down - right
             bool end = false;
-            while (not end){
+            while (!end){
                 // check right and left lines of main way
                 int way_x = x;
                 int way_y = y;
                 bool must = true;
                 // check up - right and down - left lines
                 while (must){
+                    int x8y = way_x + 8 * way_y;
                     if (way_x == 7 or way_y == 7){must = false;}
-                    else if (equal_color(color, board[way_x+9+8*way_y])){must=false;}
-                    else if (board[way_x+9+8*way_y] != '.'){
+                    else if (equal_color(color, board[x8y+9])){must=false;}
+                    else if (board[x8y+9] != '.'){
                         // enemy found
                         must = false;
-                        if (way_x > 5 or way_y > 5 or board[way_x+18+8*way_y] != '.'){}
+                        if (way_x > 5 or way_y > 5 or board[x8y+18] != '.'){}
                         else{
                             // try take it
                             temp_moves.push_back({cur_x,cur_y,x,y,way_x+2,way_y+2});
@@ -448,11 +452,12 @@ std::vector<std::vector<int>> Position::fig_moves(int x, int y, bool free , int 
                 way_x = x;
                 must = true;
                 while (must){
+                    int x8y = way_y * 8 + way_x;
                     if (way_x == 0 or way_y == 0){must=false;}
-                    else if (equal_color(color, board[way_x-9+8*way_y])){must=false;}
-                    else if (board[way_x-9+8*way_y] != '.'){
+                    else if (equal_color(color, board[x8y-9])){must=false;}
+                    else if (board[x8y-9] != '.'){
                         must = false;
-                        if (way_x < 2 or way_y < 2 or board[way_x-18+8*way_y] != '.'){}
+                        if (way_x < 2 or way_y < 2 or board[x8y-18] != '.'){}
                         else{
                             temp_moves.push_back({cur_x,cur_y,x,y,way_x-2,way_y-2});
                             auto temp_pos = copy();
@@ -504,13 +509,12 @@ std::vector<std::vector<int>> Position::fig_moves(int x, int y, bool free , int 
         else if (free){
             bool must = true;
             while (must){
-                if (x==7 or y == 0){
-                    must=false;
-                    }
-                else if (equal_color(color, board[x-7+8*y]) ){must=false;}
-                else if (board[x-7+8*y] != '.'){
+                int d = x + 8 * y;
+                if (x==7 or y == 0){must=false;}
+                else if (equal_color(color, board[d-7]) ){must=false;}
+                else if (board[d-7] != '.'){
                     must = false;
-                    if (x > 5 or y < 2 or board[x-14+8*y] != '.'){}
+                    if (x > 5 or y < 2 or board[d-14] != '.'){}
                     else{
                         temp_moves.push_back({cur_x,cur_y,x+2,y-2});
                         auto temp_pos = copy();
@@ -542,16 +546,17 @@ std::vector<std::vector<int>> Position::fig_moves(int x, int y, bool free , int 
                 bool must = true;
                 // check down - right line
                 while (must){
+                    int x8y = way_y * 8 + way_x;
                     if (way_x == 7 or way_y == 0){must=false;}
-                    else if (equal_color(color, board[way_x-7+8*way_y])){must=false;}
-                    else if (board[way_x-7+8*way_y] == '.'){
+                    else if (equal_color(color, board[x8y-7])){must=false;}
+                    else if (board[x8y-7] == '.'){
                         way_x += 1;
                         way_y -= 1;
                     }
                     else{
                         // enemy found
                         must = false;
-                        if (way_x > 5 or way_y < 2 or board[way_x-14+8*way_y] != '.'){}
+                        if (way_x > 5 or way_y < 2 or board[x8y-14] != '.'){}
                         else {
                             temp_moves.push_back({cur_x,cur_y,x,y,way_x+2,way_y-2});
                             auto temp_pos = copy();
@@ -571,16 +576,17 @@ std::vector<std::vector<int>> Position::fig_moves(int x, int y, bool free , int 
                 way_x = x;
                 must = true;
                 while (must){
+                    int x8y = 8 * way_y + way_x;
                     if (way_x == 0 or way_y == 7){must=false;}
-                    else if (equal_color(color, board[way_x+7+8*way_y])){must=false;}
-                    else if (board[way_x+7+8*way_y] == '.'){
+                    else if (equal_color(color, board[x8y+7])){must=false;}
+                    else if (board[x8y+7] == '.'){
                         way_y += 1;
                         way_x -= 1;
                     }
                     else{
                         // enemy found
                         must = false;
-                        if (way_x < 2 or way_y > 5 or board[way_x+14+8*way_y] != '.'){}
+                        if (way_x < 2 or way_y > 5 or board[x8y+14] != '.'){}
                         else{
                             temp_moves.push_back({cur_x,cur_y,x,y,way_x-2,way_y+2});
                             auto temp_pos = copy();
@@ -628,16 +634,17 @@ std::vector<std::vector<int>> Position::fig_moves(int x, int y, bool free , int 
             // if free
             bool must = true;
             while (must){
+                int d = x + 8 * y;
                 if (x==0 or y == 0){must=false;}
-                else if (equal_color(color,board[x-9+8*y])){must=false;}
-                else if (board[x-9+8*y] == '.'){
+                else if (equal_color(color,board[d-9])){must=false;}
+                else if (board[d-9] == '.'){
                     y -= 1;
                     x -= 1;
                     temp_moves.push_back({cur_x,cur_y,x,y});
                 }
                 else{
                     must = false;
-                    if (x < 2 or y<2 or board[x-18+8*y] != '.'){}
+                    if (x < 2 or y<2 or board[d-18] != '.'){}
                     else{
                         temp_moves.push_back({cur_x,cur_y,x-2,y-2});
                         auto temp_pos = copy();
@@ -664,16 +671,17 @@ std::vector<std::vector<int>> Position::fig_moves(int x, int y, bool free , int 
                 bool must = true;
                 // up - right line
                 while(must){
+                    int x8y = way_y * 8 + way_x;
                     if (way_x==7 or way_y == 7){must=false;}
-                    else if (equal_color(color, board[way_x+9+8*way_y])){must=false;}
-                    else if (board[way_x+9+8*way_y] == '.'){
+                    else if (equal_color(color, board[x8y+9])){must=false;}
+                    else if (board[x8y+9] == '.'){
                         way_y += 1;
                         way_x += 1;
                     }
                     else{
                         // enemy found
                         must = false;
-                        if (way_x>5 or way_y > 5 or board[way_x+18+8*way_y] != '.'){}
+                        if (way_x>5 or way_y > 5 or board[x8y+18] != '.'){}
                         else {
                             temp_moves.push_back({cur_x,cur_y,x,y,way_x+2,way_y+2});
                             auto temp_pos = copy();
@@ -693,16 +701,17 @@ std::vector<std::vector<int>> Position::fig_moves(int x, int y, bool free , int 
                 way_y = y;
                 must = true;
                 while (must){
+                    int x8y = way_x + way_y * 8;
                     if (way_x == 0 or way_y == 0){must = false;}
-                    else if (equal_color(color, board[way_x-9+8*way_y])){must = false;}
-                    else if (board[way_x-9+8*way_y] == '.'){
+                    else if (equal_color(color, board[x8y-9])){must = false;}
+                    else if (board[x8y-9] == '.'){
                         way_y -= 1;
                         way_x -= 1;
                     }
                     else{
                         // enemy found
                         must = false;
-                        if (way_x < 2 or way_y < 2 or board[way_x-18+8*way_y] != '.'){}
+                        if (way_x < 2 or way_y < 2 or board[x8y-18] != '.'){}
                         else {
                             temp_moves.push_back({cur_x,cur_y,x,y,way_x-2,way_y-2});
                             auto temp_pos = copy();

@@ -24,13 +24,13 @@
 	ProcessorClockFrequency="1400"
 	>
 	<Testing>
-		<StartDateTime>Jun 04 15:19 MSK</StartDateTime>
-		<StartTestTime>1622809159</StartTestTime>
+		<StartDateTime>Jun 04 16:05 MSK</StartDateTime>
+		<StartTestTime>1622811951</StartTestTime>
 		<TestList>
-			<Test>./src/Moving-simple-taking-2</Test>
 			<Test>./src/Moving-simple-taking</Test>
-			<Test>./src/Moving-simple-not_tacking</Test>
 			<Test>./src/Moving-queen</Test>
+			<Test>./src/Moving-simple-not_tacking</Test>
+			<Test>./src/Moving-simple-taking-2</Test>
 			<Test>./src/Something_works</Test>
 			<Test>./src/small_methoods</Test>
 			<Test>./src/Short_game</Test>
@@ -48,39 +48,13 @@
 			<Test>./src/Short_game_with_stupid_player</Test>
 		</TestList>
 		<Test Status="passed">
-			<Name>Moving-simple-taking-2</Name>
-			<Path>./src</Path>
-			<FullName>./src/Moving-simple-taking-2</FullName>
-			<FullCommandLine>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=Moving-simple-taking-2"</FullCommandLine>
-			<Results>
-				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.0170762</Value>
-				</NamedMeasurement>
-				<NamedMeasurement type="numeric/double" name="Processors">
-					<Value>1</Value>
-				</NamedMeasurement>
-				<NamedMeasurement type="text/string" name="Completion Status">
-					<Value>Completed</Value>
-				</NamedMeasurement>
-				<NamedMeasurement type="text/string" name="Command Line">
-					<Value>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=Moving-simple-taking-2"</Value>
-				</NamedMeasurement>
-				<NamedMeasurement type="text/string" name="Environment">
-					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
-				</NamedMeasurement>
-				<Measurement>
-					<Value encoding="base64" compression="gzip">eJyLTslPLkktLolVgDIUylKLijPz8xQyixWUjPSM9SyUuKLhiopK8xTKM0syFJR0dTNScwqUFNLyixTyC0qAOoq5bKkLkOwFuyw5sTi12EoBDAwVamCMgsTi4tQUGN9AIS0xMwfON7RQKM7OLChITUEyDaShCOxkqGlmMN1mOE1D0h5cklhSCtQaHOrs7BocrMgFACtpXjU=</Value>
-				</Measurement>
-			</Results>
-		</Test>
-		<Test Status="passed">
 			<Name>Moving-simple-taking</Name>
 			<Path>./src</Path>
 			<FullName>./src/Moving-simple-taking</FullName>
 			<FullCommandLine>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=Moving-simple-taking"</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.0185169</Value>
+					<Value>0.0202404</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -100,39 +74,13 @@
 			</Results>
 		</Test>
 		<Test Status="passed">
-			<Name>Moving-simple-not_tacking</Name>
-			<Path>./src</Path>
-			<FullName>./src/Moving-simple-not_tacking</FullName>
-			<FullCommandLine>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=Moving-simple-not_tacking"</FullCommandLine>
-			<Results>
-				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.0186317</Value>
-				</NamedMeasurement>
-				<NamedMeasurement type="numeric/double" name="Processors">
-					<Value>1</Value>
-				</NamedMeasurement>
-				<NamedMeasurement type="text/string" name="Completion Status">
-					<Value>Completed</Value>
-				</NamedMeasurement>
-				<NamedMeasurement type="text/string" name="Command Line">
-					<Value>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=Moving-simple-not_tacking"</Value>
-				</NamedMeasurement>
-				<NamedMeasurement type="text/string" name="Environment">
-					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
-				</NamedMeasurement>
-				<Measurement>
-					<Value encoding="base64" compression="gzip">eJyLTslPLkktLolVgDIUylKLijPz8xQyixWUjPSM9SyUuKLhiopK8xTKM0syFJR0dTNScwqUFNLyixTyC0qAOoq5bKkLkOwFuyw5sTi12EoBDAwVamCMgsTi4tQUGN9AIS0xMwfON7RQKM7OLChITUEyDaShCOxkqGlmMN1mOE1D0h5cklhSCtQaHOrs7BocrMgFACtpXjU=</Value>
-				</Measurement>
-			</Results>
-		</Test>
-		<Test Status="passed">
 			<Name>Moving-queen</Name>
 			<Path>./src</Path>
 			<FullName>./src/Moving-queen</FullName>
 			<FullCommandLine>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=Moving-queen"</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.0194483</Value>
+					<Value>0.0213512</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -152,13 +100,65 @@
 			</Results>
 		</Test>
 		<Test Status="passed">
+			<Name>Moving-simple-not_tacking</Name>
+			<Path>./src</Path>
+			<FullName>./src/Moving-simple-not_tacking</FullName>
+			<FullCommandLine>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=Moving-simple-not_tacking"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.023767</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=Moving-simple-not_tacking"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyLTslPLkktLolVgDIUylKLijPz8xQyixWUjPSM9SyUuKLhiopK8xTKM0syFJR0dTNScwqUFNLyixTyC0qAOoq5bKkLkOwFuyw5sTi12EoBDAwVamCMgsTi4tQUGN9AIS0xMwfON7RQKM7OLChITUEyDaShCOxkqGlmMN1mOE1D0h5cklhSCtQaHOrs7BocrMgFACtpXjU=</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>Moving-simple-taking-2</Name>
+			<Path>./src</Path>
+			<FullName>./src/Moving-simple-taking-2</FullName>
+			<FullCommandLine>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=Moving-simple-taking-2"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0247388</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=Moving-simple-taking-2"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyLTslPLkktLolVgDIUylKLijPz8xQyixWUjPSM9SyUuKLhiopK8xTKM0syFJR0dTNScwqUFNLyixTyC0qAOoq5bKkLkOwFuyw5sTi12EoBDAwVamCMgsTi4tQUGN9AIS0xMwfON7RQKM7OLChITUEyDaShCOxkqGlmMN1mOE1D0h5cklhSCtQaHOrs7BocrMgFACtpXjU=</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
 			<Name>Something works</Name>
 			<Path>./src</Path>
 			<FullName>./src/Something_works</FullName>
 			<FullCommandLine>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=Something works"</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.020081</Value>
+					<Value>0.0256202</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -184,7 +184,7 @@
 			<FullCommandLine>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=small methoods"</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.0208188</Value>
+					<Value>0.0260158</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -210,7 +210,7 @@
 			<FullCommandLine>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=Short game"</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.0217649</Value>
+					<Value>0.0254332</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -236,7 +236,7 @@
 			<FullCommandLine>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=find all moves of simple figure"</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.0222401</Value>
+					<Value>0.0260797</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -262,7 +262,7 @@
 			<FullCommandLine>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=all moves of simple figure with taking"</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.0237295</Value>
+					<Value>0.026897</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -288,7 +288,7 @@
 			<FullCommandLine>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=all moves of queen"</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.0238071</Value>
+					<Value>0.0272892</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -314,7 +314,7 @@
 			<FullCommandLine>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=all moves queen taking"</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.0211537</Value>
+					<Value>0.0241935</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -340,7 +340,7 @@
 			<FullCommandLine>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=Large queen moves"</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.0189902</Value>
+					<Value>0.0219721</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -366,7 +366,7 @@
 			<FullCommandLine>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=Simple search"</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.0173622</Value>
+					<Value>0.0190125</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -392,7 +392,7 @@
 			<FullCommandLine>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=Searcher's things"</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.0129517</Value>
+					<Value>0.0145255</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -418,7 +418,7 @@
 			<FullCommandLine>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=all moves mixed figures with taking"</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.0110313</Value>
+					<Value>0.0124968</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -444,7 +444,7 @@
 			<FullCommandLine>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=all moves of queen with taking"</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.00901415</Value>
+					<Value>0.0109546</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -470,7 +470,7 @@
 			<FullCommandLine>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=Large search"</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.056264</Value>
+					<Value>0.056865</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -496,7 +496,7 @@
 			<FullCommandLine>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=search tree with h = 7"</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.804793</Value>
+					<Value>0.798125</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -522,7 +522,7 @@
 			<FullCommandLine>/Users/valerij/Desktop/checkers/build/bin/proj_test "--test-case=Short game with stupid player"</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>2.70078</Value>
+					<Value>2.10019</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -541,8 +541,8 @@
 				</Measurement>
 			</Results>
 		</Test>
-		<EndDateTime>Jun 04 15:19 MSK</EndDateTime>
-		<EndTestTime>1622809162</EndTestTime>
+		<EndDateTime>Jun 04 16:05 MSK</EndDateTime>
+		<EndTestTime>1622811953</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>
